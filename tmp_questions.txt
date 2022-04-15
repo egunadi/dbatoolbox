@@ -1,0 +1,254 @@
++ SQL Server Data Tools
+	- Required if using Dashboard
+	- What is this?
+	- Can check its existence is appwiz.cpl or in Visual Studio "about" page
+
++ How to tell if permissions are granted under a certain login?
+	Under a login (for mwuser) 
+	How are they connected to SQL? Windows or SQL?
+	If usr, then see how permissions are set
+		sysadmin right?
+		If this is the case, then permissions will have to be reconfigured
+		Talk to the IT to see if there are 3rd party databases using usr
+
++ How to determine settings for Login auditing
+	- In SSMS 
+		Instance Properties > Security > Login auditing
+		Mirror settings
+
++ What are we to do with running ExtendedEventSessions?
+	- This could just be the system (default SQL Server's)
+	- If there extra ones, then talk with IT (did we set it up?)
+
++ What are we to do with SSIS packages?
+	Do we coordinate with JP to have these transfered?
+	They would have to be reconfigured to point to the new SSAS to point to the new DB
+	We would probably have to do this, coordinating with JP
+
++ Connection strings for Dashboard?
+	Same as above
+
++ For Windows logins, do their IT have to re-create these logins on the new server?
+	YES
+
++ How to transfer Endpoints?
+	- We haven't seen one yet besides the default ones
+
++ SQL Server baselining?
+	- OS Schedulers, VISIBLEONLINE:12
+	- Waits: SOS_SCHEDULER_YIELD 
+
+	- This was a concern with the previous migration because they only had 2 virtual cores (not recommended)
+	- They did not want to increase this, so Paul had to do extra work to show that this is a bottleneck.  
+
+
++ Are SSIS Proxies not always transfered?
+	If used by the Dashboard, then it must be transferred
+	Run by JP?
+
++ "Grant mwuser rights to MI objects"
+	- Is this simply..
+			use [medical]
+			go
+			grant select, insert, update, delete to [mwuser]
+			grant exec to [mwuser]
+			
++ How do we identify the firewall port exceptions?
+	- Will they have "SQL" in their names?
+	- Or is this seen in the Config Mgr?
+	- Dynamic/static port?
+
+	Sometimes there are multiple instances before, but now there is only one. 
+
+	We use static ports, generally.
+
+	See the Browser Service, SSAS, etc...
+		Make sure the ports for these are open
+
++ Set up SQL Agent job to run periodically to collect connection information
+	- How is this to be done?
+
+	Collect usage information
+		* How many connections are open
+		* Use a custom table and uses sp_who2?
+
+	Run by Tim...
+
++ Create scripts to mock each user database with empty files on the new server.  Modify the script to set the file locations and ownership.
+	- How is this to be done?
+
+	- There certain settings 
+		* Ownership
+		* File settings
+	that are in databases.  Can create an empty database with these settings.
+
+	Run by Tim...
+
++ How to check for End points, Linked Servers and Linked Logins?
+	- Check via SSMS
+		Server Objects > Linked Servers
+	- Tim's script outlines these
+	- These must be transferred
+
++ How to check for Replication & Impersonation Rights??
+	- Object Explorer > Replication
+	- 99% of our sites do not have this 
+
++ DBCC UPDATEUPSAGE & DBCC ('<database_name>' WITH COUNT_ROWS)
+	- What is this for?
+
+	- In the new server, we want to update statistics because that can become outdated
+	- Run this by Tim...
+	- Google this first.
+
++ How to Rebuild Indexes?
+	- Not necessary?	
+	- Run by Tim?
+
++ sp_updatestats
+	- Just run this as is? YES, run for everything.
+
++ Unit Test?
+	- Can we connect to the application server?
+	- Can we see data?
+	- DML statements
+
++ Rename server computer name?
+	https://msdn.microsoft.com/en-us/library/ms143799.aspx
+	- Is this always done?
+
++ Ideally, would compress backup be turned on?  Or do we just mimic what's on the old server?
+	- For most people, CPU isn't an issue, so turn it on
+	- Everything is quicker.  The only downside is CPU.
+
++ Format for summary?
+	- Can follow Tim's or...
+	- Tim's document should be the baseline
+
++ BE SURE TO KEEP A RECORD OF WHEN THINGS WERE DONE
+
+
+==================================
+ANSWERS
+=================================
+
+Always do the database integrity check
+	all errormessages, no infomessages
+	make sure that they have enough space
+		double the database size (this command creates snapshots of the database)
+
+Rebuild indexes
+	Do it just because we do not know when it was last done
+	This is not a requirement, because we have jobs that would do this
+	This would also update statistics
+	These are tasks that can be done while they are on the server
+
+Create dummy database.  
+	When exporting users and default database is user-created, then those databases are needed.
+	We will need to install the helprev stored procedure in the master database
+		This will create an SP
+			execute sp_help_login
+				This will generate a list of users
+					We don't need anything that has a # in front on it on SQLSERVERCERTIFICATE
+					We just want a local account (simple name)
+					We also want domain logins
+					We don't need to bring over the sa account or admin account
+						These will be setup on the new server already
+
+
+DBCC UPDATEUSAGE
+	- Not necessary, but wouldn't hurt
+
+Unit test
+	- Ask support to set up a test environment to point to the new database
+	- Or set up another environment
+
+Format for summary
+	- John created a private shared folder
+		* Tim's audit script is in here 
+		* Put results to text, so it can be copied into notepad
+	- Create document for Eddie?
+		Then customers can provide information
+		We can run script to verify the info
+
+If there is a Proxy...
+	Audit script will create Proxy so we could export it (?)
+	We typically try to set up Proxy by hand because they have a password associated with them
+	Coordinate with IT
+	Inquire about it to the IT (there is a Proxy and it appears to be doing this...)
+
++ There is no script for "SQL Agent job to run periodically to collect connection information"
+	sys._request connections....
+	 One for connections and one for sessions
+	 	What IP, what application, what endpoint, what origination point?
+	 	How is it connecting?  Which users?
+	 	Run this periodically
+	 		A session may start up and go away
+	 			We may not catch it
+	 		We can group it by IP and by application
+	 	EX.
+	 		I'm doing migration for Cummins BH
+	 			They have app connecting called patient export
+	 			So something is connecting under the usr account
+	 sp_who gives way too much information
+	 	Just look at
+	 		connection and session -- use the DMVs
+	 		get the endpoint, user, and application name
+	 		then group them
+	 		sys.dm.exec_connection
+	 			join to session 
+	 				on session id
+	 			join on request (?) -- to see what SQL plans are running
+	 Also, who is connecting via SSMS?
+	 	On a true production server, there should not be a lot of people connecting via SSMS
+
+
+Other script that creates user
+	Export user?
+	John's folder called "mi_db" (shared folder in One Drive)
+		There are four members
+		Add me
+		Otherwise, Paul has access
+
+
+
+==============================
+SQL_Migration_Overview.sql
+==============================
+What are the following?
+	+ sysalerts
+	+ sysoperators
+	+ sysproxies
+	+ syscollector_collection_sets_internal
+	+ server_event_sessions (running and stopped)
+	
+These are system tables
+
+dbMail
+	How to know if a job fails?  Who to send the email to?
+		Operators (emails) are used for this.
+		
+We can specify events that will trigger off of other events.
+	When an alert is raised (sysalerts), an operator can then be triggered to send an email
+	Alerts listen for an event that matches a certain criteria
+		Ex. An error number or severity level
+		
+Proxies
+	Give permissions to a user (Bill dashboard training)
+	
+==============================
+SqlServer_Config_Audit.sql	
+==============================	
+What are the following?
+	+ Permissions_user
+		CmdShell_Executor, etc. --> security role
+	+ Section '<Script out any Credentials under Security>'		
+	+ Section '<List all Server Backup Devices>'
+	+ sys.endpoints
+	+ Section '<List all Linked Servers and their associated login>'
+			To connect to another SSMS instance
+				UTAH\DEVTEST to UTAL\DEPT
+	+ Section '<Script out the Logon Triggers of the server, if any exist>'
+	+ Section '<REPLICATION – List Publication or Subscription articles>'
+	
+	

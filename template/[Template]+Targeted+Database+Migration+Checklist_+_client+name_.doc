@@ -1,0 +1,1687 @@
+Date: Mon, 1 Nov 2021 22:15:15 +0000 (UTC)
+Message-ID: <1287371827.9.1635804915227@188da347f725>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_8_513998344.1635804915227"
+
+------=_Part_8_513998344.1635804915227
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>[Template] Targeted Database Migration Checklist: &lt;client nam=
+e&gt;</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>[Template] Targeted Database Migration Checklist: &lt;client name&g=
+t;</h1>
+    <div class=3D"Section1">
+        <p></p>
+<h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-1.In=
+itialAudit">1. Initial Audit</h1>
+<div id=3D"expander-69403565" class=3D"expand-container">
+<div id=3D"expander-control-69403565" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span>
+<span class=3D"expand-control-text">Click here to expand...</span>
+</div>
+<div id=3D"expander-content-69403565" class=3D"expand-content">
+<h2 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-A.So=
+urceServer-<hostname><IP>">A. Source Server - &lt;hostname&gt;&lt;IP&gt;</h=
+2>
+<h3 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-I.SQ=
+LServerLevelSettings">I. SQL Server Level Settings</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"c7279ff2-fb85-4494-8f7b-973=
+a72c0182e" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 654.0px;">
+<col style=3D"width: 126.0px;">
+<col style=3D"width: 976.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p><strong>Task</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Pending</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Notes</strong></p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"12"><span class=3D"placeholder-inline-tasks">If =
+non-MI DBs exist, run by customer</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"13"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"21"><span class=3D"placeholder-inline-tasks">If =
+disabled jobs exist, run by customer</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"22"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">SELECT
+@@servername as ServerName,
+name as JobName,
+date_modified as LastModifiedDate
+FROM
+msdb.dbo.sysjobs WITH (NOLOCK)
+WHERE
+enabled =3D 0
+ORDER BY name</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"23"><span class=3D"placeholder-inline-tasks">If =
+processor affinity settings are vanilla, check-off 1B-II-2</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"24"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">4</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"25"><span class=3D"placeholder-inline-tasks">If =
+Dashboard objects do not exist, check-off section 2b</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"26"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">5</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"27"><span class=3D"placeholder-inline-tasks">If =
+non-MI SSIS &amp; SSAS objects exist, run by customer</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"28"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">6</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"108"><span class=3D"placeholder-inline-tasks">If=
+ IP and hostname will be changed post the migration, uncheck 2A-I-12 and 3-=
+27</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"114"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-II.D=
+BLevelSettings">II. DB Level Settings</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"952f77bb-17b6-4635-aa60-ed4=
+269254db3" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 742.0px;">
+<col style=3D"width: 126.0px;">
+<col style=3D"width: 888.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p><strong>Task</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Pending</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Notes</strong></p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"14"><span class=3D"placeholder-inline-tasks">If =
+[medical] does not =E2=80=9CAuto Shrink=E2=80=9D, check-off =E2=80=9CDay Of=
+=E2=80=9D Task #14</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"15"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"29"><span class=3D"placeholder-inline-tasks">Ens=
+ure [medical_test] uses simple recovery with TLs shrunk</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"52"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"131"><span class=3D"placeholder-inline-tasks">En=
+sure <code>PAGE_VERIFY CHECKSUM</code> is enabled &lt;<a href=3D"https://do=
+cs.microsoft.com/en-us/troubleshoot/sql/admin/troubleshoot-dbcc-errors#inve=
+stigate-root-cause-for-database-consistency-errors" data-card-appearance=3D=
+"inline" class=3D"external-link" rel=3D"nofollow">https://docs.microsoft.co=
+m/en-us/troubleshoot/sql/admin/troubleshoot-dbcc-errors#investigate-root-ca=
+use-for-database-consistency-errors</a> &gt;</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"132"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<h2 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-B.Ta=
+rgetServer-<hostname><IP>">B. Target Server - &lt;hostname&gt;&lt;IP&gt;</h=
+2>
+<h3 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-I.Wi=
+ndowsServerLevelSettings">I. Windows Server Level Settings</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"b5cb7385-4b5c-4e6c-b0ae-71d=
+8bf896612" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 773.0px;">
+<col style=3D"width: 120.0px;">
+<col style=3D"width: 863.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p><strong>Task</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Pending</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Notes</strong></p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"30"><span class=3D"placeholder-inline-tasks">Ens=
+ure that the same services/programs exist (ex. SSIS, SSAS, SSDT for Visual =
+Studio)</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"31"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Ensure that SQL Server Agent and SQL Server B=
+rowser has =E2=80=9Cautomatic=E2=80=9D startup type </p><p>Here is a Micros=
+oft KB for installing SSDT for Visual Studio:</p><p><a href=3D"https://docs=
+.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=3Dsq=
+l-server-ver15" class=3D"external-link" rel=3D"nofollow">https://docs.micro=
+soft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=3Dsql-serv=
+er-ver15</a></p><p>Here is the download page for Visual Studio=E2=80=99s =
+=E2=80=9CSSIS Projects=E2=80=9D extension, which is also needed to configur=
+e the dtsx packages:</p><p><a href=3D"https://marketplace.visualstudio.com/=
+items?itemName=3DSSIS.SqlServerIntegrationServicesProjects" class=3D"extern=
+al-link" rel=3D"nofollow">https://marketplace.visualstudio.com/items?itemNa=
+me=3DSSIS.SqlServerIntegrationServicesProjects</a></p><p>Here is a Microsof=
+t KB for installing SSIS:</p><p><a href=3D"https://docs.microsoft.com/en-us=
+/sql/integration-services/install-windows/install-integration-services?view=
+=3Dsql-server-ver15" class=3D"external-link" rel=3D"nofollow">https://docs.=
+microsoft.com/en-us/sql/integration-services/install-windows/install-integr=
+ation-services?view=3Dsql-server-ver15</a></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"102"><span class=3D"placeholder-inline-tasks">En=
+sure that Windows has been activated</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"103"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"32"><span class=3D"placeholder-inline-tasks">Run=
+ services in target with service acct as in source</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"33"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>As reference, this article lists the permissi=
+ons recommended by Microsoft:</p><p><a href=3D"https://docs.microsoft.com/e=
+n-us/sql/database-engine/configure-windows/configure-windows-service-accoun=
+ts-and-permissions?view=3Dsql-server-ver15#Serv_Perm" class=3D"external-lin=
+k" rel=3D"nofollow">https://docs.microsoft.com/en-us/sql/database-engine/co=
+nfigure-windows/configure-windows-service-accounts-and-permissions?view=3Ds=
+ql-server-ver15#Serv_Perm</a></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">4</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"34"><span class=3D"placeholder-inline-tasks">Ens=
+ure that network protocols are same as source</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"35"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>If changes are made, restart the SQL Server s=
+ervice</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">5</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"119"><span class=3D"placeholder-inline-tasks">Co=
+nfirm if server will be used for SQL Server only, or for the main app as we=
+ll</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"122"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">6</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"36"><span class=3D"placeholder-inline-tasks">Ens=
+ure enough memory, CPU, storage, &amp; drives were provisioned. See if dedi=
+cated drives (not C:\) can be provided for both the data and backups. </spa=
+n></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"37"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>If changes are made, reconfigure SQL Server a=
+ccordingly (ex. set default backup directory, or set max server memory)</p>=
+<p><strong>Note</strong>: </p>
+<ul>
+<li><p>If the server will be used for the main app as well, make sure it ha=
+s enough space to house the MEDINFO folder as well.</p></li>
+<li><p>If the server will be used for the main app, recommend that the driv=
+e names are the same</p></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">7</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"38"><span class=3D"placeholder-inline-tasks">Ens=
+ure firewall settings are same as source. If it is off in source but on in =
+target, add inbound &amp; outbound rules to open SQL Server ports (TCP 1433=
+ &amp; 1434, UDP 1434)</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"39"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://msdn.microsoft.com/en-us/l=
+ibrary/cc646023.aspx" class=3D"external-link" rel=3D"nofollow">https://msdn=
+.microsoft.com/en-us/library/cc646023.aspx</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-II.S=
+QLServerLevelSettings">II. SQL Server Level Settings</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"2351dbff-dcd8-4418-a438-b3e=
+4c672cb87" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 700.0px;">
+<col style=3D"width: 124.0px;">
+<col style=3D"width: 932.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p><strong>Task</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Pending</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Notes</strong></p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"40"><span class=3D"placeholder-inline-tasks">Ver=
+ify MSSQL 2012+ with latest CU is installed</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"41"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://docs.microsoft.com/en-us/s=
+ql/database-engine/install-windows/latest-updates-for-microsoft-sql-server?=
+view=3Dsql-server-ver15" class=3D"external-link" rel=3D"nofollow">https://d=
+ocs.microsoft.com/en-us/sql/database-engine/install-windows/latest-updates-=
+for-microsoft-sql-server?view=3Dsql-server-ver15</a></p><p><a href=3D"https=
+://sqlserverbuilds.blogspot.com/" class=3D"external-link" rel=3D"nofollow">=
+https://sqlserverbuilds.blogspot.com/</a></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"42"><span class=3D"placeholder-inline-tasks">Ens=
+ure that processor affinity settings are the same as source</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"43"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"117"><span class=3D"placeholder-inline-tasks">En=
+sure that mixed authentication is enabled</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"118"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+</div>
+</div>
+<h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-2A.P=
+repwork">2A. Prepwork</h1>
+<div id=3D"expander-246193477" class=3D"expand-container">
+<div id=3D"expander-control-246193477" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span>
+<span class=3D"expand-control-text">Click here to expand...</span>
+</div>
+<div id=3D"expander-content-246193477" class=3D"expand-content">
+<h3 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-I.SQ=
+LServerLevelSettings.1">I. SQL Server Level Settings</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"9796337a-9ce8-446c-9917-d96=
+cda6c6479" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 614.0px;">
+<col style=3D"width: 87.0px;">
+<col style=3D"width: 1055.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p><strong>Task</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Pending</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Notes</strong></p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"53"><span class=3D"placeholder-inline-tasks">Cop=
+y latest full backup and create dummy DB(s). If non C:\ drives were provisi=
+oned in step 1B-I-6, configure instance DB directories accordingly first.</=
+span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"54"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"58"><span class=3D"placeholder-inline-tasks">Rec=
+reate Logins and configure as in source</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"59"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Disable [sa] if [sa] is disabled in source</p=
+>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">grant se=
+lect, insert, update, delete to mwuser
+
+grant exec to mwuser</pre>=20
+</div>
+</div><p>If creating Logins from scratch, create [usr] Login and tie with [=
+mwuser] User</p><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"60"><span class=3D"placeholder-inline-tasks">Rec=
+reate jobs (excluding Maintenance Plans), then disable them</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"64"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">USE MSDB=
+;
+GO
+UPDATE MSDB.dbo.sysjobs
+SET Enabled =3D 0
+WHERE Enabled =3D 1;
+GO</pre>=20
+</div>
+</div><p>If creating jobs from scratch, here is the list of standard jobs:<=
+/p>
+<ol>
+<li><p>"job_cldictionary_archive"</p></li>
+<li><p>"Cleanup CdsRsnRequests [medical]" (omit for v75)</p></li>
+<li><p>"Appt Search Scrub Data/ Build Cache" (omit for v75)</p></li>
+<li><p>"Dimrun Cutoff (month to date) [medical]"</p></li>
+<li><p>"Dimrun Collections [Medical]"</p></li>
+<li><p>"Import NC Files" (contingent on eRX module evaluation)</p></li>
+<li><p>Patient Portal Job(s) (contingent on Patient Portal module evaluatio=
+n)</p></li>
+</ol><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">4</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"61"><span class=3D"placeholder-inline-tasks">Rec=
+reate Maintenance Plans</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"65"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>If creating Maintenance Plans from scratch, c=
+an use Ola Hallengren maintenance solutions. </p><p>For reference, here is =
+a sample schedule:</p>
+<ol>
+<li><p>Integrity check for user DBs every Sat at 2am</p></li>
+<li><p>Integrity check for system DBs every Sat at 3am</p></li>
+<li><p>Optimize index for [medical] every Sun at 2am</p></li>
+<li><p>Full backup for [medical] every day at 10pm</p></li>
+<li><p>Log backup for [medical] every hour of every day from 6am to 9pm</p>=
+</li>
+<li><p>Cleanup command log every Sat at 12am</p></li>
+<li><p>Cleanup output logs every Sun at 12am</p></li>
+<li><p>Cleanup backup history every Sat at 1am</p></li>
+<li><p>Cleanup job history every Sun at 1am</p></li>
+</ol></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">5</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"66"><span class=3D"placeholder-inline-tasks">Ens=
+ure server-level objects are same as source. If no proxy, check-off 2B-1</s=
+pan></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"67"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">6</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"68"><span class=3D"placeholder-inline-tasks">Ena=
+ble =E2=80=9COptimize for Ad Hoc=E2=80=9D, =E2=80=9CCompress Backup=E2=80=
+=9D, =E2=80=9Cxp_cmdshell=E2=80=9D settings. </span></li>
+<li data-inline-task-id=3D"120"><span class=3D"placeholder-inline-tasks">If=
+ =E2=80=9CCost Threshold for Paralellism=E2=80=9D is 5, set to 50.</span></=
+li>
+<li data-inline-task-id=3D"121"><span class=3D"placeholder-inline-tasks">Se=
+t MAXDOP to 8 or lower &lt;<a href=3D"https://littlekendra.com/2016/07/14/m=
+ax-degree-of-parallelism-cost-threshold-for-parallelism/" class=3D"external=
+-link" rel=3D"nofollow">https://littlekendra.com/2016/07/14/max-degree-of-p=
+arallelism-cost-threshold-for-parallelism/</a>&gt;</span></li>
+<li data-inline-task-id=3D"125"><span class=3D"placeholder-inline-tasks">En=
+sure instant file initialization (IFI) and Lock Pages in Memory (LPIM) are =
+enabled </span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"69"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">sp_confi=
+gure 'show advanced options', 1
+go
+reconfigure
+go
+
+sp_configure 'xp_cmdshell', 1
+go
+reconfigure
+go</pre>=20
+</div>
+</div><p>&lt;<a href=3D"https://www.brentozar.com/blitz/instant-file-initia=
+lization/" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"n=
+ofollow">https://www.brentozar.com/blitz/instant-file-initialization/</a> &=
+gt; </p><p>&lt;<a href=3D"https://blog.sqlauthority.com/2019/09/16/sql-serv=
+er-enable-lock-pages-in-memory-lpim/" data-card-appearance=3D"inline" class=
+=3D"external-link" rel=3D"nofollow">https://blog.sqlauthority.com/2019/09/1=
+6/sql-server-enable-lock-pages-in-memory-lpim/</a> &gt;</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">7</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"70"><span class=3D"placeholder-inline-tasks">If =
+Patient Portal exists, enable =E2=80=9CDatabase Mail XPs=E2=80=9D </span></=
+li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"71"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">8</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"106"><span class=3D"placeholder-inline-tasks">Se=
+t Min Server Memory to 1 GB and Max Server Memory to 80% of server memory</=
+span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"107"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">9</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"72"><span class=3D"placeholder-inline-tasks">Che=
+ck for "orphaned" users. If none, check-off 3-12.</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"73"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">EXEC sp_=
+change_users_login 'REPORT'
+
+Use [$databaseName];
+GO
+
+ALTER USER OrphanUser WITH LOGIN =3D correctedLoginName
+
+SELECT *=20
+FROM sys.objects=20
+WHERE schema_id =3D SCHEMA_ID('dbo')</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">10</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"74"><span class=3D"placeholder-inline-tasks">Set=
+up and test =E2=80=9CImport NC Files=E2=80=9D job</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"63"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">begin tr=
+an
+select * from clparms as [a] where 1=3D1 and a.code=3D'erx' and a.skey=3D'u=
+p'
+update clparms set ALPHA1=3D'D:\MEDINFO\ERX' where 1=3D1 and code=3D'erx' a=
+nd skey=3D'up'
+update clparms set ALPHA3=3D'D:\MEDINFO\' where 1=3D1 and code=3D'erx' and =
+skey=3D'up'
+select * from clparms as [a] where 1=3D1 and a.code=3D'erx' and a.skey=3D'u=
+p'
+rollback tran
+--commit tran
+
+exec util_newcrop_import @filename=3D'NCTSV-201907.EXE', @checkSyslog =3D 0=
+, @debug =3D 1&nbsp; --using last month's file</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">11</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"75"><span class=3D"placeholder-inline-tasks">(Ti=
+me permitting) Run DMA (Data Migration Assistant)</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"76"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">12</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li class=3D"checked" data-inline-task-id=3D"109"><span class=3D"placeholde=
+r-inline-tasks">Note down which objects are configured using IP or hostname=
+</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"110"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">13</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"128"><span class=3D"placeholder-inline-tasks">En=
+sure there are 8 equally sized data files for tempdb. If there are less tha=
+n 8 cores, create the same number for files as cores. If adding files, rest=
+art SQL Server.</span></li>
+<li data-inline-task-id=3D"130"><span class=3D"placeholder-inline-tasks">If=
+ on 2014 and below, enable TF 1117 and 1118 </span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"129"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://wiki.galenhealthcare.com/i=
+ndex.php/Create_Multiple_TempDB_files_for_best_performance" data-card-appea=
+rance=3D"inline" class=3D"external-link" rel=3D"nofollow">https://wiki.gale=
+nhealthcare.com/index.php/Create_Multiple_TempDB_files_for_best_performance=
+</a> </p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">DBCC TRA=
+CEON(1117, -1);
+DBCC TRACEON(1118, -1);</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-II.3=
+rdPartySettings">II. 3rd Party Settings</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"3a1ff05d-6f26-47f2-bf3c-c9d=
+298d47b33" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 530.0px;">
+<col style=3D"width: 87.0px;">
+<col style=3D"width: 1139.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p><strong>Task</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Pending</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Notes</strong></p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"77"><span class=3D"placeholder-inline-tasks">If =
+Patient Portal exists, try configuring DB mail or reach out to Support</spa=
+n></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"78"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Confirm whether a maintenance splashscreen sh=
+ould be implemented</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"79"><span class=3D"placeholder-inline-tasks">Che=
+ck if customer uses reporting platform requiring ODBC connection</span></li=
+>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"80"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"81"><span class=3D"placeholder-inline-tasks">If =
+Interfaces exist, touch bases with Interface</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"82"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">4</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"104"><span class=3D"placeholder-inline-tasks">If=
+ HDL exists, touch bases with HDL engineer</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"105"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">5</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"112"><span class=3D"placeholder-inline-tasks">If=
+ Phone Tree exists, touch bases with Phone Tree engineer</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"113"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">6</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"115"><span class=3D"placeholder-inline-tasks">If=
+ Provider Portal exists, ensure that connection to the new DB server is tes=
+ted</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"116"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Confirm whether a maintenance splashscreen sh=
+ould be implemented</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">7</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"126"><span class=3D"placeholder-inline-tasks">If=
+ Hef Exports exist, ensure Proxy, Credential, and export directory are copi=
+ed over. Also, ensure that an engineer is assigned to re-install and test B=
+ox Sync post the migration.</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"127"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+</div>
+</div>
+<h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-2B.D=
+ashboardTasks">2B. Dashboard Tasks</h1>
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"55"><span class=3D"placeholder-inline-tasks">Pre=
+mium Dashboard not used. Disregard section</span></li>
+</ul>
+<div id=3D"expander-642152391" class=3D"expand-container">
+<div id=3D"expander-control-642152391" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span>
+<span class=3D"expand-control-text">Click here to expand...</span>
+</div>
+<div id=3D"expander-content-642152391" class=3D"expand-content">
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"168799a8-4833-4570-a8b4-6a9=
+83d0221df" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 555.0px;">
+<col style=3D"width: 124.0px;">
+<col style=3D"width: 1077.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p><strong>Task</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Pending</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Notes</strong></p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"56"><span class=3D"placeholder-inline-tasks">Cre=
+ate SSIS proxy (if used)</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"57"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"83"><span class=3D"placeholder-inline-tasks">Mig=
+rate SSAS DB(s)</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"84"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"85"><span class=3D"placeholder-inline-tasks">Rec=
+onfigure, reimport, and test SSIS package(s)</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"86"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Custom packages may require that certain dire=
+ctories be moved over</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+</div>
+</div>
+<h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-3.Th=
+eDayOf">3. The Day Of</h1>
+<div id=3D"expander-894343392" class=3D"expand-container">
+<div id=3D"expander-control-894343392" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span>
+<span class=3D"expand-control-text">Click here to expand...</span>
+</div>
+<div id=3D"expander-content-894343392" class=3D"expand-content">
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"83d2bb0f-de2f-4075-b71d-09b=
+c47d3c910" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 423.0px;">
+<col style=3D"width: 1333.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p><strong>Task</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Notes</strong></p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"123"><span class=3D"placeholder-inline-tasks">If=
+ Portal(s) exist, coordinate a time to implement splashscreen</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"16"><span class=3D"placeholder-inline-tasks">Con=
+tact client 30 mins prior</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"17"><span class=3D"placeholder-inline-tasks">At =
+specified time, make sure Medinfo users are off</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">4</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"18"><span class=3D"placeholder-inline-tasks">Dis=
+able jobs in source server and disable SQL Server Agent</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Note which jobs are disabled</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">USE MSDB=
+;
+GO
+UPDATE MSDB.dbo.sysjobs
+SET Enabled =3D 0
+WHERE Enabled =3D 1;
+GO</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">5</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"19"><span class=3D"placeholder-inline-tasks">Pla=
+ce DB(s) in =E2=80=9Cread-only=E2=80=9D mode</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Use GUI if other users are connected</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">USE [ma=
+ster]
+GO
+ALTER DATABASE [dashboardDB] SET  READ_ONLY WITH NO_WAIT
+GO</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">6</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"20"><span class=3D"placeholder-inline-tasks">Tak=
+e =E2=80=9Ccopy only=E2=80=9D backup with =E2=80=9Cverify backup integrity=
+=E2=80=9D</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">7</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"44"><span class=3D"placeholder-inline-tasks">Tra=
+nsfer backup(s) to new server</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">8</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"45"><span class=3D"placeholder-inline-tasks">Dro=
+p =E2=80=9Cbogus=E2=80=9D DB(s) in new server</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">9</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"46"><span class=3D"placeholder-inline-tasks">Res=
+tore backup(s) to new instance</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">10</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"47"><span class=3D"placeholder-inline-tasks">Set=
+ DB(s) from =E2=80=9Cread-only=E2=80=9D to =E2=80=9Cread-write=E2=80=9D</sp=
+an></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">11</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"48"><span class=3D"placeholder-inline-tasks">Che=
+ck Login Permissions</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">grant se=
+lect, insert, update, delete to mwuser
+
+grant exec to mwuser </pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">12</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"87"><span class=3D"placeholder-inline-tasks">Che=
+ck for "orphaned" users</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">EXEC sp_=
+change_users_login 'REPORT'
+
+Use [$databaseName];
+GO
+
+ALTER USER OrphanUser WITH LOGIN =3D correctedLoginName
+
+SELECT *=20
+FROM sys.objects=20
+WHERE schema_id =3D SCHEMA_ID('dbo')</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">13</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"49"><span class=3D"placeholder-inline-tasks">Shr=
+ink logs (if autogrowth has kicked in)</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">14</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"51"><span class=3D"placeholder-inline-tasks">Tur=
+n off auto shrink (if used)</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">15</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"88"><span class=3D"placeholder-inline-tasks">Ens=
+ure that TL autogrowth settings are optimal</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">16</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"89"><span class=3D"placeholder-inline-tasks">Set=
+up and test =E2=80=9CImport NC Files=E2=80=9D job</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">begin tr=
+an
+select * from clparms as [a] where 1=3D1 and a.code=3D'erx' and a.skey=3D'u=
+p'
+update clparms set ALPHA1=3D'D:\MEDINFO\ERX' where 1=3D1 and code=3D'erx' a=
+nd skey=3D'up'
+update clparms set ALPHA3=3D'D:\MEDINFO\' where 1=3D1 and code=3D'erx' and =
+skey=3D'up'
+select * from clparms as [a] where 1=3D1 and a.code=3D'erx' and a.skey=3D'u=
+p'
+rollback tran
+--commit tran
+
+exec util_newcrop_import @filename=3D'NCTSV-201907.EXE', @checkSyslog =3D 0=
+, @debug =3D 1&nbsp; --using last month's file</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">17</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"90"><span class=3D"placeholder-inline-tasks">Ens=
+ure server computer name has been renamed</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://msdn.microsoft.com/en-us/l=
+ibrary/ms143799.aspx" class=3D"external-link" rel=3D"nofollow">https://msdn=
+.microsoft.com/en-us/library/ms143799.aspx</a></p><p>Default Instance:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">sp_drops=
+erver &lt;old_name&gt;; =20
+GO =20
+sp_addserver &lt;new_name&gt;, local; =20
+GO  </pre>=20
+</div>
+</div><p>Named Instance:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">sp_drops=
+erver &lt;old_name\instancename&gt;; =20
+GO =20
+sp_addserver &lt;new_name\instancename&gt;, local; =20
+GO</pre>=20
+</div>
+</div><p>Verify:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">SELECT =
+@@SERVERNAME AS 'Server Name';</pre>=20
+</div>
+</div><p>If changed, SQL Server will have to be restarted.</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">18</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"91"><span class=3D"placeholder-inline-tasks">Poi=
+nt MI to new SQL Server</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>If MSETUP is using =E2=80=9Csa=E2=80=9D, repl=
+ace with =E2=80=9Cusr=E2=80=9D</p><p>If IP is being changed, make sure to u=
+se hostname instead</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">19</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"92"><span class=3D"placeholder-inline-tasks">Con=
+duct unit testing</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">
+select * from clmaster where plname=3D'test' and account=3D
+</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">20</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"93"><span class=3D"placeholder-inline-tasks">Re-=
+enable jobs and restart SQL Server Agent</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">USE MSDB=
+;
+GO
+UPDATE MSDB.dbo.sysjobs
+SET Enabled =3D 1
+WHERE Enabled =3D 0;
+GO</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">21</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"94"><span class=3D"placeholder-inline-tasks">Tak=
+e full backup of [medical]</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">22</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"95"><span class=3D"placeholder-inline-tasks">Set=
+ old DB(s) to offline (be sure that current Login=E2=80=99s default DB is n=
+ot [medical])</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">ALTER DA=
+TABASE &lt;dbname&gt; SET OFFLINE WITH ROLLBACK IMMEDIATE</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">23</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"96"><span class=3D"placeholder-inline-tasks">Run=
+ dbcc checkdb</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">dbcc che=
+ckdb('medical') WITH NO_INFOMSGS,ALL_ERRORMSGS</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">24</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"97"><span class=3D"placeholder-inline-tasks">Reb=
+uild indexes</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">25</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"98"><span class=3D"placeholder-inline-tasks">Rev=
+iew Error Logs and SQL Server Logs for any errors</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">26</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"99"><span class=3D"placeholder-inline-tasks">Rem=
+ove tmp backups in target and source</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">27</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"124"><span class=3D"placeholder-inline-tasks">If=
+ Portal exist(s), have Portal engineer remove splashscreen(s) and possibly =
+reconfigure the DB connection</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">28</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"100"><span class=3D"placeholder-inline-tasks">Co=
+nfirm with customer that migration has been completed</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">29</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li class=3D"checked" data-inline-task-id=3D"111"><span class=3D"placeholde=
+r-inline-tasks">After IP and/or hostname is changed, reconfigure affected o=
+bjects</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">30</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"101"><span class=3D"placeholder-inline-tasks">Up=
+date SF connect info, SQL Server Version, &amp; SQL DB Server Version</span=
+></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+</div>
+</div>
+<h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-4.Ba=
+seliningandPerformanceTuning">4. Baselining and Performance Tuning</h1>
+<div id=3D"expander-1001494684" class=3D"expand-container">
+<div id=3D"expander-control-1001494684" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span>
+<span class=3D"expand-control-text">Click here to expand...</span>
+</div>
+<div id=3D"expander-content-1001494684" class=3D"expand-content">
+<p>Traditionally, this goes as follows:</p>
+<ul>
+<li><p>Change the Compatibility Level to the latest version</p></li>
+<li><p>Collect perfmon counters</p></li>
+<li><p>Generate a PAL report and analyze its results</p></li>
+<li><p>If any alarming patterns are found, a trace is run during those time=
+s to see if they are caused by slow performing queries.</p></li>
+</ul>
+<p></p>
+<p>When crossing the SQL Server 2014 threshold, however, Microsoft recommen=
+ds the following:</p>
+<ul>
+<li><p>Keep the source Compatibility Level</p></li>
+<li><p>Enable Query Store to collect baseline data</p></li>
+<li><p>If using SSMS v18+, enable Query Tuning Assistant </p></li>
+<li><p>Change Compatibility Level to latest version</p></li>
+<li><p>Fix performance regressions with Automatic Plan Correction (SQL 2017=
++)</p></li>
+</ul>
+<p></p>
+<p>Things to explore:</p>
+<ul>
+<li><p>The latest version of PAL &lt;<a href=3D"https://github.com/clinthuf=
+fman/PAL" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"no=
+follow">https://github.com/clinthuffman/PAL</a> &gt;</p></li>
+<li><p>Perfmon recommendations (counters to collect and expected numbers) f=
+rom =E2=80=9CSQL Server Query Performance Tuning=E2=80=9D book</p></li>
+</ul>
+</div>
+</div>
+<p></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_8_513998344.1635804915227
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_8_513998344.1635804915227--

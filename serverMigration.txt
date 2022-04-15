@@ -1,0 +1,717 @@
+====================
+SWHC migration
+====================
+
++ New server has less space and memory, because it is supposed to be dedicated only to the medical databases
+	?? Will this be an issue?
+
+	! One core is not a good idea!
+		With hyperthreading, 4 cores provides 8 different threads to do processing
+			If there are interfaces, etc...
+			
+		With a hyperVM, we can set as many cores as desired... 
+
+	Talk to John
+		At the very least 2, but ideally 4
+		Licensing?  Licensed per core?
+
+	DMVs to monitor performance?
+
+	There may be a performance hit with only 8 GB of memory....
+
+
++ Autogrowth has kicked in!!!!!!!!!!
+	1. (Ideally) right before a FULL backup:
+		Switch to SIMPLE, then back to FULL, then take a FULL backup
+			When is the FULL backup set to run?
+	2. DBCC LOGINFO shows that most of the logs are available for re-use. So:
+		Run DBCC SHRINKFILE (set initial size to 1 GB with parameter, or by resizing the log)
+		Do this while in SIMPLE recovery model
+			Look-up why this is the case
+		To reclaim disk space
+		Also, this would "defragment" the log file, so data can be read contiguously
+
+++ Compress backup - unchecked
+	- For most people, CPU isn't an issue, so turn it on
+	- Everything is quicker.  The only downside is CPU.                                                                                   
+	- UNLESS, there are performance IO issues on target server...
+
+
+++ Good that Max Memory is set to 12 GB.  The current OS has 16 GB of memory.  So this leaves ~2GB for the OS and ~2GB for applications.
+	- Double check how much memory the target server has!
+	- Also, check Resmon to see how much % of Physical Memory is used
+
+++ Max DOP
+	- Currently set to 0
+	- Leave this at 0!
+
++ SWHCTEST is another SQL Server Instance....
+	- Will this be migrated?
+	- Can see in config mrg or services applet
+
+
++ Which SSIS packages should be migrated?
+  - Where is the SSIS package for the Dashboard?
+  - The "maintenance plan" ones will be created automatically by the maintenance plans
+  - Familiarize CDW (Copy Database Wizard) & run by client
+  	+ This is build by default by the Copy Database Wizard!
+  - OR, export package to file system and investigate "under the hood"
+
+++ If a MINet services are running under Local System, this means they are logging into SQL Server using "NT Authority\System", right? 
+	- If Net Services are not in the same server, then don't worry about them!
+
+++ In OneNote: SQL Service Accounts - Default Accounts?
+	+ Check the SQL Services Account?
+	- In the Configuration Manager > SQL Server Services
+		* If it says "NT..." then it is default
+
+
+
+====================
+Westsound migration
+====================
++ Ad hoc workload?
++ Max DOP (degree of parallelism)?
++ MAX Server Memory?
++ xp_CmdShell?
+
++ The first thing to do is to export the Login accounts over, especially the user-created ones with default database of "medical"
+	!- Before exporting, "medical" must already exist in the new server.  Typically, this is done by creating a dummy "medical" database. 
+		OR, one of the backups can be restored...but this will create orphaned users
+			So port over user first using "master" as the default database
+				THEN restore the database
+
+		OR
+
+		create a blank database labeled medical (necessary to import user account with default database setting).
+		Importe user account "USR" from production server to new server.
+		Remove blank database labeled medical.
+
+	- export_sql_logins.sql	
+		* Run this on the old server
+
+	- exec sp_help_revlogin
+		* This will show all the Login accounts that we may port over.  Run this by the client.
+		* Anything with ## we do not need
+
+	- user_accounts_to_export.sql
+		* Generate this script to run on the new server
+
+	!- Port over "usr" for now.  This is our account.  We need to discuss the other accounts with the client.
+
++ Script out the jobs
+	!- Jobs created by Maintenance Plans do not need to be scripted out
+	!- For now port over the first five ones
+
++ Tomorrow:
+	- Backup the old database
+
+
+
+===========================
+Tim Email
+===========================
+
+1.       Upgrade the SQL version to SP1, CU5.   [PAUL] - Completed
+2.       Configure network protocols to be the same as the source server (ports, firewall exceptions)  [PAUL] - Completed
+3.       Configure new instance level settings appropriate for the target server  [PAUL] - Completed
+4.       Verify that all the instance and server-level settings are compatible between SQL 2008 and SQL 2014 (XP_Cmdshell, etc…)  [PAUL] - Completed
+5.       Poll the current SQL server to see “who” is using the server.  [TIM]
+a.       Set up SQL Agent job to run periodically to collect connection information
+6.       Create scripts to mock each user database with empty files on the new server.  Modify the script to set the file locations and ownership.  [TIM] - Completed
+7.       Bring over the logins from the old server  [TIM] - Completed
+a.       Create stored proc sp_help_revlogin on source server.  Script can be acquired from Microsoft.
+b.       Run sp_help_revlogin
+c.       Copy the resulting text and paste in an editor
+d.       Edit the script down to the logins we need.  We’ll avoid server specific logins like BUILTIN\Administrators, NT AUTHORITY\SYSTEM, etc…
+e.       Run the resulting script to create the login on the target server.  This preserves the SIDs and passwords for the SQL Server logins.
+8.       Run resulting script from step 4 to load user logins on target server.  This will prevent having to resolve orphaned logins at the target server. [TIM] -Completed
+a.       Verify server and database roles of each login between the source server and target server.
+9.       Move ERX HTTP downloader and dll's to the target server   [PAUL] -Completed
+10.   Script out and recreate any SQL Agent jobs from the source server to the target server.  [TIM]
+a.       Review file paths carefully.  Change file path as necessary to match target server.
+b.       Disable the SQL Agent job(s) on target server until we cut over.
+11.   Investigate and recreate any other server-level objects   [PAUL]
+a.       Backup devices - None
+b.       End points – None
+c.       Linked Servers and Linked Logins - None
+d.       SQL Server Agent Proxies - None
+e.       Credentials – Completed
+f.        Replication - None
+g.       Impersonation Rights - None
+h.       Maintenance Plans – Completed
+i.         DB Mail Accounts and Profiles- Completed
+12.   Make a backup copy of each user database on source server [TIM] - Completed
+a.       Copy backup of each user database to target server
+13.   Restore database(s) on target server  [TIM] - Completed
+14.   Set compatibility level to new level for SQL Server 2014  [TIM] - Completed
+15.   Run DBCC UPDATEUSAGE on restored database [TIM] - Completed
+a.       DBCC (‘<database_name>’) WITH COUNT_ROWS
+16.   Run DBCC CHECKDB(‘<database_name>’) WITH ALL_ERRORMSGS] - Completed
+17.   Rebuild Indexes
+18.   Update statistics (sp_updatestats) - Is this necessary after a rebuild index? (http://www.sqlskills.com/blogs/paul/search-engine-qa-10-rebuilding-indexes-and-updating-statistics/)
+19.   Review SQL log for any errors [PAUL and TIM]
+20.   Unit Test
+21.   Choose Migration cutover date after successfully completing step 12 through step 20.  - Completed
+22.   Repeat step 9 through step 17 for final cutover. ] - Completed]
+23.   Rename server computer name - https://msdn.microsoft.com/en-us/library/ms143799.aspx  - Completed
+24.   Restore a copy of the medical DB for Interface testing – Requested by Dale to test a new Uni-Directional Lab Import Interface   [PAUL] -Completed
+25.   Bill may have to change the connection strings for the Dashboard Job. We'll know for sure before Friday [PAUL]
+
+
+For another comprehensive list, see Tim's email to Skyline.
+ 
+
+
+======================
+Paul Notes
+======================
+
++ Check if proxies exists (ex. for SSIS)
+	- Also check in Security > Credentials
+
++ Check to see if there are any SSIS packages in MSDB
+
++ "Extended Events" (which was introduced in SSMS 2008) can be used
+	- It is similar to the Profiler
+
++ Navigate to Server Objects > Sys Endpoints > Default (?)
+
++ Check if there are any linked servers by quering the metadata
+
+		SELECT * FROM sys.server
+		SELECT @@servername -- Will show something like CPSQL2
+
+	Linked servers will need to be moved
+
++ Compatibility level may have to be manually set
+	- MI supports 2008R2 and above
+	- parser or features?
+
++ SQL Server Config Mgr > SQL Server Network Config
+	- Check Protocols to see how network config is defined
+		* aka "How will I let users log into SQL?"
+		* TCP/IP - internet
+		* Named pipes (another protocol)
+		* Shared memory (everything is local)
+		* IP addresses
+			> See which IPs (or IPALL) have a port
+				# If dynamic ports used, others cannot connect?
+				# 443 is the default port
+
++ Create migration tasks
+	- Prereqs
+	- Tasks
+	- Firewall Port Exceptions
+
+
+Coast Pain Management Migration:
+--------------------------------
++ See if a full backup exists.  If not, take a full backup!
+
++ Is the SQL Server Agent running?  If not, turn on!
+
++ Use the scripts on GitHub to give an overview of what's installed on an instance
+	- GitHub > medinformatix.sql > MIDB-Development > migration-sql > SQL_Migration_Overview.sql
+		> Tim needs to update this
+		> Run this on medical
+		> Be sure to configure the company using the following query
+			SELECT COMPANY, COUNT(*)
+			FROM CLMASTER
+			GROUP BY COMPANY
+	- SqlServer_Config_Audit.sql
+		> Run on master
+		> This will give an in-depth look
+			* Ex. sp configure
+
++ Examine the setup of the new server
+	- What is the SQL Server Version?
+		* Express cannot be used
+	- What are the requirements?
+	- What are the components in the old server that we must take into account?
+
++ Create usr & map to mwuser
+
++ Copy full bkp to new instance
+
++ Grant mwuser rights to MI objects
+
++ Create maintenance plan
+	- For each subplan, copy what exists manually 
+	- Do not use proxy (use the SQL Server auth instead)
+	- Using the toolbar in the LHS, we can drag and drop
+		* Assuming we are not using the Maintenance Plan Wizard
+
++ Configure server settings
+	- Memory
+		* 2 GB for MI
+		* 2 GB for OS
+	- Check compress backup (this uses more CPU)
+	- Copy 'Advanced' settings directly
+	- FULL recovery model must be set
+	- Check the compatibility model
+		* Leave this at 2008 for older MI versions
+	- Where do they want the backups to reside?
+		* Do they want the MDF & LDF to be on a separate drive than the .bak & .trn?
+	- Are there firewall port exceptions?
+		* 1433 for SQL Server
+		* TCP 2383 for SSAS
+		* TCP 135 for SSIS
+		* UDP 1434 for SQL Server Browser
+		* DOUBLE CHECK THESE!
+		* These can be tested by connecting from another box
+	- We don't need the following in the Config Mgr:
+		* Reporting Services
+		* Full-text Search (used for fuzzy matching, when users need more functionality than just select statements)
+		* Browser (needed only when there are multiple instances)
+		* DO NOT UNINSTALL THESE.  BUT THEY CAN BE TURNED OFF.
+	- Do we have to create a SSIS proxy?
+	- Is there a ctxstore setup?  If so, inform IT (?)
+		* Apparently, ctxstore is a database....
+	- Use perfmon counters for baselining (collecting metrics)
+		* Collect data every 15 seconds
+		* How many virtual processors are there?
+		* Save data as BLG file
+			relog $filename.blg -f csv -o $filename.csv
+
+
+
+Sample Analyis
+---------------------
+Target Server:
+**************
++ Is everything installed?
+	 - SSMS
+	 	* What edition?  Std?  Enterprise?  SPs & CU?
+	 		> Run '@@version'
+	 - SSAS
+	 	* Check config mgr
+	 - SSIS
+	 	* Check config mgr
+
++ If we see "hypervisor" then we are dealing with a VM
+	- Is this a storage subsystem?
+	- Only one drive?  Or SAN?
+
++ Is mixed auth enabled?  
+	Login > New Login > Can select (a) Windows auth, (b) SQL Server auth
+
++ Are there any firewall port exceptions?
+
++ What is the
+	- Memory
+		Ex. 2.3 GB
+		* This can be checked in the task Mgr
+	- CPU
+		Ex. 2 processors (virtual cores) = 2 * cores
+		* This can be checked in the task mgr
+	- Free storage
+		> Ex. 200 GB free in E:\ drive
+	- Also, check the System window (ctrl panel)
+
++ Document all findings in the One Note document
+	O - stands for good
+	X - stands for bad
+
++ SSMS > properties > memory 
+	- See how many GB of cache SQL can eat
+		* Can SQL cache its DB?
+		Ex. 
+			> OS needs 1-2 GB
+			> MI will also take up RAM (~2 GB)
+			> SQL DB = 5.5 GB
+
++ sqlserverupdates.com
+	- This is a good resource 
+
++ Check SQL Login accounts
+	- See config mgr
+		* Are these the same users?
+	
+
+
+Source Server:
+**************
++ SQL Jobs
+	- These need to be moved
+	- These are defined in the "msdb" db
+	- Logins and permissions are stored in the "master" db
+	- Restoring these is a process that is more involved.  As such, it is easier to
+		* Script out these jobs
+		* Recreate permissions
+
++ Maintenance plans that use SSIS are not so easy to recreate (vs SQL jobs)
+
++ How is MI connecting to SSMS?
+	- Windows auth?
+	- run "sp_who2"
+		* Anything < 50 is system
+		* As for > 50...
+		Ex. 
+			> NT AUTHORITY\SYSTEM
+			> Why is "usr" given sysadmin privileges?
+
++ Services.cmd encapsulates services.msc?
+
++ Note that "usr" login = "mwuser" user in ssms
+	- Hence we must
+		GRANT EXEC ON $SP TO MWUSER -- "ON $SP" is optional
+
+
+--------------
+
++ Check the Server Properties
+	- Memory
+		* Min
+		* Max
+	- Security
+		- Login auditing
+		- Mixed auth?
+	- DB settings
+		- Compress backup checked?
+	- Advanced settings
+
++ Security > Logins
+	- Note down and insure they exist in the new server
+
++ Check the SQL Services Account
+
+
+
+
+
+
+
+
+
+------------
+
+3rd party, windows, task-scheduler
+
+	jobs apart from SQL
+	we can only move jobs that are native to SQL server (that we can script out)
+		jobs running under the SQL Server Agent
+
+are they planning to decommission the old server?
+	we are only responsible in moving MI related DBs
+
+backup exec 
+	a backup job that creates a sql server database
+
+
+
+
+==========================
+Old Server
+==========================
+
+There is a scripts that gives internal details of the system
+	Not easy to see in grid mode, so send it to text.  Then copy over into Notepad++
+	Query completed with errors because it's an older version of SQL
+	Look at server configuration
+		max server memory (MB) - with defaults, we can bring a server under under memory pressure to a halt
+			should be 80-85% of max memory of the machine
+			select @@version
+				Look in msdn for recommendations
+				glenn berry sql server			
+			Properties > Memory
+				OR View Faces > Server Configuration > MaxServerMemory
+			minimum 1024 (1 GB)
+		Don't worry about processor affinity
+	xp_cmdshell (?)
+		Allows SQL Service cmd_shell access (DOS commands)
+			Used to execute http downloader (calling application via cmd line and capture output)
+		View Faces > Server Configuration > XPCmdShellEnabled
+			Turn on
+	cost threshold for parallelism (different from Max Degree of Paralellism!)
+		5 -> 20
+		It takes more effort to parallelize nowadays
+			Not the best idea
+	Bring to the customer's attention that there are other databases (which we don't touch)
+		Look at medical DB
+			MDL & LDF sizes
+	Examine user logins	
+		administrator	These are local
+		arussell		These are local.  Find out what this is all about.
+		sa 				These are local
+		SWHA\Medinfo.	Make sure that these come over 
+		SWHA\nevis		Make sure that these come over
+		usr				Make sure that these come over
+
+		Create a script to export these accounts
+			Scripts will also export the password (encrypted) and SID
+				SID is important.  It must match.
+			Create an sp in the master database
+				export_sql_users, which encrypts user PWs and contains -- run in master database
+					sp_help_revlogin
+						copy scripts and delete what we don't need
+			When running scripts, we may need to temporarily create a database
+		Make sure usr account is not in sysadmin role
+	Examine permissions for each database
+	Security > Credentials
+		Portal credentials
+			select * from sysmail_log (use msdb database)
+
+See OneNote document
+	Create step-by-step document
+		Each customer is a little bit different
+
+Check if the client has SSAS
+	Try logging into SSAS using machine name
+		select @@servername, copy results, then
+	Can also check from Config Mgr
+	This will tell us if they are using the dashboard OLAP
+
+SQL Server 2000 will require to doing an intermediate upgrade (cannot jump directly to 2016)
+
+
+Summary:
+Configured Max Memory from default to 6400 MB. 80% of Max
+Enabled xp_cmdshell
+Installed sp_help_revlogin to master database.
+Run sp_help_revlogin to generate list of users to export to new server with password (encrypted)
+Created a blank database labeled medical (necessary to import user account with default database setting).
+Imported user account "USR" from production server to new server.
+Removed blank database labeled medical.
+
+===================================
+Conference Call
+===================================
+
+Patient Portal is using notification services
+	2014 Google disabled account
+
+Database is only 4GB
+	Backups are not taking place
+		This means the log file will continue to grow
+			Manual backups have been done
+		Maintenance plan does not exist?
+	Put in a maintenance plan and migrate it
+		Email me path where you would like backups to go
+	Only "medical" db needs to be migrated (not CMS)
+
+Users
+	aRussell - web designer
+		tied to the cms database
+		forgo this account
+
+When would you like to do the actual migration?
+	Do not migrate MI and DB on the same day!
+		Do application migration after the DB migration
+			Right before app migration, the production data will be put on read-only mode and be transferred over again.
+
+Clarify ports and IP addresses
+	Will it remain the same?
+
+Clarify that there are no interfaces
+	Less work is terms of reconfiguring IPs
+
+Server name?  If same, then there will be no configuration changes.
+
+Once we get a copy of that share, we will restore the new database
+	\\SWHA-SRV\mssql
+	615-902-0170 -> Jason's number
+
+10th - database part
+17th - application
+week after - modules
+
+Richmond - main contact
+
+
+==============================
+Setting up Maintenance Plans
+==============================
+
+They have not have a successful backup.
+	Let's backup the database using SQL.
+
+DBCC LOGINFO('medical')
+	Status of 2 means it's in use
+	There are entries with status 0, which means it has grown	
+	Medical.ldf (log file) contains 747 VLF files.	Too many.  Can lead to fragmented log file, which can slow performance.
+
+Kimberly Tripp and Paul Randall (oversee SQL project at Microsoft)
+	Too many or too few log files
+		Set it to 1GB and it creates 8 VLFs and let it grow at 1GB a piece
+			Set the log file so it doesn't grow (especially at percentages, as it will grow exponentially)
+
+Tasks > Backup 
+	Destination: Disk
+	The Agent doesn't have access to the shared drive
+	Cannot access the config mgr
+	Send email
+		Is the SQL Server Engine service running under a network account or local system account?  I can access Z: via our medinfo account just fine; however, SQL Server cannot see the folder I created for the backups.  Can you adjust your policy to permit the SQL Server service account access to the folders on Z:?
+		The service account for SQL Server Agent will need to be granted access privileges, since the backup jobs will run under the context of the sql server agent.
+	Backup name
+		medical_full_201701311034.bak
+		System denied, access denied
+	SQL Server Agent is the one backing it up.  It will need access.
+
+
+=========================================
+Exact Migration Steps
+=========================================
+
+Z:\Database Backups
+
+Jason sent a link 
+	\\swha-srv\zbackups\medical
+		These are where backups have been going
+
+1. At 1pm Central, we will place "medical" in "read-only" mode
+	Properties > Options
+		Color will become grey
+2. Take a backup copy 
+	Script action to a query window
+		medical_backup_20171300000.bak
+		medical_backup_20171301_migration.bak
+	It is easier to kick off the backup manually, instead of using a job
+3. cmd > echo %computername%
+		on the new server
+	Run > $computerName\e%
+		Navigates to the E:\ drive
+			Create folder "Migration_Database"
+				Copy bak file into this new directory
+5. Drop "bogus" database in new server
+	When dropping, be sure to "close existing connections"
+6.  Restore new database
+		Make sure that checkboxes are not checked
+		Query into the new database (select top 10 * from clmaster)
+7. dbcc checkdb('medical') WITH NO_INFOMSGS,ALL_ERRORMSGS
+	This should come back very clean
+	While this is running, the database is still usable
+	Log: "Run Successfully -- No issues"
+		select * from sys.dm_exec_requests
+		This will allow us to see where "dcbb checkdb" is
+8. Set database from "read-only" to "read-write"		
+9. select * from clparms as [a] where 1=1 and a.code='erx' and a.skey='up'
+		This will show where ALPHA1 & 3 points to
+			If they point to old server, the download will fail.  This must be updated to point to the new directory
+10. exec util_newcrop_import @checkSyslog = 0, @debug = 1
+	Needs to be after the 20th day of the month, so nothing will be downloaded
+		exec util_newcrop_import @filename="NCTSV-201701.EXE', @checkSyslog = 0, @debug = 1  --using last month's file
+			If files are downloaded, then erx downloads are working
+11. Set old database to offline
+	Tasks > Take offline
+12. Update Medinformatix Application (MSETUP) database setting to point server to new server.  Connections verified.
+13. Check if there are any "sql orphaned users" (report)
+14. Restart MI Services to make sure that the database is pointed to the new one
+		exec sp_who
+
+!! Prepping all the jobs is the key to a successful migration
+!! Be sure to keep a log of all the steps and what time they were executed!!
+
+Call Tim at 5 till 11 (10:55am)
+
+
+
+  _   _       _            
+ | \ | | ___ | |_ ___  ___ 
+ |  \| |/ _ \| __/ _ \/ __|
+ | |\  | (_) | ||  __/\__ \
+ |_| \_|\___/ \__\___||___/
+                           
+
++ In general, do not touch non-MI DBs
++ There are resources in One Drive for migrations (shared by Paul and Tim)
++ In general, it is bad practice to put backup files (.bak & .trn) in the same drive as the data & log files (.MFD & .LDF)
++ SSIS Proxy?
++ SQL Jobs must be scripted out and re-run on the new server
++ Maintenance Plans must be recreated using the Wizard
+                            
+
+                                     \\\///
+                                    / _  _ \
+                                  (| (.)(.) |)
+.-------------------------------.OOOo--()--oOOO.-------------------------------.
+|                                                                              |
+|                           _                     __                           |
+|                     (_)____   ____  ____  / /____  _____                     |
+|                    / / ___/  / __ \/ __ \/ __/ _ \/ ___/                    |
+|                    / / /     / / / / /_/ / /_/  __(__  )                   |
+|                  __/ /_/     /_/ /_/\____/\__/\___/____/                  |
+|                                   /___/                                   |
+|                                                                              |
+'-------------------------------.oooO------------------------------------------'
+                                 (   )   Oooo.
+                                  \ (    (   )
+                                   \_)    ) /
+                                         (_/
+
+
+
+
+# HILLSDALE
+
+John Reinhold [3:43 PM]
+eben if that site only has 1 drive i'd rec at least 1TB min
+
+
+# COMPREHENSIVE EYE
+
+John Reinhold [10:53 AM]
+i asked him about that and he seemed set on having a single partition since it's a vm and they'll be taking bare metal backups of the host and vm...still, i think it's good to suggest this too.  the site is really small so looking at the current sql server ram/cpu's should give you some idea. he didn't say if they had a certain number of core licenses or not, just "i'll do whatever you guys say"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--
