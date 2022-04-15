@@ -1,0 +1,453 @@
+
+  ____            _   _    __        ___     _       _                     
+ / ___|  ___ ___ | |_| |_  \ \      / / |__ (_) __ _| |__   __ _ _ __ ___  
+ \___ \ / __/ _ \| __| __|  \ \ /\ / /| '_ \| |/ _` | '_ \ / _` | '_ ` _ \ 
+  ___) | (_| (_) | |_| |_    \ V  V / | | | | | (_| | | | | (_| | | | | | |
+ |____/ \___\___/ \__|\__|    \_/\_/  |_| |_|_|\__, |_| |_|\__,_|_| |_| |_|
+                                               |___/                       
+
+
++ Important system objects and counters:
+
+    +--------------+---------------------------+-----------------------------------------------+
+    | Object       | Counter                   | When to worry                                 |
+    +--------------+---------------------------+-----------------------------------------------+
+    | PhysicalDisk | %Disk Time                | Consistently > 90%                            |
+    +--------------+---------------------------+-----------------------------------------------+
+    | PhysicalDisk | Current Disk Queue Length | Particularly helpful when "% Disk Time" is    |
+    |              |                           | high; allows to see how many I/O              |
+    |              |                           | operations are waiting.  Start worrying       |
+    |              |                           | when this value is more than 1.5x the         |
+    |              |                           | number of spindles                            |
+    +--------------+---------------------------+-----------------------------------------------+
+    | PhysicalDisk | Avg. Disk Queue Length    | In many configs, a disk has 1 spindle.  Start |
+    |              |                           | worrying when this value is more than 1.5x    |
+    |              |                           | the number of spindles                        |
+    +--------------+---------------------------+-----------------------------------------------+
+    | Memory       | Page faults/sec           | "Some" page faults are normal; look for       |
+    |              |                           | consistenly high numbers                     |
+    +--------------+---------------------------+-----------------------------------------------+
+
+
++ If "% Processor Time" is consistently above 75%, there may be a problem
+
++ A few topics before we go further:
+  - PerfMon, counters with "/sec" in the name are not cumulative
+    * Makes it easy to do ad-hoc monitoring
+  - PerfMon's GUI defaults to taking measurements every one second
+    * Too often for trend analysis
+    * 30-second is generally "good enough" for ad-hoc troubleshooting
+
++ Creating Data Collectors
+  - Typically named "SQL Server Collector"
+  - Select "Create manually (Advanced)"
+  - Select "Create data logs" and only check "Performance counter"
+  - Be sure to note the location of the data
+  - Click "Start this data collector set now"
+  - Default location is
+      %systemdrive%\PerfLogs\Admin\SQL Server Collector
+
+
+
+   ___                
+  / _ \ ______ _ _ __ 
+ | | | |_  / _` | '__|
+ | |_| |/ / (_| | |   
+  \___//___\__,_|_|   
+                      
+==============================
+https://www.brentozar.com/archive/2006/12/dba-101-using-perfmon-for-sql-performance-tuning/
+==============================
+
++ The Best SQL Server Performance Monitor Counters to Analyze
+Now that you’ve got the hang of adding counters, here’s the full list we need to add, including the ones mentioned above:
+
+  - These are listed OBJECT first, then COUNTER
+  - Memory – Available MBytes
+  - Physical Disk – Avg. Disk sec/Read
+  - Physical Disk – Avg. Disk sec/Write
+  - Physical Disk – Disk Reads/sec
+  - Physical Disk – Disk Writes/sec
+  - Processor – % Processor Time
+  - SQLServer: General Statistics – User Connections
+  - SQLServer: Memory Manager – Memory Grants Pending
+  - SQLServer: SQL Statistics – Batch Requests/sec
+  - SQLServer: SQL Statistics – Compilations/sec
+  - SQLServer: SQL Statistics – Recompilations/sec
+  - System – Processor Queue Length
+
+
++ Memory Counters
+  - Memory - Available Mbytes
+    * Ideally 1 GB
+    * If less than this, we are probably running into an issue
+    * Only after extended performance tuning can we comfortably give SQL Server more memory
+  - Paging File - % Usage
+    * Ideally, we're never going to swap to disk.  So "0" or "1" is ideal.
+    * Anything higher can be problematic.
+  - SQLServer:Buffer Manager - 
+    * Buffer cache hit ratio -> Cross out!  
+      > It used to be recommended to keep this >= 90%
+    * Page life expectancy -> This is the better counter to monitor now
+      > Once you've read something off the disk, how long will it stay in memory before something else kicks it out?
+      > The number we want is 180 (seconds).  Anything below that is a danger sign.
+        # Either buy more memory
+        # Look at huge queries (ex. table scans)
+  - SQLServer:Memory Manager - 
+    * Memory Grants Pending
+      > The number of queries waiting to execute because they can't get enough memory to run
+      > You want this to always be 0!
+      > If >= 1, you really need more memory
+
++ Storage Metrics: Physical Disk
+  - % Disk Time -> Cross out!
+  - Avg. Disk Queue Length -> Cross out!
+  - Avg. Disk sec/Read
+    * How long does it take for disks to respond to requests
+    * Expand to 3 decimal places to get milliseconds
+    * If averaging 100 milliseconds or higher, you've probably got a storage problem
+  - Avg. Disk sec/Write
+    * How long does it take for disks to respond to requests
+    * Expand to 3 decimal places to get milliseconds
+    * If averaging 100 milliseconds or higher, you've probably got a storage problem
+  - Disk Reads/sec
+    * We can't do anything about these, but it shows how busy our storage subsystem.  
+    * We can compare with other tuning sessions to see how things have changed.    
+  - Disk Writes/sec
+    * We can't do anything about these, but it shows how busy our storage subsystem.  
+    * We can compare with other tuning sessions to see how things have changed.
+
++ CPU & Other Metrics
+  - Processor - % Processor Time
+    * In general, the lower the better
+    * SQL Server is licensed per processor (expensive!)
+  - System - Processor Queue Length
+    * How many tasks are waiting on CPU in order to execute
+    * Not necessarily the number of queries, but could be anything (OS-wide counter)
+  - SQLServer:Batch Statistics - 
+    * Compilations/sec and
+    * Recompilations/sec
+      > See how the above two relate to one another
+      > If there are a lot more recompiles, something is not right
+        # Query plans are being flushed out of the buffer
+        # Perhaps statistics or indexes are changing dramatically
+  - SQLServer:General Statistics - 
+    * User Connections
+      > The more users connected, the worse the performance
+      > Be aware of connection string pooling though (application with many users but uses only one SQL user)
+
++ Run it for as long as possible
+  - Low impact
+
++ Sort high to low
+
++ Delete ranges that are irrelevant
+
++ What to Look For, in Order (cpu and memory)
+  - System - Processor Queue Length
+    * Becase SQL Server is so expensive
+  - Memory - Available Mbytes
+    * Once SQL Server starts paging to disk you're screwed
+      > There's nothing you can do to make it go faster
+  - Lock pages in memory
+    * This is setting to you give to the service account to make sure that SQL Server's processes are always in memory
+
++ What to Look for Next (storage)
+  - Disk metrics on the page file drive
+    * Control Panel > System and Security > System > Advanced system settings > Advanced > Performance Options > Advanced > Virtual Memory
+  - Disk metrics on the log file drive
+    * If this is nasty, then INSERTs, UPDATEs, and DELETEs are the culprit
+    * These are tuned differently than SELECT statements
+  - Disk metrics on the data file drive
+  - Disk metrics on the TempDB drive
+
++ Got Everything on One Drive?
+  * Narrow it down with the DMV
+      sys.dm_io_virtual_file_stats
+
++ Wrapping Things Up
+  - Double-check the event log first
+  - Wash, Rinse, and Repeat:
+    * Perfmon, Profiler, Mitigations
+  - Show a clear cause and effect
+  - Use ClearTrace to get an edge
+
+
+
+  _____           _     
+ |_   _|__   ___ | |___ 
+   | |/ _ \ / _ \| / __|
+   | | (_) | (_) | \__ \
+   |_|\___/ \___/|_|___/
+                        
+
+Convert .blg to .csv
+----------------------
+https://pyttemjuk.wordpress.com/2014/10/01/convert-blg-to-csv/
+1. Open a command prompt (Start–>Run–>Type cmd–>Enter) or from Tiles just type cmd and press enter.
+2. Use “cd” to change directory to the directory containing your .blg file
+3. Now type
+      relog NameOfYourFile.blg -f CSV -o NewNameOfFile.csv
+    This command will not change the old file, it will create a new file in the csv format.
+4.Open Excel and import the new .csv file.
+5. Now you can work with the log file data in excel.
+
+
+
+  ____                        _           _                _           _     
+ / ___|  __ _ _ __ ___  _ __ | | ___     / \   _ __   __ _| |_   _ ___(_)___ 
+ \___ \ / _` | '_ ` _ \| '_ \| |/ _ \   / _ \ | '_ \ / _` | | | | / __| / __|
+  ___) | (_| | | | | | | |_) | |  __/  / ___ \| | | | (_| | | |_| \__ \ \__ \
+ |____/ \__,_|_| |_| |_| .__/|_|\___| /_/   \_\_| |_|\__,_|_|\__, |___/_|___/
+                       |_|                                   |___/           
+
+==============
+System - OK
+==============
++ Processor Queue Length
+  - It is on average below 10 threads per processor, which is acceptable
+
+==============
+Memory - OK
+==============
++ Available MBytes
+  - On average, there is at least 10 GB of memory available, so we should be fine (B.Ozar recommends > 1 GB)
+  - Sometime between midnight on Friday (5/18) and 4:30 am on Saturday (5/19), the memory available dropped to about 4.4 GB (less than 5 percent of available RAM)
+      * This was probably caused by a job
++ Paging File % Usage
+  - 1% max, so we are OK (B.Ozar recommends "0" or "1")
+  
+===================================
+SQLServer:Memory Manager - OK
+===================================
++ Memory Grants Pending
+  - All zeroes ;-)
+  
+===================================
+SQLServer:Buffer Manager 
+  - As long as users are not complaining during production hours, we should be fine.  
+===================================
++ Page life expectancy
+  - While the average value is 24,891 seconds, it periodically drops to near 0 (minimum is 10).
+    * These are probably caused by nightly jobs.
+  - Note: B.Ozar recommends at least 180 seconds
+  
+==================
+PhysicalDisk 
+  - May want to see why G:\ has spikes in write and read latency, as well as disk queue length
+==================
++ Avg. Disk Queue Length 
+  - The G:\ drive spikes on a regular basis at night, most likely due to jobs.  It has reached a maximum of 1,138, but has an average value of 2.
+  - The average value for all other drives is 0 (below 1.5), which is fine even if only one spindle is available (S.Whigham recommendation)
++ Current Disk Queue Length
+  - The G:\ and F:\ drives spike on a regular basis at night, most likely due to jobs
+    * G:\ has an average of 12
+    * F:\ has an average of 6
+  - The average value for all other drives is 1 (below 1.5), which is fine even if only one spindle is available (S.Whigham recommendation)
++ Read Latency Analysis
+  - On Friday morning (5/18) 1:00-5:30am, the G:\ drive spiked to 378 milliseconds.  Sometime that day, 5:30a-10:00p, the G:\ drive spiked to 201 milliseconds.
+  - All but the E:\ drive have spiked above 100 milliseconds
+    * Spikes for C:\ seem to happen on a more regular basis
+      > Thu (5/17) 4:00-8:30p
+      > Fri (5/18) 10:00a-3:00p
+      > Fri (5/18) 3:00-7:30p
+      > Sat (5/19) 9:00a-2:00p
+  - Otherwise, the average for all drives are well under 100 milliseconds (B.Ozar recommendation)
++ Write Latency Analysis
+  - Only G:\ spikes above 100 milliseconds.  However, it does this at regular intervals.
+    * It is possible that G:\ is overwhelmed at these times
+  - Otherwise, the average is well under 100 milliseconds (B.Ozar recommendation)
+
+================
+Processor - OK
+================
++ % Processor Time
+  - Heavy spikes occur at night, with all processors exceeding 80% utilization
+    * Otherwise, the average utilization is well under 50%
+
+===================================
+SQLServer:General Statistics - OK
+===================================
++ User Connections
+  - Number of user connections spike around noon time
+    * Max connections is 1,083 users
+
+===================================
+SQLServer:Batch Statistics - OK
+=================================== 
++ Compilations/sec
+  - The ratio percentage of SQL Compilations to Batch Requests spiked to 385% on Saturday (5/19), sometime between 4:30-9:00am. 
+    * This is most likely due to a job. 
+  - Otherwise, it is on average below 100%
+
++ Re-Compilations/sec
+  - The ratio percentage of SQL Re-Compilations to SQL Compilations spiked to 59% on Saturday (5/19), sometime between 9:00am-2:00pm. 
+    * This is most likely due to a weekend job.
+    * On weekdays, spikes occur at night.
+  - Otherwise, the average is 0.073%
+
+
+                               __                          __           _         ___
+   _________ _____ ___  ____  / /__     ____ _____  ____ _/ /_  _______(_)____   |__ \
+  / ___/ __ `/ __ `__ \/ __ \/ / _ \   / __ `/ __ \/ __ `/ / / / / ___/ / ___/   __/ /
+ (__  ) /_/ / / / / / / /_/ / /  __/  / /_/ / / / / /_/ / / /_/ (__  ) (__  )   / __/
+/____/\__,_/_/ /_/ /_/ .___/_/\___/   \__,_/_/ /_/\__,_/_/\__, /____/_/____/   /____/
+                    /_/                                  /____/
+
+              ____                             __
+ _   ______ _/ / /__  __  __   _________ _____/ /
+| | / / __ `/ / / _ \/ / / /  / ___/ __ `/ __  /
+| |/ / /_/ / / /  __/ /_/ /  / /  / /_/ / /_/ /
+|___/\__,_/_/_/\___/\__, /  /_/   \__,_/\__,_/
+                   /____/
+
+
+/******************************************************************************
+ *                                  changes:                                  *
+ *                  - reordered sections to match pal report                  *
+ *            - remove compilations/sec, per b.ozar recommendation            *
+ ******************************************************************************/
+
+
+==============
+Memory - Paging file % usage a bit more than expected, but still OK
+==============
++ Available MBytes
+  - On average, there is at least 2 GB of memory available, so we should be fine (B.Ozar recommends > 1 GB)
++ Paging File % Usage
+  - Avg of 2% and max of 3% max, so a bit above what's recommended (B.Ozar recommends "0" or "1")
+
+==================
+PhysicalDisk 
+  - May want to see why F:\ has spikes in write latency and current disk queue length
+==================
++ Read Latency Analysis
+  - Average for all drives are well under 100 milliseconds (B.Ozar recommendation)
+  - On Wed morning (4/22/2020) 0:13-5:38am, the C:\ drive spiked to 14.53 seconds
+    - This seems to be a one-off
+  - On Sat night (4/18/2020), the F:\ drive spiked to 1.671 seconds, most likely due to an index rebuild job
++ Write Latency Analysis
+  - Average for all drives is well under 100 milliseconds (B.Ozar recommendation)
+  - Both F:\ and E:\ spike over 100 milliseconds at regular intervals
++ Current Disk Queue Length
+  - The average value for all drives is 0 (below 1.5), which is fine even if only one spindle is available (S.Whigham recommendation)
+  - The F:\ drive spikes somewhat regularly.  It has reached a maximum of 215.
++ Avg. Disk Queue Length 
+  - The average value for all drives is 0 (below 1.5), which is fine even if only one spindle is available (S.Whigham recommendation)
+  - On Sat night (4/18/2020), the F:\ drive spiked to 2,373, most likely due to an index rebuild job
+
+================
+Processor - OK
+================
++ % Processor Time
+  - The average utilization is well under 50%, but there are regular spikes to around 60%
+  - Processors(3) & (4) have some one-offs
+    * On Thu night (4/16/2020), Processor(3) spiked to 94%
+    * On Sat night (4/18/2020), Processor(4) spiked to 83%
+
+===================================
+SQLServer:Buffer Manager - OK
+===================================
++ Page life expectancy
+  - While the average value is 175,197 seconds, it made a vertical drop to 0 on Sat night (4/18/2020)
+    * Probably caused by an index rebuild
+  - Note: B.Ozar recommends at least 180 seconds
+
+===================================
+SQLServer:General Statistics - OK
+===================================
++ User Connections
+  - Number of user connections spike around noon time
+    * Max connections is 429 users
+
+===================================
+SQLServer:Memory Manager - OK
+===================================
++ Memory Grants Pending
+  - All zeroes ;-)
+
+===================================
+SQLServer:Batch Statistics - May want to look into why re-compilations are occuring 
+=================================== 
++ Re-Compilations/sec
+  - The ratio percentage of SQL Re-Compilations to SQL Compilations spike regulary to around 20%, but has av average of 5% 
+  - On Mon morning (4/20/2020) 4:52-10:17am, this spiked to 61%
+    * This appears to be a one off
+
+==============
+System - OK
+==============
++ Processor Queue Length
+  - It is on average below 10 threads per processor, which is acceptable
+
+
+                               __      __  _
+    ____  ____ __________ _   / /___ _/ /_(_)___  ____
+   / __ \/ __ `/ ___/ __ `/  / / __ `/ __/ / __ \/ __ \
+  / /_/ / /_/ / /  / /_/ /  / / /_/ / /_/ / / / / /_/ /
+ / .___/\__,_/_/   \__,_/  /_/\__,_/\__/_/_/ /_/\____/
+/_/
+
+/******************************************************************************
+ *                                  changes:                                  *
+ *          - removed queue length counters, as suggested by b.ozar           *
+ *                           - changed format to md                           *
+ ******************************************************************************/
+
+
+
+# Memory - Not ideal that paging file has nontrivial usage, but still OK
+
+- Available MBytes
+  - On average, there is at least 3 GB of memory available, so we should be fine (B.Ozar recommends > 1 GB)
+- Paging File % Usage
+  - Avg of 27% and max of 48%, so a lot above what's recommended (B.Ozar recommends "0" or "1")
+
+# PhysicalDisk - OK
+
+- Read Latency Analysis
+  - Averages for all drives are well under 100 milliseconds (B.Ozar recommendation)
+  - On Mon morning (4/20/2020) 4:21-10:53am, the C:\ drive spiked to 316 milliseconds
+    - This seems to be a one-off
+- Write Latency Analysis
+  - Averages for all drives are well under 100 milliseconds (B.Ozar recommendation)
+  - No spikes over 100 milliseconds 
+
+# Processor - OK
+
+- % Processor Time
+  - The average utilization is well under 50%, but there are night spikes to around 80% (most likely due to jobs)
+
+# SQLServer:Buffer Manager - OK
+
+- Page life expectancy
+  - While the average value is 321,829 seconds, it made a vertical drop to 15 on Sun night (4/19/2020)
+    * Probably caused by an index rebuild or by the VM
+  - Note: B.Ozar recommends at least 180 seconds, while sqlwatch recommends > 300
+
+# SQLServer:General Statistics - OK
+
+- User Connections
+  - Number of user connections spike around noon time
+    * Max connections is 245
+
+# SQLServer:Memory Manager - OK
+
+- Memory Grants Pending
+  - All zeroes, as recommended by B.Ozar
+
+# SQLServer:Batch Statistics - OK
+
+- Re-Compilations/sec
+  - The ratio percentage of SQL Re-Compilations to SQL Compilations has an average of 0%
+    - On Fri (4/17/2020) before 5:28pm, this spiked to 9% (sqlwatch recommends < 10%)
+      - This appears to be a one off
+
+# System - OK
+
+- Processor Queue Length
+  - It is on average below 10 threads per processor, which is acceptable
+
+
+
+
