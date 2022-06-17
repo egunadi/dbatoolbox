@@ -1,11 +1,11 @@
-Date: Wed, 8 Jun 2022 05:17:34 +0000 (UTC)
-Message-ID: <1263733266.249.1654665454501@d2fc30c2e0ac>
+Date: Fri, 17 Jun 2022 19:46:48 +0000 (UTC)
+Message-ID: <1880579618.1.1655495208272@e1fae381bec7>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_248_1740465830.1654665454501"
+	boundary="----=_Part_0_747118255.1655495208250"
 
-------=_Part_248_1740465830.1654665454501
+------=_Part_0_747118255.1655495208250
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -237,14 +237,14 @@ t;</h1>
         <p></p>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-1.In=
 itialAudit">1. Initial Audit</h1>
-<div id=3D"expander-572439230" class=3D"expand-container">
-<div id=3D"expander-control-572439230" class=3D"expand-control">
+<div id=3D"expander-1917585765" class=3D"expand-container">
+<div id=3D"expander-control-1917585765" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-572439230" class=3D"expand-content">
+<div id=3D"expander-content-1917585765" class=3D"expand-content">
 <h2 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-A.So=
 urceServer-<hostname><IP>">A. Source Server - &lt;hostname&gt;&lt;IP&gt;</h=
 2>
@@ -654,14 +654,14 @@ sure that mixed authentication is enabled</span></li>
 </div>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-2A.P=
 repwork">2A. Prepwork</h1>
-<div id=3D"expander-1175324748" class=3D"expand-container">
-<div id=3D"expander-control-1175324748" class=3D"expand-control">
+<div id=3D"expander-1594451175" class=3D"expand-container">
+<div id=3D"expander-control-1594451175" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1175324748" class=3D"expand-content">
+<div id=3D"expander-content-1594451175" class=3D"expand-content">
 <h3 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-I.SQ=
 LServerLevelSettings.1">I. SQL Server Level Settings</h3>
 <div class=3D"table-wrap">
@@ -1119,14 +1119,14 @@ ashboardTasks">2B. Dashboard Tasks</h1>
 <li data-inline-task-id=3D"55"><span class=3D"placeholder-inline-tasks">Pre=
 mium Dashboard not used. Disregard section</span></li>
 </ul>
-<div id=3D"expander-546241532" class=3D"expand-container">
-<div id=3D"expander-control-546241532" class=3D"expand-control">
+<div id=3D"expander-775018984" class=3D"expand-container">
+<div id=3D"expander-control-775018984" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-546241532" class=3D"expand-content">
+<div id=3D"expander-content-775018984" class=3D"expand-content">
 <p></p>
 <div class=3D"table-wrap">
 <table data-layout=3D"default" data-local-id=3D"168799a8-4833-4570-a8b4-6a9=
@@ -1192,14 +1192,14 @@ ctories be moved over</p></td>
 </div>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-3.Th=
 eDayOf">3. The Day Of</h1>
-<div id=3D"expander-843617049" class=3D"expand-container">
-<div id=3D"expander-control-843617049" class=3D"expand-control">
+<div id=3D"expander-1906004090" class=3D"expand-container">
+<div id=3D"expander-control-1906004090" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-843617049" class=3D"expand-content">
+<div id=3D"expander-content-1906004090" class=3D"expand-content">
 <p></p>
 <div class=3D"table-wrap">
 <table data-layout=3D"default" data-local-id=3D"83d2bb0f-de2f-4075-b71d-09b=
@@ -1471,7 +1471,8 @@ GO</pre>=20
 <td class=3D"confluenceTd">
 <ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
 <li data-inline-task-id=3D"91"><span class=3D"placeholder-inline-tasks">Poi=
-nt MI to new SQL Server</span></li>
+nt MI to new SQL Server, being sure to restart the Net Services and Redirec=
+tor Service</span></li>
 </ul></td>
 <td class=3D"confluenceTd"><p>If MSETUP is using =E2=80=9Csa=E2=80=9D, repl=
 ace with =E2=80=9Cusr=E2=80=9D</p><p>If IP is being changed, make sure to u=
@@ -1631,14 +1632,14 @@ date SF connect info, SQL Server Version, &amp; SQL DB Server Version</span=
 </div>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-4.Ba=
 seliningandPerformanceTuning">4. Baselining and Performance Tuning</h1>
-<div id=3D"expander-1775789467" class=3D"expand-container">
-<div id=3D"expander-control-1775789467" class=3D"expand-control">
+<div id=3D"expander-990742383" class=3D"expand-container">
+<div id=3D"expander-control-990742383" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1775789467" class=3D"expand-content">
+<div id=3D"expander-content-990742383" class=3D"expand-content">
 <p>Traditionally, this goes as follows:</p>
 <ul>
 <li><p>Change the Compatibility Level to the latest version</p></li>
@@ -1674,7 +1675,7 @@ rom =E2=80=9CSQL Server Query Performance Tuning=E2=80=9D book</p></li>
     </div>
 </body>
 </html>
-------=_Part_248_1740465830.1654665454501
+------=_Part_0_747118255.1655495208250
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -1684,4 +1685,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_248_1740465830.1654665454501--
+------=_Part_0_747118255.1655495208250--
