@@ -1,0 +1,602 @@
+Date: Wed, 26 Oct 2022 00:08:57 +0000 (UTC)
+Message-ID: <383171377.13.1666742937826@afde247e1883>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_12_1377979789.1666742937826"
+
+------=_Part_12_1377979789.1666742937826
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>[External] [In-Progress] Database Migration PowerShell Commands<=
+/title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>[External] [In-Progress] Database Migration PowerShell Commands</h1=
+>
+    <div class=3D"Section1">
+        <p></p>
+<h2 id=3D"id-[External][In-Progress]DatabaseMigrationPowerShellCommands-A.I=
+nitialSetup">A. Initial Setup</h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"835ccb0f-cc5f-45d6-b795-b0a=
+45d52c405" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 310.0px;">
+<col style=3D"width: 310.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p></p></th>
+<th class=3D"confluenceTh"><p><strong>To-do</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>PS Command</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Enable remoting</p></td>
+<td class=3D"confluenceTd"><p><code>Enable-PSRemoting</code></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>One-to-one remote </p></td>
+<td class=3D"confluenceTd"><p><code>Enter-PSSession -computerName &lt;Serve=
+r-R2&gt;</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-[External][In-Progress]DatabaseMigrationPowerShellCommands-B.A=
+uditingServerProperties">B. Auditing Server Properties</h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"9284c28a-769c-465b-86af-5c7=
+880cce00b" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 310.0px;">
+<col style=3D"width: 310.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p></p></th>
+<th class=3D"confluenceTh"><p><strong>Server Property</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>PS Command</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Localhost <br></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;<code>$env:computername</code></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>IP address</p></td>
+<td class=3D"confluenceTd"><p><code>Get-NetIPAddress -AddressFamily IPv4</c=
+ode></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>PowerShell version</p></td>
+<td class=3D"confluenceTd"><p><code>Get-Host | Select-Object -Property Vers=
+ion</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-[External][In-Progress]DatabaseMigrationPowerShellCommands-C.d=
+batools">C. dbatools</h2>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>dbatools require a minimum PowerShell version of 3.0: <a class=3D"extern=
+al-link" href=3D"https://www.powershellgallery.com/packages/dbatools/1.0.13=
+5" rel=3D"nofollow">https://www.powershellgallery.com/packages/dbatools/1.0=
+.135</a></p>
+<p>See command B3 for checking the version, as well as the following articl=
+es on updating PowerShell:</p>
+<ul>
+<li><p><a class=3D"external-link" href=3D"https://docs.microsoft.com/en-us/=
+powershell/scripting/windows-powershell/install/installing-windows-powershe=
+ll?view=3Dpowershell-7.1#upgrading-existing-windows-powershell" rel=3D"nofo=
+llow">https://docs.microsoft.com/en-us/powershell/scripting/windows-powersh=
+ell/install/installing-windows-powershell?view=3Dpowershell-7.1#upgrading-e=
+xisting-windows-powershell</a></p></li>
+<li><p><a class=3D"external-link" href=3D"https://docs.microsoft.com/en-us/=
+powershell/scripting/windows-powershell/wmf/setup/install-configure?view=3D=
+powershell-7.1" rel=3D"nofollow">https://docs.microsoft.com/en-us/powershel=
+l/scripting/windows-powershell/wmf/setup/install-configure?view=3Dpowershel=
+l-7.1</a></p></li>
+</ul>
+<p>If PowerShell is greater or equal to 3.0 but less than 5.0, dbatools wil=
+l have to be installed with an offline method: <a class=3D"external-link" h=
+ref=3D"https://dbatools.io/offline/" rel=3D"nofollow">https://dbatools.io/o=
+ffline/</a> </p>
+</div>
+</div>
+<div class=3D"confluence-information-macro confluence-information-macro-war=
+ning">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-error confluence-inform=
+ation-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>If step 3 returns an error like =E2=80=9CPowerShell Gallery is currently=
+ unavailable,=E2=80=9D try running the commands here and restart PowerShell=
+:</p>
+<p><a class=3D"external-link" href=3D"https://dev.to/darksmile92/powershell=
+-disabled-support-for-tls-1-0-for-the-gallery-update-module-and-install-mod=
+ule-broken-1oii" rel=3D"nofollow">https://dev.to/darksmile92/powershell-dis=
+abled-support-for-tls-1-0-for-the-gallery-update-module-and-install-module-=
+broken-1oii</a></p>
+</div>
+</div>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" data-local-id=3D"c41f231c-0b95-4703-8b6c-=
+771d025b0491" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 106.0px;">
+<col style=3D"width: 323.0px;">
+<col style=3D"width: 365.0px;">
+<col style=3D"width: 825.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p></p></th>
+<th class=3D"confluenceTh"><p><strong>To-do</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>PS Command</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Example</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Get list of installed modules and versions</p=
+></td>
+<td class=3D"confluenceTd"><p><code>Get-InstalledModule</code></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>Execution Policy</p></td>
+<td class=3D"confluenceTd"><p><code>Set-ExecutionPolicy -ExecutionPolicy Re=
+moteSigned -Scope CurrentUser</code></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Trust PowerShell Gallery</p></td>
+<td class=3D"confluenceTd"><p><code>Set-PSRepository -Name PSGallery -Insta=
+llationPolicy Trusted</code></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>Install dbatools</p></td>
+<td class=3D"confluenceTd"><p><code>Install-Module -Name dbatools</code></p=
+></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>Update dbatools</p></td>
+<td class=3D"confluenceTd"><p><code>Update-Module dbatools</code></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Test DB connection</p></td>
+<td class=3D"confluenceTd"><p><code>Connect-DbaInstance</code></p></td>
+<td class=3D"confluenceTd"><p><code>Connect-DbaInstance -SqlInstance EBENGU=
+NADI255E\MSSQLSERVER01&nbsp;</code></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>Disable SQL Agent Jobs</p></td>
+<td class=3D"confluenceTd"><p><code>Set-DbaAgentJob -Disable</code></p></td=
+>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Get-Dba=
+AgentJob -SqlInstance localhost |=20
+Set-DbaAgentJob -SqlInstance localhost -Disable</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>Enable running SQL Agent Jobs</p></td>
+<td class=3D"confluenceTd"><p><code>Start-DbaAgentJob -Enable</code></p></t=
+d>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Get-Dba=
+AgentJob -SqlInstance localhost|=20
+Set-DbaAgentJob -SqlInstance localhost -Enable</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Create Credential object </p></td>
+<td class=3D"confluenceTd"><p><code>Get-Credential</code></p></td>
+<td class=3D"confluenceTd"><p><code>$cred =3D Get-Credential sa&nbsp;</code=
+></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Copy all non-system Logins</p></td>
+<td class=3D"confluenceTd"><p><code>Copy-DbaLogin -ExcludeSystemLogins</cod=
+e></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Copy-Db=
+aLogin -Source $replica -Destination $replicatocopy `
+-SourceSqlCredential $scred -DestinationSqlCredential $dcred `
+-ExcludeLogin realcajun -ExcludeSystemLogins -EnableException</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>11</p></td>
+<td class=3D"confluenceTd"><p>Copy SQL Jobs</p>
+<div class=3D"confluence-information-macro confluence-information-macro-not=
+e">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
+rmation-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>Some jobs have hard-coded IPs, hostnames, database names, or directories=
+. Be sure to manually check for these. </p>
+</div>
+</div></td>
+<td class=3D"confluenceTd"><p><code>Copy-DbaAgentJob</code></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Copy-Db=
+aAgentJob -Source sqlserver2014a -Destination sqlcluster `
+-SourceSqlCredential $scred -DestinationSqlCredential $dcred</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>12</p></td>
+<td class=3D"confluenceTd"><p>Visualize SQL Job schedules</p></td>
+<td class=3D"confluenceTd"><p><code>Find-DbaAgentJob | Get-DbaAgentJobHisto=
+ry | ConvertTo-DbaTimeline</code></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: powershell; gutter: false; theme: Confluence" data-theme=3D"Confluence">$=
+oneweekago =3D [datetime]::Today.AddDays(-7)
+Find-DbaAgentJob -SqlInstance localhost  |=20
+Get-DbaAgentJobHistory -StartDate $oneweekago |=20
+ConvertTo-DbaTimeline |=20
+Out-File -FilePath c:\temp\jobs.html -Encoding ASCII</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>Check for active connections to the database<=
+/p></td>
+<td class=3D"confluenceTd"><p><code>Get-DbaProcess</code></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Get-Dba=
+Process -SqlInstance SourceServer -Database MigratingDatabase |=20
+Select Host, login, Program</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td class=3D"confluenceTd"><p>Remove connections to the database</p></td>
+<td class=3D"confluenceTd"><p><code>Stop-DbaProcess</code></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Get-Dba=
+Process -SqlInstance SourceServer -Database MigratingDatabase |=20
+Stop-DbaProcess</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Copy databases</p></td>
+<td class=3D"confluenceTd"><p><code>Copy-DbaDatabase</code></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: powershell; gutter: false; theme: Confluence" data-theme=3D"Confluence">C=
+opy-DbaDatabase -Source sql2014a -Destination sql2014b -Database TestDB -Ba=
+ckupRestore -SharedPath \\fileshare\sql\migration</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>Restore databases</p></td>
+<td class=3D"confluenceTd"><p><code>Restore-DbaDatabase</code></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: powershell; gutter: false; theme: Confluence" data-theme=3D"Confluence">R=
+estore-DbaDatabase -SqlInstance dbatoolslab\sql2017 -Path 'C:\dbatoolslab\B=
+ackup\WideWorldImporters-Full.bak'</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>17</p></td>
+<td class=3D"confluenceTd"><p>Install Standard Maintenance Plan</p></td>
+<td class=3D"confluenceTd"><p><code>Install-DbaMaintenanceSolution</code></=
+p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">$params=
+ =3D @{
+    SqlInstance =3D 'SQLSERVER01'
+    Database =3D 'medical'
+    ReplaceExisting =3D $true
+    InstallJobs =3D $true
+    CleanupTime =3D 72
+    Verbose =3D $true
+}
+Install-DbaMaintenanceSolution @params </pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>18</p></td>
+<td class=3D"confluenceTd"><p>Automatically calculate and set maximum memor=
+y</p></td>
+<td class=3D"confluenceTd"><p><code>Set-DbaMaxMemory</code></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Set-Dba=
+MaxMemory -SqlInstance $SQLInstance</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_12_1377979789.1666742937826--
