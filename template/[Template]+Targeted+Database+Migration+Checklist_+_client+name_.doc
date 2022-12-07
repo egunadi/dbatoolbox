@@ -1,11 +1,11 @@
-Date: Tue, 13 Sep 2022 17:35:33 +0000 (UTC)
-Message-ID: <680896302.1.1663090533685@17787e5de9bd>
+Date: Wed, 7 Dec 2022 23:55:38 +0000 (UTC)
+Message-ID: <462863916.21.1670457338047@3b1e2300dc4c>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_0_1374211860.1663090533656"
+	boundary="----=_Part_20_114895506.1670457338046"
 
-------=_Part_0_1374211860.1663090533656
+------=_Part_20_114895506.1670457338046
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -237,14 +237,14 @@ t;</h1>
         <p></p>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-1.In=
 itialAudit">1. Initial Audit</h1>
-<div id=3D"expander-1566940376" class=3D"expand-container">
-<div id=3D"expander-control-1566940376" class=3D"expand-control">
+<div id=3D"expander-1737578919" class=3D"expand-container">
+<div id=3D"expander-control-1737578919" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1566940376" class=3D"expand-content">
+<div id=3D"expander-content-1737578919" class=3D"expand-content">
 <h2 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-A.So=
 urceServer-<hostname><IP>">A. Source Server - &lt;hostname&gt;&lt;IP&gt;</h=
 2>
@@ -412,10 +412,10 @@ ure [medical_test] uses simple recovery with TLs shrunk</span></li>
 <td class=3D"confluenceTd">
 <ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
 <li data-inline-task-id=3D"131"><span class=3D"placeholder-inline-tasks">En=
-sure <code>PAGE_VERIFY CHECKSUM</code> is enabled &lt;<a class=3D"external-=
-link" data-card-appearance=3D"inline" href=3D"https://docs.microsoft.com/en=
--us/troubleshoot/sql/admin/troubleshoot-dbcc-errors#investigate-root-cause-=
-for-database-consistency-errors" rel=3D"nofollow">https://docs.microsoft.co=
+sure <code>PAGE_VERIFY CHECKSUM</code> is enabled &lt;<a href=3D"https://do=
+cs.microsoft.com/en-us/troubleshoot/sql/admin/troubleshoot-dbcc-errors#inve=
+stigate-root-cause-for-database-consistency-errors" data-card-appearance=3D=
+"inline" class=3D"external-link" rel=3D"nofollow">https://docs.microsoft.co=
 m/en-us/troubleshoot/sql/admin/troubleshoot-dbcc-errors#investigate-root-ca=
 use-for-database-consistency-errors</a> &gt;</span></li>
 </ul></td>
@@ -464,19 +464,19 @@ Studio)</span></li>
 </ul></td>
 <td class=3D"confluenceTd"><p>Ensure that SQL Server Agent and SQL Server B=
 rowser has =E2=80=9Cautomatic=E2=80=9D startup type </p><p>Here is a Micros=
-oft KB for installing SSDT for Visual Studio:</p><p><a class=3D"external-li=
-nk" href=3D"https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-d=
-ata-tools-ssdt?view=3Dsql-server-ver15" rel=3D"nofollow">https://docs.micro=
+oft KB for installing SSDT for Visual Studio:</p><p><a href=3D"https://docs=
+.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=3Dsq=
+l-server-ver15" class=3D"external-link" rel=3D"nofollow">https://docs.micro=
 soft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=3Dsql-serv=
 er-ver15</a></p><p>Here is the download page for Visual Studio=E2=80=99s =
 =E2=80=9CSSIS Projects=E2=80=9D extension, which is also needed to configur=
-e the dtsx packages:</p><p><a class=3D"external-link" href=3D"https://marke=
-tplace.visualstudio.com/items?itemName=3DSSIS.SqlServerIntegrationServicesP=
-rojects" rel=3D"nofollow">https://marketplace.visualstudio.com/items?itemNa=
+e the dtsx packages:</p><p><a href=3D"https://marketplace.visualstudio.com/=
+items?itemName=3DSSIS.SqlServerIntegrationServicesProjects" class=3D"extern=
+al-link" rel=3D"nofollow">https://marketplace.visualstudio.com/items?itemNa=
 me=3DSSIS.SqlServerIntegrationServicesProjects</a></p><p>Here is a Microsof=
-t KB for installing SSIS:</p><p><a class=3D"external-link" href=3D"https://=
-docs.microsoft.com/en-us/sql/integration-services/install-windows/install-i=
-ntegration-services?view=3Dsql-server-ver15" rel=3D"nofollow">https://docs.=
+t KB for installing SSIS:</p><p><a href=3D"https://docs.microsoft.com/en-us=
+/sql/integration-services/install-windows/install-integration-services?view=
+=3Dsql-server-ver15" class=3D"external-link" rel=3D"nofollow">https://docs.=
 microsoft.com/en-us/sql/integration-services/install-windows/install-integr=
 ation-services?view=3Dsql-server-ver15</a></p></td>
 </tr>
@@ -505,10 +505,10 @@ sure that Windows has been activated</span></li>
 <li data-inline-task-id=3D"33"><span>&nbsp;</span></li>
 </ul></td>
 <td class=3D"confluenceTd"><p>As reference, this article lists the permissi=
-ons recommended by Microsoft:</p><p><a class=3D"external-link" href=3D"http=
-s://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configur=
-e-windows-service-accounts-and-permissions?view=3Dsql-server-ver15#Serv_Per=
-m" rel=3D"nofollow">https://docs.microsoft.com/en-us/sql/database-engine/co=
+ons recommended by Microsoft:</p><p><a href=3D"https://docs.microsoft.com/e=
+n-us/sql/database-engine/configure-windows/configure-windows-service-accoun=
+ts-and-permissions?view=3Dsql-server-ver15#Serv_Perm" class=3D"external-lin=
+k" rel=3D"nofollow">https://docs.microsoft.com/en-us/sql/database-engine/co=
 nfigure-windows/configure-windows-service-accounts-and-permissions?view=3Ds=
 ql-server-ver15#Serv_Perm</a></p></td>
 </tr>
@@ -576,8 +576,8 @@ target, add inbound &amp; outbound rules to open SQL Server ports (TCP 1433=
 <ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
 <li data-inline-task-id=3D"39"><span>&nbsp;</span></li>
 </ul></td>
-<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"https://ms=
-dn.microsoft.com/en-us/library/cc646023.aspx" rel=3D"nofollow">https://msdn=
+<td class=3D"confluenceTd"><p><a href=3D"https://msdn.microsoft.com/en-us/l=
+ibrary/cc646023.aspx" class=3D"external-link" rel=3D"nofollow">https://msdn=
 .microsoft.com/en-us/library/cc646023.aspx</a></p></td>
 </tr>
 </tbody>
@@ -612,12 +612,12 @@ ify MSSQL 2012+ with latest CU is installed</span></li>
 <ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
 <li data-inline-task-id=3D"41"><span>&nbsp;</span></li>
 </ul></td>
-<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"https://do=
-cs.microsoft.com/en-us/sql/database-engine/install-windows/latest-updates-f=
-or-microsoft-sql-server?view=3Dsql-server-ver15" rel=3D"nofollow">https://d=
+<td class=3D"confluenceTd"><p><a href=3D"https://docs.microsoft.com/en-us/s=
+ql/database-engine/install-windows/latest-updates-for-microsoft-sql-server?=
+view=3Dsql-server-ver15" class=3D"external-link" rel=3D"nofollow">https://d=
 ocs.microsoft.com/en-us/sql/database-engine/install-windows/latest-updates-=
-for-microsoft-sql-server?view=3Dsql-server-ver15</a></p><p><a class=3D"exte=
-rnal-link" href=3D"https://sqlserverbuilds.blogspot.com/" rel=3D"nofollow">=
+for-microsoft-sql-server?view=3Dsql-server-ver15</a></p><p><a href=3D"https=
+://sqlserverbuilds.blogspot.com/" class=3D"external-link" rel=3D"nofollow">=
 https://sqlserverbuilds.blogspot.com/</a></p></td>
 </tr>
 <tr>
@@ -654,14 +654,14 @@ sure that mixed authentication is enabled</span></li>
 </div>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-2A.P=
 repwork">2A. Prepwork</h1>
-<div id=3D"expander-1490219982" class=3D"expand-container">
-<div id=3D"expander-control-1490219982" class=3D"expand-control">
+<div id=3D"expander-2098509695" class=3D"expand-container">
+<div id=3D"expander-control-2098509695" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1490219982" class=3D"expand-content">
+<div id=3D"expander-content-2098509695" class=3D"expand-content">
 <h3 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-I.SQ=
 LServerLevelSettings.1">I. SQL Server Level Settings</h3>
 <div class=3D"table-wrap">
@@ -744,7 +744,7 @@ GO</pre>=20
 </div>
 </div><p>If creating jobs from scratch, here is the list of standard jobs:<=
 /p>
-<ol>
+<ol start=3D"1">
 <li><p>"job_cldictionary_archive"</p></li>
 <li><p>"Cleanup CdsRsnRequests [medical]" (omit for v75)</p></li>
 <li><p>"Appt Search Scrub Data/ Build Cache" (omit for v75)</p></li>
@@ -769,7 +769,7 @@ reate Maintenance Plans</span></li>
 <td class=3D"confluenceTd"><p>If creating Maintenance Plans from scratch, c=
 an use Ola Hallengren maintenance solutions. </p><p>For reference, here is =
 a sample schedule:</p>
-<ol>
+<ol start=3D"1">
 <li><p>Integrity check for user DBs every Sat at 2am</p></li>
 <li><p>Integrity check for system DBs every Sat at 3am</p></li>
 <li><p>Optimize index for [medical] every Sun at 2am</p></li>
@@ -807,9 +807,9 @@ ble =E2=80=9COptimize for Ad Hoc=E2=80=9D, =E2=80=9CCompress Backup=E2=80=
  =E2=80=9CCost Threshold for Paralellism=E2=80=9D is 5, set to 50.</span></=
 li>
 <li data-inline-task-id=3D"121"><span class=3D"placeholder-inline-tasks">Se=
-t MAXDOP to 8 or lower &lt;<a class=3D"external-link" href=3D"https://littl=
-ekendra.com/2016/07/14/max-degree-of-parallelism-cost-threshold-for-paralle=
-lism/" rel=3D"nofollow">https://littlekendra.com/2016/07/14/max-degree-of-p=
+t MAXDOP to 8 or lower &lt;<a href=3D"https://littlekendra.com/2016/07/14/m=
+ax-degree-of-parallelism-cost-threshold-for-parallelism/" class=3D"external=
+-link" rel=3D"nofollow">https://littlekendra.com/2016/07/14/max-degree-of-p=
 arallelism-cost-threshold-for-parallelism/</a>&gt;</span></li>
 <li data-inline-task-id=3D"125"><span class=3D"placeholder-inline-tasks">En=
 sure instant file initialization (IFI) and Lock Pages in Memory (LPIM) are =
@@ -834,12 +834,12 @@ go
 reconfigure
 go</pre>=20
 </div>
-</div><p>&lt;<a class=3D"external-link" data-card-appearance=3D"inline" hre=
-f=3D"https://www.brentozar.com/blitz/instant-file-initialization/" rel=3D"n=
+</div><p>&lt;<a href=3D"https://www.brentozar.com/blitz/instant-file-initia=
+lization/" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"n=
 ofollow">https://www.brentozar.com/blitz/instant-file-initialization/</a> &=
-gt; </p><p>&lt;<a class=3D"external-link" data-card-appearance=3D"inline" h=
-ref=3D"https://blog.sqlauthority.com/2019/09/16/sql-server-enable-lock-page=
-s-in-memory-lpim/" rel=3D"nofollow">https://blog.sqlauthority.com/2019/09/1=
+gt; </p><p>&lt;<a href=3D"https://blog.sqlauthority.com/2019/09/16/sql-serv=
+er-enable-lock-pages-in-memory-lpim/" data-card-appearance=3D"inline" class=
+=3D"external-link" rel=3D"nofollow">https://blog.sqlauthority.com/2019/09/1=
 6/sql-server-enable-lock-pages-in-memory-lpim/</a> &gt;</p></td>
 </tr>
 <tr>
@@ -974,9 +974,9 @@ art SQL Server.</span></li>
 <ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
 <li data-inline-task-id=3D"129"><span>&nbsp;</span></li>
 </ul></td>
-<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
-ce=3D"inline" href=3D"https://wiki.galenhealthcare.com/index.php/Create_Mul=
-tiple_TempDB_files_for_best_performance" rel=3D"nofollow">https://wiki.gale=
+<td class=3D"confluenceTd"><p><a href=3D"https://wiki.galenhealthcare.com/i=
+ndex.php/Create_Multiple_TempDB_files_for_best_performance" data-card-appea=
+rance=3D"inline" class=3D"external-link" rel=3D"nofollow">https://wiki.gale=
 nhealthcare.com/index.php/Create_Multiple_TempDB_files_for_best_performance=
 </a> </p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
@@ -1097,9 +1097,9 @@ ould be implemented</p></td>
 <td class=3D"confluenceTd">
 <ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
 <li data-inline-task-id=3D"126"><span class=3D"placeholder-inline-tasks">If=
- Hef Exports exist, ensure Proxy, Credential, and export directory are copi=
-ed over. Also, ensure that an engineer is assigned to re-install and test B=
-ox Sync post the migration.</span></li>
+ Hef and/or RWT Exports exist, ensure Proxy, Credential, and export directo=
+ry are copied over. Also, ensure that an engineer is assigned to re-install=
+ and test Box Sync post the migration.</span></li>
 </ul></td>
 <td class=3D"confluenceTd">
 <ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
@@ -1119,14 +1119,14 @@ ashboardTasks">2B. Dashboard Tasks</h1>
 <li data-inline-task-id=3D"55"><span class=3D"placeholder-inline-tasks">Pre=
 mium Dashboard not used. Disregard section</span></li>
 </ul>
-<div id=3D"expander-621796098" class=3D"expand-container">
-<div id=3D"expander-control-621796098" class=3D"expand-control">
+<div id=3D"expander-1659421937" class=3D"expand-container">
+<div id=3D"expander-control-1659421937" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-621796098" class=3D"expand-content">
+<div id=3D"expander-content-1659421937" class=3D"expand-content">
 <p></p>
 <div class=3D"table-wrap">
 <table data-layout=3D"default" data-local-id=3D"168799a8-4833-4570-a8b4-6a9=
@@ -1192,14 +1192,14 @@ ctories be moved over</p></td>
 </div>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-3.Th=
 eDayOf">3. The Day Of</h1>
-<div id=3D"expander-1281446748" class=3D"expand-container">
-<div id=3D"expander-control-1281446748" class=3D"expand-control">
+<div id=3D"expander-2007154277" class=3D"expand-container">
+<div id=3D"expander-control-2007154277" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1281446748" class=3D"expand-content">
+<div id=3D"expander-content-2007154277" class=3D"expand-content">
 <p></p>
 <div class=3D"table-wrap">
 <table data-layout=3D"default" data-local-id=3D"83d2bb0f-de2f-4075-b71d-09b=
@@ -1435,8 +1435,8 @@ exec util_newcrop_import @filename=3D'NCTSV-201907.EXE', @checkSyslog =3D 0=
 <li data-inline-task-id=3D"90"><span class=3D"placeholder-inline-tasks">Ens=
 ure server computer name has been renamed</span></li>
 </ul></td>
-<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"https://ms=
-dn.microsoft.com/en-us/library/ms143799.aspx" rel=3D"nofollow">https://msdn=
+<td class=3D"confluenceTd"><p><a href=3D"https://msdn.microsoft.com/en-us/l=
+ibrary/ms143799.aspx" class=3D"external-link" rel=3D"nofollow">https://msdn=
 .microsoft.com/en-us/library/ms143799.aspx</a></p><p>Default Instance:</p>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -1632,14 +1632,14 @@ date SF connect info, SQL Server Version, &amp; SQL DB Server Version</span=
 </div>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-4.Ba=
 seliningandPerformanceTuning">4. Baselining and Performance Tuning</h1>
-<div id=3D"expander-661148487" class=3D"expand-container">
-<div id=3D"expander-control-661148487" class=3D"expand-control">
+<div id=3D"expander-1223230537" class=3D"expand-container">
+<div id=3D"expander-control-1223230537" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-661148487" class=3D"expand-content">
+<div id=3D"expander-content-1223230537" class=3D"expand-content">
 <p>Traditionally, this goes as follows:</p>
 <ul>
 <li><p>Change the Compatibility Level to the latest version</p></li>
@@ -1711,7 +1711,7 @@ rsion=3D"1" data-linked-resource-type=3D"attachment" data-linked-resource-d=
 efault-alias=3D"image-20220830-202014.png" data-base-url=3D"https://medinfo=
 rmatix.atlassian.net/wiki" data-linked-resource-content-type=3D"image/png" =
 data-linked-resource-container-id=3D"678330399" data-linked-resource-contai=
-ner-version=3D"93" data-media-id=3D"4c429374-b53f-4b76-b1d6-3e7f629e50ae" d=
+ner-version=3D"94" data-media-id=3D"4c429374-b53f-4b76-b1d6-3e7f629e50ae" d=
 ata-media-type=3D"file" width=3D"468" height=3D"960"></span>
 <ul>
 <li><p>Use the default directory for saving the data (default is %systemdri=
@@ -1747,8 +1747,8 @@ c282f3374" class=3D"confluenceTable">
 <ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
 <li data-inline-task-id=3D"135"><span class=3D"placeholder-inline-tasks">St=
 op the Data Collector Set from part I and move the file to a computer with =
-PAL installed &lt;<a class=3D"external-link" data-card-appearance=3D"inline=
-" href=3D"https://github.com/clinthuffman/PAL" rel=3D"nofollow">https://git=
+PAL installed &lt;<a href=3D"https://github.com/clinthuffman/PAL" data-card=
+-appearance=3D"inline" class=3D"external-link" rel=3D"nofollow">https://git=
 hub.com/clinthuffman/PAL</a> &gt;</span></li>
 </ul></td>
 <td class=3D"confluenceTd">
@@ -1993,11 +1993,11 @@ ce the workload duration has passed for the new compatibility lv, check =E2=
 </table>
 </div>
 <p></p>
-<p>Per this <a class=3D"external-link" href=3D"https://docs.microsoft.com/e=
-n-us/sql/relational-databases/performance/best-practice-with-the-query-stor=
-e?view=3Dsql-server-ver15#Configure" rel=3D"nofollow">MS KB</a> and <a clas=
-s=3D"external-link" href=3D"https://www.scarydba.com/2018/03/26/query-store=
--and-automated-cleanup/" rel=3D"nofollow">article</a>, the Query Store auto=
+<p>Per this <a href=3D"https://docs.microsoft.com/en-us/sql/relational-data=
+bases/performance/best-practice-with-the-query-store?view=3Dsql-server-ver1=
+5#Configure" class=3D"external-link" rel=3D"nofollow">MS KB</a> and <a href=
+=3D"https://www.scarydba.com/2018/03/26/query-store-and-automated-cleanup/"=
+ class=3D"external-link" rel=3D"nofollow">article</a>, the Query Store auto=
 matically keeps it data below 90% of the Max Size (set in step I1 above) if=
  it=E2=80=99s =E2=80=9CSize Based Cleanup Mode=E2=80=9D is set to =E2=80=9C=
 Auto=E2=80=9D:</p><span class=3D"confluence-embedded-file-wrapper image-cen=
@@ -2011,20 +2011,20 @@ d-resource-version=3D"1" data-linked-resource-type=3D"attachment" data-link=
 ed-resource-default-alias=3D"image-20220913-173407.png" data-base-url=3D"ht=
 tps://medinformatix.atlassian.net/wiki" data-linked-resource-content-type=
 =3D"image/png" data-linked-resource-container-id=3D"678330399" data-linked-=
-resource-container-version=3D"93" data-media-id=3D"0e236bf3-15f7-48c5-8262-=
+resource-container-version=3D"94" data-media-id=3D"0e236bf3-15f7-48c5-8262-=
 51d771e6cb23" data-media-type=3D"file" width=3D"468" height=3D"444"></span>
 <p>Even if it falls behind and switches into read-only mode, this switch is=
- only =E2=80=9Ctemporary=E2=80=9D and, per <a class=3D"external-link" href=
-=3D"https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-database-tr=
-ansact-sql-set-options?view=3Dsql-server-ver16#max_storage_size_mb" rel=3D"=
-nofollow">this MS KB</a>, will switch back to read-write after enough space=
- is cleared. Unless there are extenuating circumstances, it should be safe =
-to leave on the Query Store, which is also enabled by default in Azure.</p>
+ only =E2=80=9Ctemporary=E2=80=9D and, per <a href=3D"https://docs.microsof=
+t.com/en-us/sql/t-sql/statements/alter-database-transact-sql-set-options?vi=
+ew=3Dsql-server-ver16#max_storage_size_mb" class=3D"external-link" rel=3D"n=
+ofollow">this MS KB</a>, will switch back to read-write after enough space =
+is cleared. Unless there are extenuating circumstances, it should be safe t=
+o leave on the Query Store, which is also enabled by default in Azure.</p>
 <p>Things to explore for improvement:</p>
 <ul>
-<li><p>Using SQLWATCH or another performance reporting tool &lt;<a class=3D=
-"external-link" data-card-appearance=3D"inline" href=3D"https://sqlwatch.io=
-/" rel=3D"nofollow">https://sqlwatch.io/</a> &gt;</p></li>
+<li><p>Using SQLWATCH or another performance reporting tool &lt;<a href=3D"=
+https://sqlwatch.io/" data-card-appearance=3D"inline" class=3D"external-lin=
+k" rel=3D"nofollow">https://sqlwatch.io/</a> &gt;</p></li>
 <li><p>Perfmon recommendations (counters to collect and expected numbers) f=
 rom =E2=80=9CSQL Server Query Performance Tuning=E2=80=9D book</p></li>
 </ul>
@@ -2035,7 +2035,7 @@ rom =E2=80=9CSQL Server Query Performance Tuning=E2=80=9D book</p></li>
     </div>
 </body>
 </html>
-------=_Part_0_1374211860.1663090533656
+------=_Part_20_114895506.1670457338046
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/04157fe1e0fd943bf1b641211a18f5a2
@@ -3205,7 +3205,7 @@ QwrMdd1ICFlNAu8gAAIgAAIgAAIgAALzigBCC+bV4UJjQQAEQAAEQAAEQKB6CJjhBOa6JgCPrCaB
 dxAAARAAARAAARAAgZITMEMIgtZ1IyFkNQm8gwAIgAAIgAAIgAAIzCsCCC2YV4cLjQUBEAABEAAB
 EACByiZghhAErWsC8MhqEngHARAAARAAARAAARCYVwSUR7bm8S/Oq0ajsSAAAiAAAiAAAiAAAiDw
 /wFhO+sU9Rvx0QAAAABJRU5ErkJggg==
-------=_Part_0_1374211860.1663090533656
+------=_Part_20_114895506.1670457338046
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/c4fcd04c5fc4959987f76bced1314a21
@@ -7811,7 +7811,7 @@ AQrkc2WmOU4SIAESIAESIAESIIFuEaBA7hYmZiIBEiABEiABEiABEjhXCFAgnyszzXGSAAmQAAmQ
 AAmQAAl0iwAFcrcwMRMJkAAJkAAJkAAJkMC5QoAC+VyZaY6TBEiABEiABEiABEigWwQokLuFiZlI
 gARIgARIgARIgATOFQIUyOfKTHOcJEACJEACJEACJEAC3SJAgdwtTMxEAiRAAiRAAiRAAiRwrhD4
 fzjEwL1Apm5qAAAAAElFTkSuQmCC
-------=_Part_0_1374211860.1663090533656
+------=_Part_20_114895506.1670457338046
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -7821,4 +7821,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_0_1374211860.1663090533656--
+------=_Part_20_114895506.1670457338046--
