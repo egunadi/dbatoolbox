@@ -1,11 +1,11 @@
-Date: Thu, 19 Jan 2023 21:16:43 +0000 (UTC)
-Message-ID: <1690921423.55.1674163003699@7c8da8bb36e0>
+Date: Sat, 21 Jan 2023 18:54:22 +0000 (UTC)
+Message-ID: <1446849933.9.1674327262079@86da298e891c>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_54_335029743.1674163003698"
+	boundary="----=_Part_8_642718035.1674327262078"
 
-------=_Part_54_335029743.1674163003698
+------=_Part_8_642718035.1674327262078
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -232,19 +232,29 @@ d of the content */
 <body>
     <h1>DBA Services</h1>
     <div class=3D"Section1">
-        <ul>
-<li><p>Query Performance Tuning</p>
-<ul>
+        <h3 id=3D"DBAServices-Overviewof(Recursive)QueryPerformanceTuningPr=
+ocess">Overview of (Recursive) Query Performance Tuning Process</h3>
+<ol start=3D"1">
 <li><p>Set performance target for application</p></li>
-<li><p>Analyze application performance</p></li>
+<li><p>Analyze application performance</p>
+<ol start=3D"1">
+<li><p>Ensure servers are not overwhelmed</p>
+<ol start=3D"1">
+<li><p>Process of capturing performance metrics varies depending on if the =
+server is on VMware, Hyper-V, Docker, AWS, Azure, etc.</p></li>
+<li><p>In general, focus on collecting metrics on waits and queues, especia=
+lly around disk I/O, memory, and CPU</p></li>
+<li><p>Network (health of the routers, cables, Wi-Fi repeaters, etc.) can a=
+lso affect performance</p></li>
+</ol></li>
+</ol></li>
 <li><p>Identify resource bottlenecks</p></li>
 <li><p>Ensure proper configuration for hardware, OS, platform, SQL Server, =
-and database</p></li>
+database, and applications</p></li>
 <li><p>Identify costliest query associated with bottleneck</p></li>
 <li><p>Optimize query</p></li>
-</ul></li>
-</ul>
+</ol>
     </div>
 </body>
 </html>
-------=_Part_54_335029743.1674163003698--
+------=_Part_8_642718035.1674327262078--
