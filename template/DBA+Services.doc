@@ -1,11 +1,11 @@
-Date: Sat, 21 Jan 2023 18:54:22 +0000 (UTC)
-Message-ID: <1446849933.9.1674327262079@86da298e891c>
+Date: Wed, 25 Jan 2023 18:12:23 +0000 (UTC)
+Message-ID: <1963311041.5.1674670343738@4af89af254e7>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_8_642718035.1674327262078"
+	boundary="----=_Part_4_946854532.1674670343738"
 
-------=_Part_8_642718035.1674327262078
+------=_Part_4_946854532.1674670343738
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -235,7 +235,7 @@ d of the content */
         <h3 id=3D"DBAServices-Overviewof(Recursive)QueryPerformanceTuningPr=
 ocess">Overview of (Recursive) Query Performance Tuning Process</h3>
 <ol start=3D"1">
-<li><p>Set performance target for application</p></li>
+<li><p>Set performance target for application </p></li>
 <li><p>Analyze application performance</p>
 <ol start=3D"1">
 <li><p>Ensure servers are not overwhelmed</p>
@@ -254,7 +254,53 @@ database, and applications</p></li>
 <li><p>Identify costliest query associated with bottleneck</p></li>
 <li><p>Optimize query</p></li>
 </ol>
+<h3 id=3D"DBAServices-CreatingaBaseline">Creating a Baseline</h3>
+<p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"https=
+://learning.oreilly.com/library/view/sql-server-2017/9781484238882/html/323=
+849_5_En_5_Chapter.xhtml" rel=3D"nofollow">https://learning.oreilly.com/lib=
+rary/view/sql-server-2017/9781484238882/html/323849_5_En_5_Chapter.xhtml</a=
+> </p>
+<h3 id=3D"DBAServices-Identifyresourcebottlenecks">Identify resource bottle=
+necks</h3>
+<p>This is a repetitive process that goes as follows:</p>
+<ol start=3D"1">
+<li><p>Identify the bottleneck</p></li>
+<li><p>Fix it</p></li>
+<li><p>Validate the fix</p></li>
+<li><p>Measure the impact and current performance</p></li>
+<li><p>Start again with the next bottleneck</p></li>
+</ol>
+<p>This process should be done for one bottleneck at a time, making one cha=
+nge at a time and validating that one change at a time.</p>
+<h3 id=3D"DBAServices-In-depthQueryTuning">In-depth Query Tuning</h3>
+<p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"https=
+://learning.oreilly.com/library/view/t-sql-querying/9780133986631/ch02.html=
+" rel=3D"nofollow">https://learning.oreilly.com/library/view/t-sql-querying=
+/9780133986631/ch02.html</a> </p>
+<h4 id=3D"DBAServices-ProcessOverview">Process Overview</h4>
+<ol start=3D"1">
+<li><p>Baseline performance and resource use of costliest query</p></li>
+<li><p>Set performance target for query (ex. every query has to meet a thre=
+e-second minimum operation, with a few exceptions)</p></li>
+<li><p>Analyze and optimize factors (such as statistics) that influence que=
+ry execution</p></li>
+<li><p>Analyze query for common problems</p></li>
+<li><p>Analyze query execution plan</p></li>
+<li><p>Analyze and prioritize operators to identify bottlenecks</p></li>
+<li><p>If warranted, modify query and/or index. Afterwards:</p>
+<ol start=3D"1">
+<li><p>Measure performance and resource use again</p></li>
+<li><p>Determine if query performance improved</p>
+<ol start=3D"1">
+<li><p>If not, undo changes!</p></li>
+</ol></li>
+</ol></li>
+<li><p>Determine if query performance is acceptable</p>
+<ol start=3D"1">
+<li><p>If not, return to step 4</p></li>
+</ol></li>
+</ol>
     </div>
 </body>
 </html>
-------=_Part_8_642718035.1674327262078--
+------=_Part_4_946854532.1674670343738--
