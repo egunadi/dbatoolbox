@@ -1,11 +1,11 @@
-Date: Sat, 28 Jan 2023 00:17:17 +0000 (UTC)
-Message-ID: <153451938.3.1674865037172@c77363f3ce62>
+Date: Wed, 1 Feb 2023 01:03:34 +0000 (UTC)
+Message-ID: <114602598.285.1675213414678@0d1bb7ec950f>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_2_1964922644.1674865037170"
+	boundary="----=_Part_284_691912300.1675213414677"
 
-------=_Part_2_1964922644.1674865037170
+------=_Part_284_691912300.1675213414677
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -232,9 +232,19 @@ d of the content */
 <body>
     <h1>DBA Services</h1>
     <div class=3D"Section1">
-        <h3 id=3D"DBAServices-MostCommonPerformanceIssues(64%ofallperforman=
-ceproblems)">Most Common Performance Issues (64% of all performance problem=
-s)</h3>
+        <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
+uning Overview</h2>
+<div id=3D"expander-1458900174" class=3D"expand-container">
+<div id=3D"expander-control-1458900174" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
+e to expand...</span>
+</div>
+<div id=3D"expander-content-1458900174" class=3D"expand-content">
+<h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
+lems)">A. Most Common Performance Issues (64% of all performance problems)<=
+/h3>
 <ol start=3D"1">
 <li><p>Insufficient or poor indexes</p>
 <ol start=3D"1">
@@ -293,8 +303,8 @@ venting plan reuse or parameterization</p></li>
 e to volatile data or poor code</p></li>
 </ol></li>
 </ol>
-<h3 id=3D"DBAServices-Overviewof(Recursive)QueryPerformanceTuningProcess">O=
-verview of (Recursive) Query Performance Tuning Process</h3>
+<h3 id=3D"DBAServices-B.Overviewof(Recursive)QueryPerformanceTuningProcess"=
+>B. Overview of (Recursive) Query Performance Tuning Process</h3>
 <ol start=3D"1">
 <li><p>Set performance target for application </p></li>
 <li><p>Analyze application performance</p>
@@ -315,14 +325,8 @@ database, and applications</p></li>
 <li><p>Identify costliest query associated with bottleneck</p></li>
 <li><p>Optimize query</p></li>
 </ol>
-<h3 id=3D"DBAServices-CreatingaBaseline">Creating a Baseline</h3>
-<p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"https=
-://learning.oreilly.com/library/view/sql-server-2017/9781484238882/html/323=
-849_5_En_5_Chapter.xhtml" rel=3D"nofollow">https://learning.oreilly.com/lib=
-rary/view/sql-server-2017/9781484238882/html/323849_5_En_5_Chapter.xhtml</a=
-> </p>
-<h3 id=3D"DBAServices-Identifyresourcebottlenecks">Identify resource bottle=
-necks</h3>
+<h3 id=3D"DBAServices-C.Identifyingresourcebottlenecks">C. Identifying reso=
+urce bottlenecks</h3>
 <p>This is a repetitive process that goes as follows:</p>
 <ol start=3D"1">
 <li><p>Identify the bottleneck</p></li>
@@ -333,12 +337,8 @@ necks</h3>
 </ol>
 <p>This process should be done for one bottleneck at a time, making one cha=
 nge at a time and validating that one change at a time.</p>
-<h3 id=3D"DBAServices-In-depthQueryTuning">In-depth Query Tuning</h3>
-<p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"https=
-://learning.oreilly.com/library/view/t-sql-querying/9780133986631/ch02.html=
-" rel=3D"nofollow">https://learning.oreilly.com/library/view/t-sql-querying=
-/9780133986631/ch02.html</a> </p>
-<h4 id=3D"DBAServices-ProcessOverview">Process Overview</h4>
+<h3 id=3D"DBAServices-D.In-depthQueryTuningProcessOverview">D. In-depth Que=
+ry Tuning Process Overview</h3>
 <ol start=3D"1">
 <li><p>Baseline performance and resource use of costliest query</p></li>
 <li><p>Set performance target for query (ex. every query has to meet a thre=
@@ -361,7 +361,329 @@ ry execution</p></li>
 <li><p>If not, return to step 4</p></li>
 </ol></li>
 </ol>
+</div>
+</div>
+<h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
+<div id=3D"expander-422699034" class=3D"expand-container">
+<div id=3D"expander-control-422699034" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
+e to expand...</span>
+</div>
+<div id=3D"expander-content-422699034" class=3D"expand-content">
+<h3 id=3D"DBAServices-A.NotesonthePerformanceMonitorTool">A. Notes on the P=
+erformance Monitor Tool </h3>
+<ol start=3D"1">
+<li><p> On a VM, counter measurements is usually is for the VM, not the phy=
+sical server. That means some values are not going to accurately reflect ph=
+ysical reality.</p></li>
+<li><p>While real time graphs are available, it=E2=80=99s recommended to ca=
+ptured data into a file (called a <em>data collector set</em>) for offline =
+analysis.</p></li>
+</ol>
+<h3 id=3D"DBAServices-B.MemoryPerformanceAnalysis">B. Memory Performance An=
+alysis</h3>
+<ul>
+<li><p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"h=
+ttps://learning.oreilly.com/library/view/sql-server-2017/9781484238882/html=
+/323849_5_En_2_Chapter.xhtml" rel=3D"nofollow">https://learning.oreilly.com=
+/library/view/sql-server-2017/9781484238882/html/323849_5_En_2_Chapter.xhtm=
+l</a> </p></li>
+<li><p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"h=
+ttps://learning.oreilly.com/library/view/sql-server-2017/9781484238882/html=
+/323849_5_En_5_Chapter.xhtml" rel=3D"nofollow">https://learning.oreilly.com=
+/library/view/sql-server-2017/9781484238882/html/323849_5_En_5_Chapter.xhtm=
+l</a> </p></li>
+</ul>
+</div>
+</div>
+<h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
+ck Tools</h2>
+<div id=3D"expander-559206915" class=3D"expand-container">
+<div id=3D"expander-control-559206915" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
+e to expand...</span>
+</div>
+<div id=3D"expander-content-559206915" class=3D"expand-content">
+<h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
+=E2=80=99s First Responder Kit</h3>
+<p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
+1px solid #ddd; box-sizing: border-box; vertical-align: text-bottom;" src=
+=3D"947577c3ee36272b288b185d96eeaac9" width=3D"250"></p>
+<h3 id=3D"DBAServices-B.PaulRandal=E2=80=99sWaitStatisticsQuery">B. Paul Ra=
+ndal=E2=80=99s <a class=3D"external-link" href=3D"https://www.sqlskills.com=
+/blogs/paul/wait-statistics-or-please-tell-me-where-it-hurts/" rel=3D"nofol=
+low">Wait Statistics Query</a></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">-- Last =
+updated October 1, 2021
+WITH [Waits] AS
+    (SELECT
+        [wait_type],
+        [wait_time_ms] / 1000.0 AS [WaitS],
+        ([wait_time_ms] - [signal_wait_time_ms]) / 1000.0 AS [ResourceS],
+        [signal_wait_time_ms] / 1000.0 AS [SignalS],
+        [waiting_tasks_count] AS [WaitCount],
+        100.0 * [wait_time_ms] / SUM ([wait_time_ms]) OVER() AS [Percentage=
+],
+        ROW_NUMBER() OVER(ORDER BY [wait_time_ms] DESC) AS [RowNum]
+    FROM sys.dm_os_wait_stats
+    WHERE [wait_type] NOT IN (
+        -- These wait types are almost 100% never a problem and so they are
+        -- filtered out to avoid them skewing the results. Click on the URL
+        -- for more information.
+        N'BROKER_EVENTHANDLER', -- https://www.sqlskills.com/help/waits/BRO=
+KER_EVENTHANDLER
+        N'BROKER_RECEIVE_WAITFOR', -- https://www.sqlskills.com/help/waits/=
+BROKER_RECEIVE_WAITFOR
+        N'BROKER_TASK_STOP', -- https://www.sqlskills.com/help/waits/BROKER=
+_TASK_STOP
+        N'BROKER_TO_FLUSH', -- https://www.sqlskills.com/help/waits/BROKER_=
+TO_FLUSH
+        N'BROKER_TRANSMITTER', -- https://www.sqlskills.com/help/waits/BROK=
+ER_TRANSMITTER
+        N'CHECKPOINT_QUEUE', -- https://www.sqlskills.com/help/waits/CHECKP=
+OINT_QUEUE
+        N'CHKPT', -- https://www.sqlskills.com/help/waits/CHKPT
+        N'CLR_AUTO_EVENT', -- https://www.sqlskills.com/help/waits/CLR_AUTO=
+_EVENT
+        N'CLR_MANUAL_EVENT', -- https://www.sqlskills.com/help/waits/CLR_MA=
+NUAL_EVENT
+        N'CLR_SEMAPHORE', -- https://www.sqlskills.com/help/waits/CLR_SEMAP=
+HORE
+=20
+        -- Maybe comment this out if you have parallelism issues
+        N'CXCONSUMER', -- https://www.sqlskills.com/help/waits/CXCONSUMER
+=20
+        -- Maybe comment these four out if you have mirroring issues
+        N'DBMIRROR_DBM_EVENT', -- https://www.sqlskills.com/help/waits/DBMI=
+RROR_DBM_EVENT
+        N'DBMIRROR_EVENTS_QUEUE', -- https://www.sqlskills.com/help/waits/D=
+BMIRROR_EVENTS_QUEUE
+        N'DBMIRROR_WORKER_QUEUE', -- https://www.sqlskills.com/help/waits/D=
+BMIRROR_WORKER_QUEUE
+        N'DBMIRRORING_CMD', -- https://www.sqlskills.com/help/waits/DBMIRRO=
+RING_CMD
+        N'DIRTY_PAGE_POLL', -- https://www.sqlskills.com/help/waits/DIRTY_P=
+AGE_POLL
+        N'DISPATCHER_QUEUE_SEMAPHORE', -- https://www.sqlskills.com/help/wa=
+its/DISPATCHER_QUEUE_SEMAPHORE
+        N'EXECSYNC', -- https://www.sqlskills.com/help/waits/EXECSYNC
+        N'FSAGENT', -- https://www.sqlskills.com/help/waits/FSAGENT
+        N'FT_IFTS_SCHEDULER_IDLE_WAIT', -- https://www.sqlskills.com/help/w=
+aits/FT_IFTS_SCHEDULER_IDLE_WAIT
+        N'FT_IFTSHC_MUTEX', -- https://www.sqlskills.com/help/waits/FT_IFTS=
+HC_MUTEX
+ =20
+       -- Maybe comment these six out if you have AG issues
+        N'HADR_CLUSAPI_CALL', -- https://www.sqlskills.com/help/waits/HADR_=
+CLUSAPI_CALL
+        N'HADR_FILESTREAM_IOMGR_IOCOMPLETION', -- https://www.sqlskills.com=
+/help/waits/HADR_FILESTREAM_IOMGR_IOCOMPLETION
+        N'HADR_LOGCAPTURE_WAIT', -- https://www.sqlskills.com/help/waits/HA=
+DR_LOGCAPTURE_WAIT
+        N'HADR_NOTIFICATION_DEQUEUE', -- https://www.sqlskills.com/help/wai=
+ts/HADR_NOTIFICATION_DEQUEUE
+        N'HADR_TIMER_TASK', -- https://www.sqlskills.com/help/waits/HADR_TI=
+MER_TASK
+        N'HADR_WORK_QUEUE', -- https://www.sqlskills.com/help/waits/HADR_WO=
+RK_QUEUE
+=20
+        N'KSOURCE_WAKEUP', -- https://www.sqlskills.com/help/waits/KSOURCE_=
+WAKEUP
+        N'LAZYWRITER_SLEEP', -- https://www.sqlskills.com/help/waits/LAZYWR=
+ITER_SLEEP
+        N'LOGMGR_QUEUE', -- https://www.sqlskills.com/help/waits/LOGMGR_QUE=
+UE
+        N'MEMORY_ALLOCATION_EXT', -- https://www.sqlskills.com/help/waits/M=
+EMORY_ALLOCATION_EXT
+        N'ONDEMAND_TASK_QUEUE', -- https://www.sqlskills.com/help/waits/OND=
+EMAND_TASK_QUEUE
+        N'PARALLEL_REDO_DRAIN_WORKER', -- https://www.sqlskills.com/help/wa=
+its/PARALLEL_REDO_DRAIN_WORKER
+        N'PARALLEL_REDO_LOG_CACHE', -- https://www.sqlskills.com/help/waits=
+/PARALLEL_REDO_LOG_CACHE
+        N'PARALLEL_REDO_TRAN_LIST', -- https://www.sqlskills.com/help/waits=
+/PARALLEL_REDO_TRAN_LIST
+        N'PARALLEL_REDO_WORKER_SYNC', -- https://www.sqlskills.com/help/wai=
+ts/PARALLEL_REDO_WORKER_SYNC
+        N'PARALLEL_REDO_WORKER_WAIT_WORK', -- https://www.sqlskills.com/hel=
+p/waits/PARALLEL_REDO_WORKER_WAIT_WORK
+        N'PREEMPTIVE_OS_FLUSHFILEBUFFERS', -- https://www.sqlskills.com/hel=
+p/waits/PREEMPTIVE_OS_FLUSHFILEBUFFERS
+        N'PREEMPTIVE_XE_GETTARGETSTATE', -- https://www.sqlskills.com/help/=
+waits/PREEMPTIVE_XE_GETTARGETSTATE
+        N'PVS_PREALLOCATE', -- https://www.sqlskills.com/help/waits/PVS_PRE=
+ALLOCATE
+        N'PWAIT_ALL_COMPONENTS_INITIALIZED', -- https://www.sqlskills.com/h=
+elp/waits/PWAIT_ALL_COMPONENTS_INITIALIZED
+        N'PWAIT_DIRECTLOGCONSUMER_GETNEXT', -- https://www.sqlskills.com/he=
+lp/waits/PWAIT_DIRECTLOGCONSUMER_GETNEXT
+        N'PWAIT_EXTENSIBILITY_CLEANUP_TASK', -- https://www.sqlskills.com/h=
+elp/waits/PWAIT_EXTENSIBILITY_CLEANUP_TASK
+        N'QDS_PERSIST_TASK_MAIN_LOOP_SLEEP', -- https://www.sqlskills.com/h=
+elp/waits/QDS_PERSIST_TASK_MAIN_LOOP_SLEEP
+        N'QDS_ASYNC_QUEUE', -- https://www.sqlskills.com/help/waits/QDS_ASY=
+NC_QUEUE
+        N'QDS_CLEANUP_STALE_QUERIES_TASK_MAIN_LOOP_SLEEP',
+            -- https://www.sqlskills.com/help/waits/QDS_CLEANUP_STALE_QUERI=
+ES_TASK_MAIN_LOOP_SLEEP
+        N'QDS_SHUTDOWN_QUEUE', -- https://www.sqlskills.com/help/waits/QDS_=
+SHUTDOWN_QUEUE
+        N'REDO_THREAD_PENDING_WORK', -- https://www.sqlskills.com/help/wait=
+s/REDO_THREAD_PENDING_WORK
+        N'REQUEST_FOR_DEADLOCK_SEARCH', -- https://www.sqlskills.com/help/w=
+aits/REQUEST_FOR_DEADLOCK_SEARCH
+        N'RESOURCE_QUEUE', -- https://www.sqlskills.com/help/waits/RESOURCE=
+_QUEUE
+        N'SERVER_IDLE_CHECK', -- https://www.sqlskills.com/help/waits/SERVE=
+R_IDLE_CHECK
+        N'SLEEP_BPOOL_FLUSH', -- https://www.sqlskills.com/help/waits/SLEEP=
+_BPOOL_FLUSH
+        N'SLEEP_DBSTARTUP', -- https://www.sqlskills.com/help/waits/SLEEP_D=
+BSTARTUP
+        N'SLEEP_DCOMSTARTUP', -- https://www.sqlskills.com/help/waits/SLEEP=
+_DCOMSTARTUP
+        N'SLEEP_MASTERDBREADY', -- https://www.sqlskills.com/help/waits/SLE=
+EP_MASTERDBREADY
+        N'SLEEP_MASTERMDREADY', -- https://www.sqlskills.com/help/waits/SLE=
+EP_MASTERMDREADY
+        N'SLEEP_MASTERUPGRADED', -- https://www.sqlskills.com/help/waits/SL=
+EEP_MASTERUPGRADED
+        N'SLEEP_MSDBSTARTUP', -- https://www.sqlskills.com/help/waits/SLEEP=
+_MSDBSTARTUP
+        N'SLEEP_SYSTEMTASK', -- https://www.sqlskills.com/help/waits/SLEEP_=
+SYSTEMTASK
+        N'SLEEP_TASK', -- https://www.sqlskills.com/help/waits/SLEEP_TASK
+        N'SLEEP_TEMPDBSTARTUP', -- https://www.sqlskills.com/help/waits/SLE=
+EP_TEMPDBSTARTUP
+        N'SNI_HTTP_ACCEPT', -- https://www.sqlskills.com/help/waits/SNI_HTT=
+P_ACCEPT
+        N'SOS_WORK_DISPATCHER', -- https://www.sqlskills.com/help/waits/SOS=
+_WORK_DISPATCHER
+        N'SP_SERVER_DIAGNOSTICS_SLEEP', -- https://www.sqlskills.com/help/w=
+aits/SP_SERVER_DIAGNOSTICS_SLEEP
+        N'SQLTRACE_BUFFER_FLUSH', -- https://www.sqlskills.com/help/waits/S=
+QLTRACE_BUFFER_FLUSH
+        N'SQLTRACE_INCREMENTAL_FLUSH_SLEEP', -- https://www.sqlskills.com/h=
+elp/waits/SQLTRACE_INCREMENTAL_FLUSH_SLEEP
+        N'SQLTRACE_WAIT_ENTRIES', -- https://www.sqlskills.com/help/waits/S=
+QLTRACE_WAIT_ENTRIES
+        N'VDI_CLIENT_OTHER', -- https://www.sqlskills.com/help/waits/VDI_CL=
+IENT_OTHER
+        N'WAIT_FOR_RESULTS', -- https://www.sqlskills.com/help/waits/WAIT_F=
+OR_RESULTS
+        N'WAITFOR', -- https://www.sqlskills.com/help/waits/WAITFOR
+        N'WAITFOR_TASKSHUTDOWN', -- https://www.sqlskills.com/help/waits/WA=
+ITFOR_TASKSHUTDOWN
+        N'WAIT_XTP_RECOVERY', -- https://www.sqlskills.com/help/waits/WAIT_=
+XTP_RECOVERY
+        N'WAIT_XTP_HOST_WAIT', -- https://www.sqlskills.com/help/waits/WAIT=
+_XTP_HOST_WAIT
+        N'WAIT_XTP_OFFLINE_CKPT_NEW_LOG', -- https://www.sqlskills.com/help=
+/waits/WAIT_XTP_OFFLINE_CKPT_NEW_LOG
+        N'WAIT_XTP_CKPT_CLOSE', -- https://www.sqlskills.com/help/waits/WAI=
+T_XTP_CKPT_CLOSE
+        N'XE_DISPATCHER_JOIN', -- https://www.sqlskills.com/help/waits/XE_D=
+ISPATCHER_JOIN
+        N'XE_DISPATCHER_WAIT', -- https://www.sqlskills.com/help/waits/XE_D=
+ISPATCHER_WAIT
+        N'XE_TIMER_EVENT' -- https://www.sqlskills.com/help/waits/XE_TIMER_=
+EVENT
+        )
+    AND [waiting_tasks_count] &gt; 0
+    )
+SELECT
+    MAX ([W1].[wait_type]) AS [WaitType],
+    CAST (MAX ([W1].[WaitS]) AS DECIMAL (16,2)) AS [Wait_S],
+    CAST (MAX ([W1].[ResourceS]) AS DECIMAL (16,2)) AS [Resource_S],
+    CAST (MAX ([W1].[SignalS]) AS DECIMAL (16,2)) AS [Signal_S],
+    MAX ([W1].[WaitCount]) AS [WaitCount],
+    CAST (MAX ([W1].[Percentage]) AS DECIMAL (5,2)) AS [Percentage],
+    CAST ((MAX ([W1].[WaitS]) / MAX ([W1].[WaitCount])) AS DECIMAL (16,4)) =
+AS [AvgWait_S],
+    CAST ((MAX ([W1].[ResourceS]) / MAX ([W1].[WaitCount])) AS DECIMAL (16,=
+4)) AS [AvgRes_S],
+    CAST ((MAX ([W1].[SignalS]) / MAX ([W1].[WaitCount])) AS DECIMAL (16,4)=
+) AS [AvgSig_S],
+    CAST ('https://www.sqlskills.com/help/waits/' + MAX ([W1].[wait_type]) =
+as XML) AS [Help/Info URL]
+FROM [Waits] AS [W1]
+INNER JOIN [Waits] AS [W2] ON [W2].[RowNum] &lt;=3D [W1].[RowNum]
+GROUP BY [W1].[RowNum]
+HAVING SUM ([W2].[Percentage]) - MAX( [W1].[Percentage] ) &lt; 95; -- perce=
+ntage threshold
+GO</pre>=20
+</div>
+</div>
+</div>
+</div>
+<h2 id=3D"DBAServices-4.In-depthQueryTuning">4. In-depth Query Tuning</h2>
+<p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"https=
+://learning.oreilly.com/library/view/t-sql-querying/9780133986631/ch02.html=
+" rel=3D"nofollow">https://learning.oreilly.com/library/view/t-sql-querying=
+/9780133986631/ch02.html</a> </p>
     </div>
 </body>
 </html>
-------=_Part_2_1964922644.1674865037170--
+------=_Part_284_691912300.1675213414677
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
+
+iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAMAAAC/MqoPAAADAFBMVEX19fXv7+98fHx1dXV9fX23
+t7eenp5wcHDn5+f09PTz8/Pd3d2SkpLY2Njt7e3Q0NCioqJycnKqqqq7u7uurq6CgoKGhobOzs7D
+w8PR0dGNjY3Hx8fj4+PGxsbS0tKoqKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAABYhwFnAAAFdklEQVR4Xu3cDVPiOhQG4EM/TAVa4IKACrvZ//+j1tndO9dBHRUU
+RRd6k/SDkLbu4iytLO8zI4STNOSQmo62lAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAGAP1MzAbnirlW3GCiwt69mM7THPcT0zVsRzrd9uuweOXDPyFvfIjOyEZQZ24rf3
+dsVemZE9xszA27Zs/k7lzPqHdMCpb/VL+G7O0owEw6OF1TsJF2aFlG2+CxWl7s/tp5eQlg9+Xu6Z
+5nvMXLcG7DQqnDJ/s0Yxm+8zI5fA+ZQUW3ag10TKSb2SZa7T/pYU71sdvaZMjhkow/xpXV5UMoLy
+GHuwrf3RFMiF1qj/e3f4Yydcv5hWNutVpP5BIPVDhNQPUWWpl3MAe0tlqVcPqR8ipH6IkPohQuqH
+CKlXp16vm6GSVJK6TPY1PpNsu3M6riT7KlJ/uvfEZLejF/6KKLzfbFCOKlKneovm7dshyf/I38yJ
+WpXMeiUnnkLrmaZ1u2H1bv1QpO4+bZ5RL+fEUyWpN2f1V3oh3360Zq9Ejaf65pm3clIvh/l/iTHT
+LpfxrPP1C8Vsvs8yuXSdRlL0WVevkTLN91g2l7HVHnjHx96g7Zhzntd8f+XkErhNh3Wcpptz5V5O
+8721ZS5bNn+nSo7rHwNS37HlVpd+euUc1stJ3doqmWVJgzIDO2GF21weXFLqOYeWXTjci8IBAAAA
+AAAAAAAAoAg3A38MNwOl4kQu4/GL5L/96hvFLpe30/BzTnTygnKKc84Yc4/N+C973sBVN/3i0xVc
+fxGcsZCd5Xwd+C1W78KI9OVdQfqsLx7b/Wx2ekAvpzhRreEylj2l8YueN3DxU/NPij8hrpUD5vg1
+38l5y0KcKExnJ5n1pezgfigvYKstibpiCuXtYfwOYx1PbCKmI24Zlz+LT/xzHIqEj682ycndrCro
+WRWaOVeNhbOZeOT/sHDdhsdb6eOgFf2chbOf1Ij2FlkRDzfeWnbTExv2ZElEZIF/GaQdxAIWkMdq
+zKO6KHE2DEa2LfbWcS3on+TMuitaDLWrYFSQ6Jxlqgp6Pmfngc+MO9BwSmads4bWJt1KNkiw6EqU
+cbyPuEwbrtxa4mwcjNmQaKgKXO8h+TLtlLnUeAhpSe5ySuRd0nR0taTFd5pS3j0VrJVo4T6YYTlh
+RlVBz9ftf4lGV9q2EpcP/zniHQffSGuTbLXhRj3GXYwnbLEertxaaYqIe0t0qwpxMJJ+jzi0ic0o
+7EzUd8tfxc8PfkGNo/kpfZW7rMkWTWztG8kaoyq/Z7oUhS/PRtciXmuSbPhdvkzbpFsV8SeO+FzT
+4aqtpUeKx6IKafMNYvVlLRowtSJzFRKP7GxUr/GcHV5d+Oat1yMVjHZ4s6qg51HaYI2rx5Hc4WUh
+bRPFefEOPxLvIEPmcHkylmhQetX6/PqMPonPdkYjtdOmHn7M5ft/1dajqCx/mTIXDNSv5QdsVBX0
+XDAFGzJt9HG41+ppInbj4KoZXWEcD3ctHUvueGMnHfnxsTOxSmhzcxQM5OLAhuv3VGVXLRsby1x9
+FB3czKr8noes53ldWSFD8Y98qvksWVfTNulW+jjkwa0eHdxYfJl1MlyuXslCMpZudplbX8Bw15Iz
+Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
+j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
+HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
+AAAAAElFTkSuQmCC
+------=_Part_284_691912300.1675213414677
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_284_691912300.1675213414677--
