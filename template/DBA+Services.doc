@@ -1,11 +1,11 @@
-Date: Wed, 1 Feb 2023 01:03:34 +0000 (UTC)
-Message-ID: <114602598.285.1675213414678@0d1bb7ec950f>
+Date: Fri, 3 Feb 2023 23:31:35 +0000 (UTC)
+Message-ID: <2123526916.3.1675467095965@7c74de4eaee4>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_284_691912300.1675213414677"
+	boundary="----=_Part_2_2126959346.1675467095962"
 
-------=_Part_284_691912300.1675213414677
+------=_Part_2_2126959346.1675467095962
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -234,14 +234,14 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
 uning Overview</h2>
-<div id=3D"expander-1458900174" class=3D"expand-container">
-<div id=3D"expander-control-1458900174" class=3D"expand-control">
+<div id=3D"expander-1825123929" class=3D"expand-container">
+<div id=3D"expander-control-1825123929" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1458900174" class=3D"expand-content">
+<div id=3D"expander-content-1825123929" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
 lems)">A. Most Common Performance Issues (64% of all performance problems)<=
 /h3>
@@ -364,14 +364,14 @@ ry execution</p></li>
 </div>
 </div>
 <h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
-<div id=3D"expander-422699034" class=3D"expand-container">
-<div id=3D"expander-control-422699034" class=3D"expand-control">
+<div id=3D"expander-2018856179" class=3D"expand-container">
+<div id=3D"expander-control-2018856179" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-422699034" class=3D"expand-content">
+<div id=3D"expander-content-2018856179" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.NotesonthePerformanceMonitorTool">A. Notes on the P=
 erformance Monitor Tool </h3>
 <ol start=3D"1">
@@ -384,15 +384,30 @@ analysis.</p></li>
 </ol>
 <h3 id=3D"DBAServices-B.MemoryPerformanceAnalysis">B. Memory Performance An=
 alysis</h3>
+<p>Memory bottlenecks are a priority because they also affect CPU. More CPU=
+ cycles are needed to write memory pages to disk so SQL Server can maintain=
+ enough free internal memory (via a process called <em>lazy writer</em>).</=
+p>
+<h4 id=3D"DBAServices-I.MemorySettings">I. Memory Settings</h4>
+<p>The following script can be used to determine the <em>max server memory<=
+/em> setting for SQL Server:</p>
+<p><a href=3D"https://github.com/bornsql/scripts/blob/main/max_server_memor=
+y.sql" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofol=
+low">https://github.com/bornsql/scripts/blob/main/max_server_memory.sql</a>=
+ </p>
+<p>At least 2GB should be available for the OS and another 2GB if MedInform=
+atix is hosted on the same server.</p>
+<p> Microsoft recommends that <em>min server memory </em>is 0.</p>
+<h4 id=3D"DBAServices-II.MemoryPerfmonCounters">II. Memory Perfmon Counters=
+</h4>
+<ol start=3D"1">
+<li><p>Memory =E2=80=93 Available MBytes</p></li>
+</ol>
+<p></p>
 <ul>
-<li><p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"h=
-ttps://learning.oreilly.com/library/view/sql-server-2017/9781484238882/html=
-/323849_5_En_2_Chapter.xhtml" rel=3D"nofollow">https://learning.oreilly.com=
-/library/view/sql-server-2017/9781484238882/html/323849_5_En_2_Chapter.xhtm=
-l</a> </p></li>
-<li><p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"h=
-ttps://learning.oreilly.com/library/view/sql-server-2017/9781484238882/html=
-/323849_5_En_5_Chapter.xhtml" rel=3D"nofollow">https://learning.oreilly.com=
+<li><p><a href=3D"https://learning.oreilly.com/library/view/sql-server-2017=
+/9781484238882/html/323849_5_En_5_Chapter.xhtml" data-card-appearance=3D"in=
+line" class=3D"external-link" rel=3D"nofollow">https://learning.oreilly.com=
 /library/view/sql-server-2017/9781484238882/html/323849_5_En_5_Chapter.xhtm=
 l</a> </p></li>
 </ul>
@@ -400,22 +415,22 @@ l</a> </p></li>
 </div>
 <h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
 ck Tools</h2>
-<div id=3D"expander-559206915" class=3D"expand-container">
-<div id=3D"expander-control-559206915" class=3D"expand-control">
+<div id=3D"expander-263177994" class=3D"expand-container">
+<div id=3D"expander-control-263177994" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-559206915" class=3D"expand-content">
+<div id=3D"expander-content-263177994" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
 =E2=80=99s First Responder Kit</h3>
 <p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
 1px solid #ddd; box-sizing: border-box; vertical-align: text-bottom;" src=
 =3D"947577c3ee36272b288b185d96eeaac9" width=3D"250"></p>
 <h3 id=3D"DBAServices-B.PaulRandal=E2=80=99sWaitStatisticsQuery">B. Paul Ra=
-ndal=E2=80=99s <a class=3D"external-link" href=3D"https://www.sqlskills.com=
-/blogs/paul/wait-statistics-or-please-tell-me-where-it-hurts/" rel=3D"nofol=
+ndal=E2=80=99s <a href=3D"https://www.sqlskills.com/blogs/paul/wait-statist=
+ics-or-please-tell-me-where-it-hurts/" class=3D"external-link" rel=3D"nofol=
 low">Wait Statistics Query</a></h3>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -624,14 +639,14 @@ GO</pre>=20
 </div>
 </div>
 <h2 id=3D"DBAServices-4.In-depthQueryTuning">4. In-depth Query Tuning</h2>
-<p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"https=
-://learning.oreilly.com/library/view/t-sql-querying/9780133986631/ch02.html=
+<p><a href=3D"https://learning.oreilly.com/library/view/t-sql-querying/9780=
+133986631/ch02.html" data-card-appearance=3D"inline" class=3D"external-link=
 " rel=3D"nofollow">https://learning.oreilly.com/library/view/t-sql-querying=
 /9780133986631/ch02.html</a> </p>
     </div>
 </body>
 </html>
-------=_Part_284_691912300.1675213414677
+------=_Part_2_2126959346.1675467095962
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
@@ -676,7 +691,7 @@ Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
 j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
 HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
 AAAAAElFTkSuQmCC
-------=_Part_284_691912300.1675213414677
+------=_Part_2_2126959346.1675467095962
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -686,4 +701,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_284_691912300.1675213414677--
+------=_Part_2_2126959346.1675467095962--
