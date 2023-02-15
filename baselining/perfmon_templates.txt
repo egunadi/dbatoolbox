@@ -25,7 +25,7 @@
     |              |                           | the number of spindles                        |
     +--------------+---------------------------+-----------------------------------------------+
     | Memory       | Page faults/sec           | "Some" page faults are normal; look for       |
-    |              |                           | consistenly high numbers                     |
+    |              |                           | consistently high numbers                     |
     +--------------+---------------------------+-----------------------------------------------+
 
 
