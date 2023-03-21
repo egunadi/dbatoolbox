@@ -1,11 +1,11 @@
-Date: Wed, 15 Feb 2023 00:51:53 +0000 (UTC)
-Message-ID: <2136124708.15.1676422313674@33e1cd0605c4>
+Date: Tue, 21 Mar 2023 17:05:12 +0000 (UTC)
+Message-ID: <631805266.427.1679418312403@219f4be4bb3b>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_14_918113786.1676422313674"
+	boundary="----=_Part_426_39194670.1679418312402"
 
-------=_Part_14_918113786.1676422313674
+------=_Part_426_39194670.1679418312402
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -234,14 +234,14 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
 uning Overview</h2>
-<div id=3D"expander-1336860412" class=3D"expand-container">
-<div id=3D"expander-control-1336860412" class=3D"expand-control">
+<div id=3D"expander-488008001" class=3D"expand-container">
+<div id=3D"expander-control-488008001" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1336860412" class=3D"expand-content">
+<div id=3D"expander-content-488008001" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
 lems)">A. Most Common Performance Issues (64% of all performance problems)<=
 /h3>
@@ -364,14 +364,14 @@ ry execution</p></li>
 </div>
 </div>
 <h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
-<div id=3D"expander-964284240" class=3D"expand-container">
-<div id=3D"expander-control-964284240" class=3D"expand-control">
+<div id=3D"expander-1911073888" class=3D"expand-container">
+<div id=3D"expander-control-1911073888" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
-h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
-e to expand...</span>
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Notes =
+on the Performance Monitor Tool</span>
 </div>
-<div id=3D"expander-content-964284240" class=3D"expand-content">
+<div id=3D"expander-content-1911073888" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.NotesonthePerformanceMonitorTool">A. Notes on the P=
 erformance Monitor Tool </h3>
 <ol start=3D"1">
@@ -382,6 +382,16 @@ ysical reality.</p></li>
 ptured data into a file (called a <em>data collector set</em>) for offline =
 analysis.</p></li>
 </ol>
+</div>
+</div>
+<div id=3D"expander-2027811868" class=3D"expand-container">
+<div id=3D"expander-control-2027811868" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">B. Memory=
+ Performance Analysis</span>
+</div>
+<div id=3D"expander-content-2027811868" class=3D"expand-content">
 <h3 id=3D"DBAServices-B.MemoryPerformanceAnalysis">B. Memory Performance An=
 alysis</h3>
 <p>Memory bottlenecks are a priority because they also affect CPU. More CPU=
@@ -391,8 +401,8 @@ alysis</h3>
 <h4 id=3D"DBAServices-I.MemorySettings">I. Memory Settings</h4>
 <p>The following script can be used to determine the <em>max server memory<=
 /em> setting for SQL Server:</p>
-<p><a href=3D"https://github.com/bornsql/scripts/blob/main/max_server_memor=
-y.sql" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofol=
+<p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"https=
+://github.com/bornsql/scripts/blob/main/max_server_memory.sql" rel=3D"nofol=
 low">https://github.com/bornsql/scripts/blob/main/max_server_memory.sql</a>=
  </p>
 <p>At least 2GB should be available for the OS and another 2GB if MedInform=
@@ -459,11 +469,93 @@ system (ex. for a reporting workloads with lots of ad hoc queries)</p></li>
 i>
 </ol></li>
 </ol></li>
+<li><p>SQLServer:Buffer Manager - Page Life Expectancy</p>
+<ol start=3D"1">
+<li><p>This indicates how long a page will stay in the buffer pool without =
+being referenced</p></li>
+<li><p>Brent Ozar recommends at least 180 seconds, while SQLwatch.io recomm=
+ends &gt; 300 seconds</p></li>
+<li><p>A baseline needs to be established and monitored over time</p>
+<ol start=3D"1">
+<li><p>Reporting systems, as opposed to OLTP systems, are expected to have =
+a lower value</p></li>
+<li><p> This number is also expected to dip to very low levels during night=
+ly loads</p></li>
+</ol></li>
+</ol></li>
+<li><p>SQLServer:Buffer Manager - Checkpoint Pages/Sec</p>
+<ol start=3D"1">
+<li><p>This represents the number of pages moved to disk by a checkpoint op=
+eration</p></li>
+<li><p>Should be relatively low: less than 30 per second for most systems</=
+p></li>
+<li><p>Higher values indicate a large number of writes occurring within the=
+ system, possibly indicative of I/O problems</p></li>
+</ol></li>
+<li><p>SQLServer:Buffer Manager - Lazy Writes/Sec</p>
+<ol start=3D"1">
+<li><p>This records how much dirty, aged buffers are removed from the buffe=
+r by the lazy write process, a system process that frees up the memory for =
+other uses</p></li>
+<li><p>Should consistently be less than 20 for the average system</p></li>
+<li><p>Higher values possibly indicate I/O issues or even memory problems</=
+p></li>
+</ol></li>
+<li><p>SQLServer:Memory Manager - Memory Grants Pending</p>
+<ol start=3D"1">
+<li><p>Under normal conditions, this should be consistently 0 for most prod=
+uction servers</p></li>
+<li><p>To retrieve this value on the fly, run queries against the DMV <code=
+>sys.dm_exec_query_memory_grants</code> . A <code>null</code> value in the =
+column <code>grant_time</code> indicates that the process is still waiting =
+for a memory grant.</p></li>
+</ol></li>
+<li><p>SQLServer:Memory Manager - Target Server Memory (KB) and SQLServer:M=
+emory Manager - Total Server Memory (KB)</p>
+<ol start=3D"1">
+<li><p>Target Server Memory (KB) indicates the total amount of dynamic memo=
+ry SQL Server is willing to consume, while Total Server Memory (KB) indicat=
+es the amount of memory currently assigned to SQL Server</p></li>
+<li><p>Target Server Memory (KB) should be close to the size of physical me=
+mory available, especially if the system is dedicated to SQL Server</p></li=
+>
+<li><p>Total Server Memory (KB) should be close to Target Server Memory (KB=
+). If it=E2=80=99s much less, make sure (1) max server memory is configured=
+ properly and (2) the system did not just start up (since there is a <em>wa=
+rm-up phase </em>to expand memory allocation and bring data pages into memo=
+ry). Ruling those two out, we can conclude SQL Server simply has a low memo=
+ry requirement.</p></li>
+<li><p>Systems with a low memory requirement usually have 5,000 free pages =
+or more. The status of memory allocation can also be queried via the DMV <c=
+ode>sys.dm_os_ring_buffers</code> .</p></li>
+</ol></li>
 </ol>
-<p></p>
+<p>III. Additional Memory Monitoring Tools</p>
+<ol start=3D"1">
+<li><p>DBCC MEMORYSTATUS</p></li>
+<li><p>Dynamic Management Views</p>
+<ol start=3D"1">
+<li><p>Sys.dm_os_memory_brokers</p></li>
+<li><p>Sys.dm_os_memory_clerks</p></li>
+<li><p>Sys.dm_os_ring_buffers</p></li>
+<li><p>Sys.dm_db_xtp_table_memory_stats</p></li>
+<li><p>Sys.dm_xtp_system_memory_consumers</p></li>
+</ol></li>
+</ol>
+<p>IV. Memory Bottleneck Resolutions</p>
+<ol start=3D"1">
+<li><p>Optimizing Application Workload</p></li>
+<li><p>Allocating More Memory to SQL Server</p></li>
+<li><p>Moving In-Memory Tables Back to Standard Storage</p></li>
+<li><p>Increasing System Memory</p></li>
+<li><p>Changing from a 32-Bit to a 64-Bit Processor</p></li>
+<li><p>Compressing Data</p></li>
+<li><p>Enabling 3GB of Process Address Space</p></li>
+<li><p>Addressing Fragmentation</p></li>
+</ol>
 <ul>
-<li><p><a href=3D"https://learning.oreilly.com/library/view/sql-server-2017=
-/9781484238882/html/323849_5_En_5_Chapter.xhtml" class=3D"external-link" re=
+<li><p><a class=3D"external-link" href=3D"https://learning.oreilly.com/libr=
+ary/view/sql-server-2017/9781484238882/html/323849_5_En_5_Chapter.xhtml" re=
 l=3D"nofollow">https://learning.oreilly.com/library/view/sql-server-2017/97=
 81484238882/html/323849_5_En_5_Chapter.xhtml</a> </p></li>
 </ul>
@@ -471,22 +563,22 @@ l=3D"nofollow">https://learning.oreilly.com/library/view/sql-server-2017/97=
 </div>
 <h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
 ck Tools</h2>
-<div id=3D"expander-2125159554" class=3D"expand-container">
-<div id=3D"expander-control-2125159554" class=3D"expand-control">
+<div id=3D"expander-1225017472" class=3D"expand-container">
+<div id=3D"expander-control-1225017472" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-2125159554" class=3D"expand-content">
+<div id=3D"expander-content-1225017472" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
 =E2=80=99s First Responder Kit</h3>
 <p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
 1px solid #ddd; box-sizing: border-box; vertical-align: text-bottom;" src=
 =3D"947577c3ee36272b288b185d96eeaac9" width=3D"250"></p>
 <h3 id=3D"DBAServices-B.PaulRandal=E2=80=99sWaitStatisticsQuery">B. Paul Ra=
-ndal=E2=80=99s <a href=3D"https://www.sqlskills.com/blogs/paul/wait-statist=
-ics-or-please-tell-me-where-it-hurts/" class=3D"external-link" rel=3D"nofol=
+ndal=E2=80=99s <a class=3D"external-link" href=3D"https://www.sqlskills.com=
+/blogs/paul/wait-statistics-or-please-tell-me-where-it-hurts/" rel=3D"nofol=
 low">Wait Statistics Query</a></h3>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -695,14 +787,14 @@ GO</pre>=20
 </div>
 </div>
 <h2 id=3D"DBAServices-4.In-depthQueryTuning">4. In-depth Query Tuning</h2>
-<p><a href=3D"https://learning.oreilly.com/library/view/t-sql-querying/9780=
-133986631/ch02.html" data-card-appearance=3D"inline" class=3D"external-link=
+<p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"https=
+://learning.oreilly.com/library/view/t-sql-querying/9780133986631/ch02.html=
 " rel=3D"nofollow">https://learning.oreilly.com/library/view/t-sql-querying=
 /9780133986631/ch02.html</a> </p>
     </div>
 </body>
 </html>
-------=_Part_14_918113786.1676422313674
+------=_Part_426_39194670.1679418312402
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
@@ -747,7 +839,7 @@ Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
 j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
 HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
 AAAAAElFTkSuQmCC
-------=_Part_14_918113786.1676422313674
+------=_Part_426_39194670.1679418312402
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -757,4 +849,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_14_918113786.1676422313674--
+------=_Part_426_39194670.1679418312402--
