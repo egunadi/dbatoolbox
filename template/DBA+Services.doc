@@ -1,11 +1,11 @@
-Date: Tue, 21 Mar 2023 17:05:12 +0000 (UTC)
-Message-ID: <631805266.427.1679418312403@219f4be4bb3b>
+Date: Wed, 22 Mar 2023 17:58:51 +0000 (UTC)
+Message-ID: <1710313513.75.1679507931778@19b316647233>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_426_39194670.1679418312402"
+	boundary="----=_Part_74_814956440.1679507931778"
 
-------=_Part_426_39194670.1679418312402
+------=_Part_74_814956440.1679507931778
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -234,14 +234,14 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
 uning Overview</h2>
-<div id=3D"expander-488008001" class=3D"expand-container">
-<div id=3D"expander-control-488008001" class=3D"expand-control">
+<div id=3D"expander-1008069994" class=3D"expand-container">
+<div id=3D"expander-control-1008069994" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-488008001" class=3D"expand-content">
+<div id=3D"expander-content-1008069994" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
 lems)">A. Most Common Performance Issues (64% of all performance problems)<=
 /h3>
@@ -364,14 +364,14 @@ ry execution</p></li>
 </div>
 </div>
 <h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
-<div id=3D"expander-1911073888" class=3D"expand-container">
-<div id=3D"expander-control-1911073888" class=3D"expand-control">
+<div id=3D"expander-1592096264" class=3D"expand-container">
+<div id=3D"expander-control-1592096264" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Notes =
 on the Performance Monitor Tool</span>
 </div>
-<div id=3D"expander-content-1911073888" class=3D"expand-content">
+<div id=3D"expander-content-1592096264" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.NotesonthePerformanceMonitorTool">A. Notes on the P=
 erformance Monitor Tool </h3>
 <ol start=3D"1">
@@ -384,14 +384,14 @@ analysis.</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-2027811868" class=3D"expand-container">
-<div id=3D"expander-control-2027811868" class=3D"expand-control">
+<div id=3D"expander-1121140009" class=3D"expand-container">
+<div id=3D"expander-control-1121140009" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">B. Memory=
  Performance Analysis</span>
 </div>
-<div id=3D"expander-content-2027811868" class=3D"expand-content">
+<div id=3D"expander-content-1121140009" class=3D"expand-content">
 <h3 id=3D"DBAServices-B.MemoryPerformanceAnalysis">B. Memory Performance An=
 alysis</h3>
 <p>Memory bottlenecks are a priority because they also affect CPU. More CPU=
@@ -529,21 +529,117 @@ ry requirement.</p></li>
 or more. The status of memory allocation can also be queried via the DMV <c=
 ode>sys.dm_os_ring_buffers</code> .</p></li>
 </ol></li>
+<li><p>Process:Private Bytes and SQL Server:Buffer Manager - Total pages</p=
+>
+<ol start=3D"1">
+<li><p>Most memory used by SQL Server goes into the buffer pool. However, t=
+here are allocations beyond the buffer pool known as <em>private bytes</em>=
+ that can cause memory pressure</p></li>
+<li><p>If you suspect this issue, compare Process:Private Bytes with SQL Se=
+rver:Buffer Manager - Total pages</p></li>
+</ol></li>
 </ol>
 <p>III. Additional Memory Monitoring Tools</p>
 <ol start=3D"1">
-<li><p>DBCC MEMORYSTATUS</p></li>
+<li><p>DBCC MEMORYSTATUS</p>
+<ol start=3D"1">
+<li><p>Returns two result sets, one showing allocations of memory and count=
+s of occurrences, another showing different memory managers and the amount =
+of memory they have consumed at the moment.</p></li>
+<li><p>If Memory Manager =E2=80=9CTarget Committed=E2=80=9D (the system req=
+uired memory) is higher than =E2=80=9CCurrent Committed=E2=80=9D (the memor=
+y currently provided), there may be buffer cache problems.</p>
+<ol start=3D"1">
+<li><p>Figure out which process is currently using the most memory using <c=
+ode>sys.dm_os_performance_counters</code></p></li>
+</ol></li>
+</ol></li>
 <li><p>Dynamic Management Views</p>
 <ol start=3D"1">
-<li><p>Sys.dm_os_memory_brokers</p></li>
-<li><p>Sys.dm_os_memory_clerks</p></li>
-<li><p>Sys.dm_os_ring_buffers</p></li>
-<li><p>Sys.dm_db_xtp_table_memory_stats</p></li>
-<li><p>Sys.dm_xtp_system_memory_consumers</p></li>
+<li><p>Sys.dm_os_memory_brokers</p>
+<ol start=3D"1">
+<li><p>While most memory is allocated to the buffer cache, this DMV exposes=
+ other processes that also consume memory</p></li>
+</ol></li>
+<li><p>Sys.dm_os_memory_clerks</p>
+<ol start=3D"1">
+<li><p>If perfmon counter Process:Private Bytes is high, use this to determ=
+ine how memory is being allocated</p></li>
+<li><p>For in-memory OLTP storage, use <code>sys.dm_db_xtp_table_memory_sta=
+ts</code> instead</p></li>
+</ol></li>
+<li><p>Sys.dm_os_ring_buffers</p>
+<ol start=3D"1">
+<li><p>Not documented in Books Online, so it=E2=80=99s subject to change or=
+ removal</p></li>
+<li><p>Outputs as XML, so XQuery may be needed to digest</p></li>
+<li><p>A ring buffer is simply a recorded response to a notification. We ca=
+n use it to see changes in memory usage</p></li>
+<li><p>Main ring buffers associated with memory:</p>
+<ol start=3D"1">
+<li><p>RING_BUFFER_RESOURCE_MONITOR</p>
+<ol start=3D"1">
+<li><p>Records changes in memory allocation</p></li>
+<li><p>Useful for identifying external memory pressure</p></li>
+</ol></li>
+<li><p>RING_BUFFER_OOM (out of memory)</p>
+<ol start=3D"1">
+<li><p>Records out-of-memory issues</p></li>
+<li><p>Can see what kind of memory action failed</p></li>
+</ol></li>
+<li><p>RING_BUFFER_MEMORY_BROKER</p>
+<ol start=3D"1">
+<li><p>Identifies internal memory pressure, which forces processes to relea=
+se memory for the buffer</p></li>
+</ol></li>
+<li><p>RING_BUFFER_BUFFER_POOL</p>
+<ol start=3D"1">
+<li><p>Records when the buffer pool itself is running out of memory</p>
+<ol start=3D"1">
+<li><p>This is a general indication of memory pressure</p></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+<li><p>Sys.dm_db_xtp_table_memory_stats</p>
+<ol start=3D"1">
+<li><p>Shows memory used by tables and indexes created in-memory</p></li>
+<li><p>Will need to query <code>sys.objects</code> to get the actual names =
+of tables or indexes</p></li>
+</ol></li>
+<li><p>Sys.dm_xtp_system_memory_consumers</p>
+<ol start=3D"1">
+<li><p>Shows system structures used to manage the internals of the memory e=
+ngine (as opposed to the amount of data loaded into memory)</p></li>
+<li><p>Look for the allocated and used bytes shown for each of the manageme=
+nt structures</p></li>
+</ol></li>
 </ol></li>
 </ol>
 <p>IV. Memory Bottleneck Resolutions</p>
 <ol start=3D"1">
+<li><p>When there is high memory stress, indicated by a large number of har=
+d page faults, this general flowchart can be used to resolve it:</p>
+<ol start=3D"1">
+<li><p>Check if Memory:Available Mbytes is low</p>
+<ol start=3D"1">
+<li><p>If yes, it=E2=80=99s possible there are external memory problems. Tr=
+oubleshoot in operating system.</p></li>
+</ol></li>
+<li><p>In <code>DBCC MEMORYSTATUS</code>, check if COMMITTED is above TARGE=
+T</p>
+<ol start=3D"1">
+<li><p>If yes, there is internal memory pressure. Identify large consumers =
+using <code>sys.dm_os_memory_brokers</code></p></li>
+</ol></li>
+<li><p>Check if Process:Private Bytes is high</p>
+<ol start=3D"1">
+<li><p>If yes, there is internal memory pressure other than the buffer. Ide=
+ntify with <code>sys.dm_os_memory_clerks</code></p></li>
+</ol></li>
+<li><p>Finally, check for memory errors in the OS log and SQL Server log</p=
+></li>
+</ol></li>
 <li><p>Optimizing Application Workload</p></li>
 <li><p>Allocating More Memory to SQL Server</p></li>
 <li><p>Moving In-Memory Tables Back to Standard Storage</p></li>
@@ -563,14 +659,14 @@ l=3D"nofollow">https://learning.oreilly.com/library/view/sql-server-2017/97=
 </div>
 <h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
 ck Tools</h2>
-<div id=3D"expander-1225017472" class=3D"expand-container">
-<div id=3D"expander-control-1225017472" class=3D"expand-control">
+<div id=3D"expander-233725723" class=3D"expand-container">
+<div id=3D"expander-control-233725723" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1225017472" class=3D"expand-content">
+<div id=3D"expander-content-233725723" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
 =E2=80=99s First Responder Kit</h3>
 <p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
@@ -794,7 +890,7 @@ GO</pre>=20
     </div>
 </body>
 </html>
-------=_Part_426_39194670.1679418312402
+------=_Part_74_814956440.1679507931778
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
@@ -839,7 +935,7 @@ Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
 j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
 HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
 AAAAAElFTkSuQmCC
-------=_Part_426_39194670.1679418312402
+------=_Part_74_814956440.1679507931778
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -849,4 +945,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_426_39194670.1679418312402--
+------=_Part_74_814956440.1679507931778--
