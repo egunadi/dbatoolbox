@@ -1,11 +1,11 @@
-Date: Wed, 22 Mar 2023 17:58:51 +0000 (UTC)
-Message-ID: <1710313513.75.1679507931778@19b316647233>
+Date: Fri, 24 Mar 2023 23:12:43 +0000 (UTC)
+Message-ID: <294320972.23.1679699563585@667eb561f111>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_74_814956440.1679507931778"
+	boundary="----=_Part_22_1166662034.1679699563585"
 
-------=_Part_74_814956440.1679507931778
+------=_Part_22_1166662034.1679699563585
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -234,14 +234,14 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
 uning Overview</h2>
-<div id=3D"expander-1008069994" class=3D"expand-container">
-<div id=3D"expander-control-1008069994" class=3D"expand-control">
+<div id=3D"expander-1092036760" class=3D"expand-container">
+<div id=3D"expander-control-1092036760" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1008069994" class=3D"expand-content">
+<div id=3D"expander-content-1092036760" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
 lems)">A. Most Common Performance Issues (64% of all performance problems)<=
 /h3>
@@ -364,14 +364,14 @@ ry execution</p></li>
 </div>
 </div>
 <h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
-<div id=3D"expander-1592096264" class=3D"expand-container">
-<div id=3D"expander-control-1592096264" class=3D"expand-control">
+<div id=3D"expander-722881424" class=3D"expand-container">
+<div id=3D"expander-control-722881424" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Notes =
 on the Performance Monitor Tool</span>
 </div>
-<div id=3D"expander-content-1592096264" class=3D"expand-content">
+<div id=3D"expander-content-722881424" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.NotesonthePerformanceMonitorTool">A. Notes on the P=
 erformance Monitor Tool </h3>
 <ol start=3D"1">
@@ -384,14 +384,14 @@ analysis.</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-1121140009" class=3D"expand-container">
-<div id=3D"expander-control-1121140009" class=3D"expand-control">
+<div id=3D"expander-18976266" class=3D"expand-container">
+<div id=3D"expander-control-18976266" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">B. Memory=
  Performance Analysis</span>
 </div>
-<div id=3D"expander-content-1121140009" class=3D"expand-content">
+<div id=3D"expander-content-18976266" class=3D"expand-content">
 <h3 id=3D"DBAServices-B.MemoryPerformanceAnalysis">B. Memory Performance An=
 alysis</h3>
 <p>Memory bottlenecks are a priority because they also affect CPU. More CPU=
@@ -640,14 +640,87 @@ ntify with <code>sys.dm_os_memory_clerks</code></p></li>
 <li><p>Finally, check for memory errors in the OS log and SQL Server log</p=
 ></li>
 </ol></li>
-<li><p>Optimizing Application Workload</p></li>
-<li><p>Allocating More Memory to SQL Server</p></li>
-<li><p>Moving In-Memory Tables Back to Standard Storage</p></li>
-<li><p>Increasing System Memory</p></li>
-<li><p>Changing from a 32-Bit to a 64-Bit Processor</p></li>
-<li><p>Compressing Data</p></li>
-<li><p>Enabling 3GB of Process Address Space</p></li>
-<li><p>Addressing Fragmentation</p></li>
+<li><p>Optimizing Application Workload</p>
+<ol start=3D"1">
+<li><p>Capture all SQL queries using Extended Events (Chapter 6) or Query S=
+tore (Chapter 11), then group the output on the <code>Reads</code> column</=
+p>
+<ol start=3D"1">
+<li><p>Queries with the highest number of logical reads contribute most oft=
+en to memory stress</p></li>
+</ol></li>
+<li><p><code>sys.dm_exec_query_stats</code> can also be used for a quick an=
+d easy analysis, but since it=E2=80=99s based on cache it may not be as acc=
+urate as EE</p></li>
+</ol></li>
+<li><p>Allocating More Memory to SQL Server</p>
+<ol start=3D"1">
+<li><p>Hard page faults mean that the memory requirement of SQL Server is m=
+ore than the max server memory value</p></li>
+<li><p>In this case, the max server memory configuration should be increase=
+d accordingly (assuming enough physical memory is available in the system)<=
+/p></li>
+<li><p>If using in-memory OLTP storage, the memory percentages allocated to=
+ the resource pools defined may need to be adjusted</p></li>
+</ol></li>
+<li><p>Moving In-Memory Tables Back to Standard Storage</p>
+<ol start=3D"1">
+<li><p>Keep an eye on general query performance metrics for in-memory table=
+s since not all tables or workloads benefit from them</p></li>
+<li><p>See Chapter 24 for more details</p></li>
+</ol></li>
+<li><p>Increasing System Memory</p>
+<ol start=3D"1">
+<li><p>To identify which queries are using more memory, query <code>sys.dm_=
+exec_query_memory_grants</code> to see I/O use</p>
+<ol start=3D"1">
+<li><p>Be careful running this query on systems already under memory stress=
+</p></li>
+</ol></li>
+<li><p>If no queries stand out, the easiest and quickest resolution may be =
+to simply increase system memory by purchasing and installing more</p></li>
+</ol></li>
+<li><p> Changing from a 32-Bit to a 64-Bit Processor</p>
+<ol start=3D"1">
+<li><p>Since SQL Server 2012, a 32-bit instance of SQL Server is limited to=
+ accessing only 3GB of memory</p>
+<ol start=3D"1">
+<li><p>Because of this limitation, only small systems should be running 32-=
+bit versions</p></li>
+</ol></li>
+<li><p>64-bit processors can access up to 24TB depending on the version of =
+the OS and the specific processor type</p></li>
+<li><p>SQL Server 2017 does not support the x86 chip set and must be run on=
+ a 64-bit processor</p></li>
+</ol></li>
+<li><p>Compressing Data</p>
+<ol start=3D"1">
+<li><p>Less system memory is used because compressed data remains compresse=
+d in memory</p></li>
+<li><p>There is a CPU cost, so keep an eye on that to be sure you=E2=80=99r=
+e not just transferring stress</p></li>
+<li><p>Depending on the nature of your data, there may not be much compress=
+ion</p></li>
+</ol></li>
+<li><p>Enabling 3GB of Process Address Space</p>
+<ol start=3D"1">
+<li><p>For 32-bit OS systems with 16GB of physical memory or less, less mem=
+ory can be allocated to the OS and more to applications. This is done by sp=
+ecifying a /3GB switch in the <code>boot.ini</code> file</p>
+<ol start=3D"1">
+<li><p>Not applicable to SQL Server 2017+</p></li>
+</ol></li>
+</ol></li>
+<li><p>Addressing Fragmentation</p>
+<ol start=3D"1">
+<li><p>While fragmentation may affect storage, it also can affect memory</p=
+>
+<ol start=3D"1">
+<li><p>Fragmented pages have lots of empty space, all of which are retrieve=
+d from disk and into memory</p></li>
+</ol></li>
+<li><p>See Chapter 17 for details</p></li>
+</ol></li>
 </ol>
 <ul>
 <li><p><a class=3D"external-link" href=3D"https://learning.oreilly.com/libr=
@@ -657,16 +730,30 @@ l=3D"nofollow">https://learning.oreilly.com/library/view/sql-server-2017/97=
 </ul>
 </div>
 </div>
+<div id=3D"expander-1984291368" class=3D"expand-container">
+<div id=3D"expander-control-1984291368" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">C. Disk P=
+erformance Analysis</span>
+</div>
+<div id=3D"expander-content-1984291368" class=3D"expand-content">
+<h3 id=3D"DBAServices-C.DiskPerformanceAnalysis">C. Disk Performance Analys=
+is</h3>
+<p>Although memory and CPUs have become faster and faster, disks and the di=
+sk subsystem remains one of the slowest parts of any computing system.</p>
+</div>
+</div>
 <h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
 ck Tools</h2>
-<div id=3D"expander-233725723" class=3D"expand-container">
-<div id=3D"expander-control-233725723" class=3D"expand-control">
+<div id=3D"expander-418314599" class=3D"expand-container">
+<div id=3D"expander-control-418314599" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-233725723" class=3D"expand-content">
+<div id=3D"expander-content-418314599" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
 =E2=80=99s First Responder Kit</h3>
 <p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
@@ -890,7 +977,7 @@ GO</pre>=20
     </div>
 </body>
 </html>
-------=_Part_74_814956440.1679507931778
+------=_Part_22_1166662034.1679699563585
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
@@ -935,7 +1022,7 @@ Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
 j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
 HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
 AAAAAElFTkSuQmCC
-------=_Part_74_814956440.1679507931778
+------=_Part_22_1166662034.1679699563585
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -945,4 +1032,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_74_814956440.1679507931778--
+------=_Part_22_1166662034.1679699563585--
