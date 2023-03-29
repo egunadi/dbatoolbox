@@ -1,11 +1,11 @@
-Date: Tue, 28 Mar 2023 20:51:15 +0000 (UTC)
-Message-ID: <614355437.89.1680036675581@8fc750e129fb>
+Date: Wed, 29 Mar 2023 00:12:17 +0000 (UTC)
+Message-ID: <230945040.105.1680048737451@d9c958b1fcc7>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_88_7560808.1680036675580"
+	boundary="----=_Part_104_253158601.1680048737451"
 
-------=_Part_88_7560808.1680036675580
+------=_Part_104_253158601.1680048737451
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -234,14 +234,14 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
 uning Overview</h2>
-<div id=3D"expander-316117725" class=3D"expand-container">
-<div id=3D"expander-control-316117725" class=3D"expand-control">
+<div id=3D"expander-46541905" class=3D"expand-container">
+<div id=3D"expander-control-46541905" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-316117725" class=3D"expand-content">
+<div id=3D"expander-content-46541905" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
 lems)">A. Most Common Performance Issues (64% of all performance problems)<=
 /h3>
@@ -364,14 +364,14 @@ ry execution</p></li>
 </div>
 </div>
 <h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
-<div id=3D"expander-1085314736" class=3D"expand-container">
-<div id=3D"expander-control-1085314736" class=3D"expand-control">
+<div id=3D"expander-1605840331" class=3D"expand-container">
+<div id=3D"expander-control-1605840331" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Notes =
 on the Performance Monitor Tool</span>
 </div>
-<div id=3D"expander-content-1085314736" class=3D"expand-content">
+<div id=3D"expander-content-1605840331" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.NotesonthePerformanceMonitorTool">A. Notes on the P=
 erformance Monitor Tool </h3>
 <ol start=3D"1">
@@ -384,14 +384,14 @@ analysis.</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-2136405645" class=3D"expand-container">
-<div id=3D"expander-control-2136405645" class=3D"expand-control">
+<div id=3D"expander-1127618786" class=3D"expand-container">
+<div id=3D"expander-control-1127618786" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">B. Memory=
  Performance Analysis</span>
 </div>
-<div id=3D"expander-content-2136405645" class=3D"expand-content">
+<div id=3D"expander-content-1127618786" class=3D"expand-content">
 <h3 id=3D"DBAServices-B.MemoryPerformanceAnalysis">B. Memory Performance An=
 alysis</h3>
 <p>Memory bottlenecks are a priority because they also affect CPU. More CPU=
@@ -730,14 +730,14 @@ l=3D"nofollow">https://learning.oreilly.com/library/view/sql-server-2017/97=
 </ul>
 </div>
 </div>
-<div id=3D"expander-1181160859" class=3D"expand-container">
-<div id=3D"expander-control-1181160859" class=3D"expand-control">
+<div id=3D"expander-1986304864" class=3D"expand-container">
+<div id=3D"expander-control-1986304864" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">C. Disk P=
 erformance Analysis</span>
 </div>
-<div id=3D"expander-content-1181160859" class=3D"expand-content">
+<div id=3D"expander-content-1986304864" class=3D"expand-content">
 <h3 id=3D"DBAServices-C.DiskPerformanceAnalysis">C. Disk Performance Analys=
 is</h3>
 <p>Although memory and CPUs have become faster and faster, disks and the di=
@@ -796,20 +796,115 @@ klog shown by the Disk Queue Length counters</p></li>
 <ol start=3D"1">
 <li><p>These track the average amount of time it takes in milliseconds to r=
 ead from or write to a disk</p></li>
+<li><p>Brent Ozar recommends these be less than 100 ms, whereas Grant Fritc=
+hey recommends less than 10 ms </p></li>
+<li><p>In terms of measuring performance of the I/O system, these are the s=
+ingle best measure</p>
+<ol start=3D"1">
+<li><p>They will not tell which query or queries are causing problems, but =
+rather how the I/O system is behaving as a whole</p></li>
 </ol></li>
+</ol></li>
+<li><p>SQLServer:Buffer Manager - Page reads/sec and Page writes/sec</p>
+<ol start=3D"1">
+<li><p>Knowing the pages being moved into and out of the buffer manager ind=
+icates whether the I/O (shown in Avg. Disk Sec/Read and Avg. Disk Sec/Write=
+) is within SQL Server</p>
+<ol start=3D"1">
+<li><p>This measure is needed to see the complete picture</p></li>
+</ol></li>
+</ol></li>
+</ol>
+<h4 id=3D"DBAServices-II.DynamicManagementObjects(DMOs)">II. Dynamic Manage=
+ment Objects (DMOs)</h4>
+<ol start=3D"1">
+<li><p>Sys.dm_io_virtual_file_stats</p>
+<ol start=3D"1">
+<li><p>Returns information about the files that make up a database</p>
+<ol start=3D"1">
+<li><p>Can see which file (log or data) is being pegged</p></li>
+</ol></li>
+<li><p>Called like so: <code>SELECT * FROM sys.dm_io_virtual_file_stats(DB_=
+ID('AdventureWorks2017'), 2) AS divfs;</code></p></li>
+<li><p>Stall data is the time that users are waiting on different I/O opera=
+tions</p>
+<ol start=3D"1">
+<li><p><code>io_stall_read_ms</code> represents the amount of time in milli=
+seconds that users are waiting for reads</p></li>
+<li><p><code>io_stall_write_ms</code> shows the amount of time that write o=
+perations have had to wait on this file within the database</p></li>
+<li><p><code>io_stall</code> represents all waits on I/O for the file</p></=
+li>
+</ol></li>
+<li><p>To put stall data in perspective, compare it with <code>sample_ms</c=
+ode>, which shows the amount of time measured</p></li>
+<li><p>Once confirmed a file is pegged, further investigate using Paul Rand=
+al=E2=80=99s wait statistics query and Perfmon metrics</p></li>
+</ol></li>
+<li><p>Sys.dm_os_wait_stats</p>
+<ol start=3D"1">
+<li><p>Shows </p>
+<ol start=3D"1">
+<li><p>Aggregate information about waits on the system (total wait time)</p=
+></li>
+<li><p>A count of the waits that have occurred</p></li>
+<li><p>A max value for these waits</p>
+<ul>
+<li><p>Useful since it=E2=80=99s possible that a single wait could have cau=
+sed the majority of the wait time</p></li>
+</ul></li>
+</ol></li>
+<li><p>Queried like so: <code>SELECT * FROM sys.dm_os_wait_stats AS dows WH=
+ERE wait_type LIKE 'PAGEIOLATCH%';</code></p>
+<ol start=3D"1">
+<li><p>I/O latch operations cause waits to occur and indicates a bottleneck=
+ in I/O</p></li>
+<li><p>Aside from PAGEIOLATCH, other processes of interest are</p>
+<ul>
+<li><p>WRITELOG</p></li>
+<li><p>LOGBUFFER</p></li>
+<li><p>ASYNC_IO_COMPLETION</p></li>
+</ul></li>
+</ol></li>
+<li><p>Values must be compared to a baseline </p></li>
+<li><p>Can also be seen in the Query Store (Chapter 11)</p></li>
+</ol></li>
+</ol>
+<h4 id=3D"DBAServices-III.DiscBottleneckResolutions">III. Disc Bottleneck R=
+esolutions</h4>
+<ol start=3D"1">
+<li><p>Optimizing application workload</p>
+<ol start=3D"1">
+<li><p>Capture all SQL queries using Extended Events (Chapter 6) or Query S=
+tore (Chapter 11), then group the output on the <code>Reads</code> or <code=
+>Writes</code> column</p>
+<ol start=3D"1">
+<li><p>Queries with the highest number of logical reads or writes will be t=
+he ones that cause a great deal of disk I/O</p></li>
+</ol></li>
+</ol></li>
+<li><p>Using a faster I/O path</p></li>
+<li><p>Using a RAID array</p></li>
+<li><p>Using a SAN system</p></li>
+<li><p>Using solid-state drives</p></li>
+<li><p>Aligning disks properly</p></li>
+<li><p>Adding system memory</p></li>
+<li><p>Creating multiple files and filegroups</p></li>
+<li><p>Moving the log files to a separate physical drive</p></li>
+<li><p>Using partitioned tables</p></li>
 </ol>
 </div>
 </div>
 <h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
 ck Tools</h2>
-<div id=3D"expander-840288282" class=3D"expand-container">
-<div id=3D"expander-control-840288282" class=3D"expand-control">
+<div id=3D"expander-801218746" class=3D"expand-container">
+<div id=3D"expander-control-801218746" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-840288282" class=3D"expand-content">
+<div id=3D"expander-content-801218746" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
 =E2=80=99s First Responder Kit</h3>
 <p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
@@ -1033,7 +1128,7 @@ GO</pre>=20
     </div>
 </body>
 </html>
-------=_Part_88_7560808.1680036675580
+------=_Part_104_253158601.1680048737451
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
@@ -1078,7 +1173,7 @@ Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
 j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
 HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
 AAAAAElFTkSuQmCC
-------=_Part_88_7560808.1680036675580
+------=_Part_104_253158601.1680048737451
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -1088,4 +1183,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_88_7560808.1680036675580--
+------=_Part_104_253158601.1680048737451--
