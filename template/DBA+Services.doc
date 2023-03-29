@@ -1,11 +1,11 @@
-Date: Wed, 29 Mar 2023 00:12:17 +0000 (UTC)
-Message-ID: <230945040.105.1680048737451@d9c958b1fcc7>
+Date: Wed, 29 Mar 2023 19:20:39 +0000 (UTC)
+Message-ID: <1980687138.25.1680117639075@5187ef634e17>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_104_253158601.1680048737451"
+	boundary="----=_Part_24_309880981.1680117639075"
 
-------=_Part_104_253158601.1680048737451
+------=_Part_24_309880981.1680117639075
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -234,14 +234,14 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
 uning Overview</h2>
-<div id=3D"expander-46541905" class=3D"expand-container">
-<div id=3D"expander-control-46541905" class=3D"expand-control">
+<div id=3D"expander-1391419878" class=3D"expand-container">
+<div id=3D"expander-control-1391419878" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-46541905" class=3D"expand-content">
+<div id=3D"expander-content-1391419878" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
 lems)">A. Most Common Performance Issues (64% of all performance problems)<=
 /h3>
@@ -364,14 +364,14 @@ ry execution</p></li>
 </div>
 </div>
 <h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
-<div id=3D"expander-1605840331" class=3D"expand-container">
-<div id=3D"expander-control-1605840331" class=3D"expand-control">
+<div id=3D"expander-1878168474" class=3D"expand-container">
+<div id=3D"expander-control-1878168474" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Notes =
 on the Performance Monitor Tool</span>
 </div>
-<div id=3D"expander-content-1605840331" class=3D"expand-content">
+<div id=3D"expander-content-1878168474" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.NotesonthePerformanceMonitorTool">A. Notes on the P=
 erformance Monitor Tool </h3>
 <ol start=3D"1">
@@ -384,14 +384,14 @@ analysis.</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-1127618786" class=3D"expand-container">
-<div id=3D"expander-control-1127618786" class=3D"expand-control">
+<div id=3D"expander-1951174342" class=3D"expand-container">
+<div id=3D"expander-control-1951174342" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">B. Memory=
  Performance Analysis</span>
 </div>
-<div id=3D"expander-content-1127618786" class=3D"expand-content">
+<div id=3D"expander-content-1951174342" class=3D"expand-content">
 <h3 id=3D"DBAServices-B.MemoryPerformanceAnalysis">B. Memory Performance An=
 alysis</h3>
 <p>Memory bottlenecks are a priority because they also affect CPU. More CPU=
@@ -730,14 +730,14 @@ l=3D"nofollow">https://learning.oreilly.com/library/view/sql-server-2017/97=
 </ul>
 </div>
 </div>
-<div id=3D"expander-1986304864" class=3D"expand-container">
-<div id=3D"expander-control-1986304864" class=3D"expand-control">
+<div id=3D"expander-669117796" class=3D"expand-container">
+<div id=3D"expander-control-669117796" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">C. Disk P=
 erformance Analysis</span>
 </div>
-<div id=3D"expander-content-1986304864" class=3D"expand-content">
+<div id=3D"expander-content-669117796" class=3D"expand-content">
 <h3 id=3D"DBAServices-C.DiskPerformanceAnalysis">C. Disk Performance Analys=
 is</h3>
 <p>Although memory and CPUs have become faster and faster, disks and the di=
@@ -883,28 +883,190 @@ tore (Chapter 11), then group the output on the <code>Reads</code> or <code=
 he ones that cause a great deal of disk I/O</p></li>
 </ol></li>
 </ol></li>
-<li><p>Using a faster I/O path</p></li>
-<li><p>Using a RAID array</p></li>
-<li><p>Using a SAN system</p></li>
-<li><p>Using solid-state drives</p></li>
-<li><p>Aligning disks properly</p></li>
-<li><p>Adding system memory</p></li>
-<li><p>Creating multiple files and filegroups</p></li>
-<li><p>Moving the log files to a separate physical drive</p></li>
-<li><p>Using partitioned tables</p></li>
+<li><p>Using a faster I/O path</p>
+<ol start=3D"1">
+<li><p>Upgrade disk drives</p></li>
+</ol></li>
+<li><p>Using a RAID array</p>
+<ol start=3D"1">
+<li><p>RAID 0: Striping with no fault tolerance</p>
+<ol start=3D"1">
+<li><p>The failure of any disk in the array will cause complete data loss i=
+n the disk subsystem. Therefore, this should not be used for any database f=
+iles, except perhaps <code>tempdb</code>.</p></li>
+<li><p><code>I/Os per disk =3D (Reads + Writes) / Number of disks in the ar=
+ray</code></p></li>
+</ol></li>
+<li><p>RAID 1: Mirroring</p>
+<ol start=3D"1">
+<li><p>Can be used where the complete data can be accommodated in one disk =
+only</p></li>
+<li><p><code>master</code> and <code>msdb</code> are usually small enough t=
+o use RAID 1</p></li>
+<li><p><code>I/Os per disk =3D (Reads + 2 X Writes) / 2</code> </p></li>
+</ol></li>
+<li><p>RAID 5: Striping with parity</p>
+<ol start=3D"1">
+<li><p>An acceptable option in many cases. It provides reasonable fault tol=
+erance by using only one extra disk to save the computed parity of the data=
+ in other disks</p></li>
+<li><p><code>I/Os per disk =3D (Reads + 4 X Writes) / Number of disks in th=
+e array</code></p>
+<ul>
+<li><p>Four I/Os are needed for each write request since read and write I/O=
+s are needed for both the data and parity</p>
+<ul>
+<li><p>Due to the magnification of write operations, use RAID 5 on read-onl=
+y volumes or volumes with a low percentage of disk writes (10 percent or le=
+ss)</p></li>
+</ul></li>
+<li><p>This means, where possible, transactional log files should not be pl=
+aced on a RAID 5 array</p></li>
+<li><p>Data files should be fine since write operations are intermittent an=
+d batched together to improve efficiency</p></li>
+</ul></li>
+</ol></li>
+<li><p>RAID 6: RAID 5 with an extra parity block</p>
+<ol start=3D"1">
+<li><p>Same performance as RAID 5 with a little overhead for writes</p></li=
+>
+</ol></li>
+<li><p>RAID 1+0 (RAID 10): Striping with mirroring</p>
+<ol start=3D"1">
+<li><p>Much more expensive than RAID 5</p></li>
+<li><p>Should be used where a large volume is required to save data and mor=
+e than 10 percent of disk requests are writes</p></li>
+<li><p>Read performance is also very good since it supports <em>split seeks=
+</em> (which distributes the read operations between disks)</p></li>
+<li><p>Use RAID 1+0 wherever performance is critical</p></li>
+<li><p><code>I/Os per disk =3D (Read + 2 X Writes) / Number of disks in the=
+ array</code></p></li>
+</ol></li>
+</ol></li>
+<li><p>Using (or removing) a SAN system</p>
+<ol start=3D"1">
+<li><p>Because of their size, complexity, and cost, SANs are not necessaril=
+y a good solution in all cases</p>
+<ol start=3D"1">
+<li><p>In some cases the solution may be going to local disks and getting r=
+id of the SAN</p></li>
+</ol></li>
+<li><p>The principal strength of SAN systems is not reflected in performanc=
+e but rather in the areas of scalability, availability, and maintenance</p>
+<ol start=3D"1">
+<li><p>Depending on the amount of data, direct-attached storage (DAS) can r=
+un faster</p></li>
+</ol></li>
+<li><p>SAN devices can also use Internet Small Computing System Interface (=
+iSCSI) to connect a device to a network device, which acts as locally attac=
+hed storage (and works nearly as fast)</p></li>
+</ol></li>
+<li><p>Using solid-state drives</p>
+<ol start=3D"1">
+<li><p>These drives use memory instead of spinning disks to store informati=
+on </p></li>
+<li><p>They=E2=80=99re quiet, lower power, and supremely fast, but also qui=
+te expensive</p></li>
+<li><p>You can also put SSDs into arrays through SAN or RAID, further incre=
+asing performance</p></li>
+<li><p>For a hardware-only solution, implementing SSDs is probably the best=
+ operation you can do for a system that is I/O bound</p></li>
+</ol></li>
+<li><p>Aligning disks properly</p>
+<ol start=3D"1">
+<li><p>Windows Server 2016 aligns disks as part of the install process, so =
+modern servers should not be running into this issue</p></li>
+<li><p>When moving volumes from a pre-Windows Server 2008 system, they need=
+ to be reformatted to get the alignment set appropriately</p></li>
+<li><p>Data on disk is stored as a series of <em>sectors </em>(or <em>block=
+s</em>), which in turn as stored on tracks. Partitions should be aligned so=
+ you=E2=80=99re storing the correct number of sectors for each track.</p></=
+li>
+</ol></li>
+<li><p>Adding system memory</p>
+<ol start=3D"1">
+<li><p>The less memory the system has, the more the disk subsystem is used<=
+/p></li>
+</ol></li>
+<li><p>Creating multiple files and filegroups (for data files)</p>
+<ol start=3D"1">
+<li><p>By separating tables that are frequently joined into separate filegr=
+oups and then putting files within the filegroups on separate disks or LUNS=
+, the separated I/O paths can result in improved performance</p>
+<ol start=3D"1">
+<li><p>Be aware that this can also lead to worse performance if the disks a=
+re not properly configured or get overloaded </p>
+<ul>
+<li><p>Having more disks does not automatically mean more I/O</p></li>
+</ul></li>
+</ol></li>
+<li><p>If multiple filegroups are to be used, it is recommended that the pr=
+imary filegroup be used only for system objects, and secondary filegroups b=
+e used only for user objects</p>
+<ol start=3D"1">
+<li><p>This approach improves the ability to recover from corruption</p></l=
+i>
+</ol></li>
+</ol></li>
+<li><p>Moving the log files to a separate physical drive</p>
+<ol start=3D"1">
+<li><p>Transaction log files should always, when possible, be located on a =
+separate hard disk drive from all other database files</p>
+<ol start=3D"1">
+<li><p>Transaction log activity primarily consists of sequential write I/O<=
+/p>
+<ul>
+<li><p>Data files, on the other hand, leans more towards nonsequential (or =
+random) I/O</p></li>
+</ul></li>
+<li><p>Having a single transaction log file on a dedicated hard disk can re=
+sult in I/O performance improvements because the disk can concentrate on se=
+quential I/O</p>
+<ul>
+<li><p>Multiple log files on a single disk brings you back to random I/O ag=
+ain</p></li>
+<li><p>The idea is having the physical disk spindle head move as little as =
+possible</p>
+<ul>
+<li><p>While this doesn=E2=80=99t apply to SSD disk, distribution the work =
+to multiple locations will still improve performance</p></li>
+</ul></li>
+</ul></li>
+</ol></li>
+<li><p>An exception to this rule is for read-only databases, where no write=
+ operations are performed on the log file</p></li>
+<li><p>As a general rule of them, try to isolate files with high I/O from o=
+ther files with high I/O</p>
+<ol start=3D"1">
+<li><p>To identify these files, use <code>sys.dm_io_virtual_file_stats</cod=
+e></p></li>
+</ol></li>
+</ol></li>
+<li><p>Using partitioned tables</p>
+<ol start=3D"1">
+<li><p>While partitioning is primarily a tool for making data management ea=
+sier, it can increase speed because queries against well-defined partitions=
+ only access files with the partitions of interest</p>
+<ol start=3D"1">
+<li><p>Ex. If data is partitioned by month, months in the past can be set t=
+o read-only and compressed</p></li>
+</ol></li>
+<li><p>This should not be relied as the primary method of enhancing perform=
+ance</p></li>
+</ol></li>
 </ol>
 </div>
 </div>
 <h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
 ck Tools</h2>
-<div id=3D"expander-801218746" class=3D"expand-container">
-<div id=3D"expander-control-801218746" class=3D"expand-control">
+<div id=3D"expander-883447821" class=3D"expand-container">
+<div id=3D"expander-control-883447821" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-801218746" class=3D"expand-content">
+<div id=3D"expander-content-883447821" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
 =E2=80=99s First Responder Kit</h3>
 <p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
@@ -1128,7 +1290,7 @@ GO</pre>=20
     </div>
 </body>
 </html>
-------=_Part_104_253158601.1680048737451
+------=_Part_24_309880981.1680117639075
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
@@ -1173,7 +1335,7 @@ Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
 j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
 HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
 AAAAAElFTkSuQmCC
-------=_Part_104_253158601.1680048737451
+------=_Part_24_309880981.1680117639075
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -1183,4 +1345,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_104_253158601.1680048737451--
+------=_Part_24_309880981.1680117639075--
