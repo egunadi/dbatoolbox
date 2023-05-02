@@ -1,11 +1,11 @@
-Date: Wed, 29 Mar 2023 19:20:39 +0000 (UTC)
-Message-ID: <1980687138.25.1680117639075@5187ef634e17>
+Date: Tue, 2 May 2023 00:30:35 +0000 (UTC)
+Message-ID: <1356151760.13.1682987435306@3bae84709b9a>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_24_309880981.1680117639075"
+	boundary="----=_Part_12_703352549.1682987435305"
 
-------=_Part_24_309880981.1680117639075
+------=_Part_12_703352549.1682987435305
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -82,8 +82,8 @@ o much for printouts */
 
     body, #full-height-container, #main, #page, #content, .has-personal-sid=
 ebar #content {
-        background: #fff !important;
-        color: #000 !important;
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
         border: 0 !important;
         width: 100% !important;
         height: auto !important;
@@ -94,7 +94,7 @@ ebar #content {
     }
 
     a, a:link, a:visited, a:focus, a:hover, a:active {
-        color: #000;
+        color: var(--ds-text, #000);
     }
 
     #content h1,
@@ -234,14 +234,14 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
 uning Overview</h2>
-<div id=3D"expander-1391419878" class=3D"expand-container">
-<div id=3D"expander-control-1391419878" class=3D"expand-control">
+<div id=3D"expander-622589386" class=3D"expand-container">
+<div id=3D"expander-control-622589386" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1391419878" class=3D"expand-content">
+<div id=3D"expander-content-622589386" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
 lems)">A. Most Common Performance Issues (64% of all performance problems)<=
 /h3>
@@ -364,14 +364,14 @@ ry execution</p></li>
 </div>
 </div>
 <h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
-<div id=3D"expander-1878168474" class=3D"expand-container">
-<div id=3D"expander-control-1878168474" class=3D"expand-control">
+<div id=3D"expander-980844387" class=3D"expand-container">
+<div id=3D"expander-control-980844387" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Notes =
 on the Performance Monitor Tool</span>
 </div>
-<div id=3D"expander-content-1878168474" class=3D"expand-content">
+<div id=3D"expander-content-980844387" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.NotesonthePerformanceMonitorTool">A. Notes on the P=
 erformance Monitor Tool </h3>
 <ol start=3D"1">
@@ -384,14 +384,14 @@ analysis.</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-1951174342" class=3D"expand-container">
-<div id=3D"expander-control-1951174342" class=3D"expand-control">
+<div id=3D"expander-131827058" class=3D"expand-container">
+<div id=3D"expander-control-131827058" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">B. Memory=
  Performance Analysis</span>
 </div>
-<div id=3D"expander-content-1951174342" class=3D"expand-content">
+<div id=3D"expander-content-131827058" class=3D"expand-content">
 <h3 id=3D"DBAServices-B.MemoryPerformanceAnalysis">B. Memory Performance An=
 alysis</h3>
 <p>Memory bottlenecks are a priority because they also affect CPU. More CPU=
@@ -539,7 +539,8 @@ here are allocations beyond the buffer pool known as <em>private bytes</em>=
 rver:Buffer Manager - Total pages</p></li>
 </ol></li>
 </ol>
-<p>III. Additional Memory Monitoring Tools</p>
+<h4 id=3D"DBAServices-III.AdditionalMemoryMonitoringTools">III. Additional =
+Memory Monitoring Tools</h4>
 <ol start=3D"1">
 <li><p>DBCC MEMORYSTATUS</p>
 <ol start=3D"1">
@@ -616,7 +617,8 @@ nt structures</p></li>
 </ol></li>
 </ol></li>
 </ol>
-<p>IV. Memory Bottleneck Resolutions</p>
+<h4 id=3D"DBAServices-IV.MemoryBottleneckResolutions">IV. Memory Bottleneck=
+ Resolutions</h4>
 <ol start=3D"1">
 <li><p>When there is high memory stress, indicated by a large number of har=
 d page faults, this general flowchart can be used to resolve it:</p>
@@ -730,14 +732,14 @@ l=3D"nofollow">https://learning.oreilly.com/library/view/sql-server-2017/97=
 </ul>
 </div>
 </div>
-<div id=3D"expander-669117796" class=3D"expand-container">
-<div id=3D"expander-control-669117796" class=3D"expand-control">
+<div id=3D"expander-1515722954" class=3D"expand-container">
+<div id=3D"expander-control-1515722954" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">C. Disk P=
 erformance Analysis</span>
 </div>
-<div id=3D"expander-content-669117796" class=3D"expand-content">
+<div id=3D"expander-content-1515722954" class=3D"expand-content">
 <h3 id=3D"DBAServices-C.DiskPerformanceAnalysis">C. Disk Performance Analys=
 is</h3>
 <p>Although memory and CPUs have become faster and faster, disks and the di=
@@ -1057,16 +1059,153 @@ ance</p></li>
 </ol>
 </div>
 </div>
+<div id=3D"expander-1029272474" class=3D"expand-container">
+<div id=3D"expander-control-1029272474" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">D. CPU Pe=
+rformance Analysis</span>
+</div>
+<div id=3D"expander-content-1029272474" class=3D"expand-content">
+<h3 id=3D"DBAServices-D.CPUPerformanceAnalysis">D. CPU Performance Analysis=
+</h3>
+<p>The measures covered here are focused on the operating systems and SQL S=
+erver. In a virtualized environment, the measures we=E2=80=99re looking at =
+for CPU are much less likely to reflect reality. There may be external pres=
+sure or even external throttling, none of which will be visible with the co=
+unters outlined here. To understand how the measures are reflecting reality=
+, investigation must be made on the hypervisor or virtualization system use=
+d.</p>
+<h4 id=3D"DBAServices-I.CPUPerfmonCounters">I. CPU Perfmon Counters</h4>
+<ol start=3D"1">
+<li><p>Processor(_Total)% - Processor Time</p>
+<ol start=3D"1">
+<li><p>% Processor Time should not be consistently high, or greater than 80=
+ percent (for Scott Whigham it=E2=80=99s 75 percent). Any sustained time gr=
+eater than 90 percent is effectively the same as 100 percent. </p></li>
+<li><p>This counter should be used as a starting point for further investig=
+ation. For example, if there is excessive disk use shown in the I/O counter=
+s, a major part of the processor may be spent on managing the disk activiti=
+es (can confirm by looking at the <code>% Privileged Time</code> counter of=
+ the processor). In that case, the disk bottleneck should be optimized firs=
+t. If the disk bottleneck, in turn, is caused by a memory bottleneck, that =
+should be the priority instead.</p></li>
+<li><p>You can track processor time as an aggregate of all the processors o=
+n the machine, or you can track the percent utilization individually to par=
+ticular processors. Use the average value as just an indicator and the indi=
+vidual values as more of a measure of actual load and processing on the sys=
+tem.</p></li>
+<li><p>In a virtualized environment, the CPUs may be virtualized so what yo=
+u=E2=80=99re seeing isn=E2=80=99t accurate. Ex: </p>
+<ol start=3D"1">
+<li><p>In a VMware system, if you install VMware Tools, you=E2=80=99ll be a=
+ble to look at a VM Processor counter to see the processor usage of the hos=
+t machine. Using this measure you can tell whether the CPU usage you=E2=80=
+=99re seeing in your SO is reflected in the hosting machine or whether you=
+=E2=80=99re just maxing out your virtual CPUs</p></li>
+<li><p>Running HyperV, you=E2=80=99d need to look to <code>\Hyper-V Hypervi=
+sor Logical Processor(_Total)\% Total Run Time</code> for the same measure<=
+/p></li>
+</ol></li>
+</ol></li>
+<li><p>Processor(_Total)% - % Privileged</p>
+<ol start=3D"1">
+<li><p><em>Privileged </em>(or <em>kernel</em>) mode (as opponed to <em>use=
+r mode</em>) reflects the time spent of system-level activities, including =
+managing disk access and other external processes. </p></li>
+<li><p>The average value is 5 to 10 percent. If 20 to 25 percent or more, t=
+here could be I/O issues (ex. defective components), a filter driver such a=
+s encryption services, or even out-of-date drivers.</p></li>
+</ol></li>
+<li><p>System - Processor Queue Length</p>
+<ol start=3D"1">
+<li><p>This is the number of threads ready to run (or requests outstanding)=
+ in the processor queue. There is only a single processor queue, even on co=
+mputers with multiple processors.</p></li>
+<li><p>On systems with lower CPU utilization, this counter is typically 0 o=
+r 1</p>
+<ol start=3D"1">
+<li><p>In general, it shouldn=E2=80=99t be more than two times the number o=
+f schedulers (usually 1:1 with processors) </p>
+<ol start=3D"1">
+<li><p>Assuming a system with 1 processor and 1 scheduler, a sustained coun=
+ter of greater than 2 generally indicates processor congestion or bottlenec=
+k</p></li>
+</ol></li>
+<li><p>PAL is fine with anything less than 10 </p></li>
+</ol></li>
+<li><p>This is a more certain indicator of a busy processor than <code>% Pr=
+ocessor Time</code></p></li>
+</ol></li>
+<li><p>System - Context Switches/sec</p>
+<ol start=3D"1">
+<li><p>This monitors the combined rate at which all processors are switched=
+ from one thread to another (a.k.a. the sum of <code>Thread:Context Switche=
+s/sec</code> for all threads running on all processors). Context switches o=
+ccur when a thread:</p>
+<ol start=3D"1">
+<li><p>Voluntarily relinquishes the processor</p></li>
+<li><p>Is preempted by a higher priority thread</p></li>
+<li><p>Switches between user mode and privileged mode to use an executive o=
+r subsystem service</p></li>
+</ol></li>
+<li><p>On average this should be &lt; 5,000, but compare to the baseline si=
+nce it depends on CPU speed</p></li>
+</ol></li>
+<li><p>SQL Server:SQL Statistics - Batch Requests/sec</p>
+<ol start=3D"1">
+<li><p>Measures SQL command batches received per second, which is a good in=
+dicator of how much load is being placed on the processor. </p></li>
+<li><p>What=E2=80=99s normal differs based on your standard workload, altho=
+ugh 10,000 requests in a second would be definitely considered a busy syste=
+m.</p></li>
+</ol></li>
+<li><p>SQL Server:SQL Statistics - SQL Compilations/sec</p>
+<ol start=3D"1">
+<li><p>Shows both the number of batch compiles and statement recompiles, wh=
+ich are expensive operations.</p></li>
+<li><p>Must compare with baseline to detect significant or sustained spikes=
+ in compilations</p></li>
+<li><p>Expect this number to be extremely high=E2=80=A6</p>
+<ol start=3D"1">
+<li><p>When a server is first turned on, or after a failover or any other s=
+tartup type event</p></li>
+<li><p> If some type of object-relational mapping engine, such as nHibernat=
+e or Entity Framework is used</p></li>
+</ol></li>
+<li><p>See Chapter 14 on how to optimize this</p></li>
+</ol></li>
+<li><p>SQL Server:SQL Statistics - SQL Recompilations/sec</p>
+<ol start=3D"1">
+<li><p>Measures the recompiles of both batches and statements, which can le=
+ad to processor stress</p></li>
+<li><p>SQLwatch.io recommends that the ratio percentage of SQL Re-Compilati=
+ons to SQL Compilations be less than 10%</p></li>
+<li><p>See Chapter 17 for details on how to optimize this</p></li>
+</ol></li>
+</ol>
+<h4 id=3D"DBAServices-II.OtherToolsforMeasuringCPUPerformance">II. Other To=
+ols for Measuring CPU Performance</h4>
+<ol start=3D"1">
+<li><p>Dynamic Management Objects (DMOs)</p>
+<ol start=3D"1">
+<li><p>Sys.dm_os_wait_stats</p></li>
+<li><p>Sys.dm_os_workers and Sys.dm_os_schedulers</p></li>
+</ol></li>
+<li><p>Query Store</p></li>
+</ol>
+</div>
+</div>
 <h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
 ck Tools</h2>
-<div id=3D"expander-883447821" class=3D"expand-container">
-<div id=3D"expander-control-883447821" class=3D"expand-control">
+<div id=3D"expander-1948858375" class=3D"expand-container">
+<div id=3D"expander-control-1948858375" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-883447821" class=3D"expand-content">
+<div id=3D"expander-content-1948858375" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
 =E2=80=99s First Responder Kit</h3>
 <p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
@@ -1290,7 +1429,7 @@ GO</pre>=20
     </div>
 </body>
 </html>
-------=_Part_24_309880981.1680117639075
+------=_Part_12_703352549.1682987435305
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
@@ -1335,7 +1474,7 @@ Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
 j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
 HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
 AAAAAElFTkSuQmCC
-------=_Part_24_309880981.1680117639075
+------=_Part_12_703352549.1682987435305
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -1345,4 +1484,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_24_309880981.1680117639075--
+------=_Part_12_703352549.1682987435305--
