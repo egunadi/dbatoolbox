@@ -1,11 +1,11 @@
-Date: Tue, 2 May 2023 00:30:35 +0000 (UTC)
-Message-ID: <1356151760.13.1682987435306@3bae84709b9a>
+Date: Fri, 19 May 2023 22:32:35 +0000 (UTC)
+Message-ID: <1705217777.23.1684535555664@bdd05d2f421c>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_12_703352549.1682987435305"
+	boundary="----=_Part_22_934277535.1684535555664"
 
-------=_Part_12_703352549.1682987435305
+------=_Part_22_934277535.1684535555664
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -234,14 +234,14 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
 uning Overview</h2>
-<div id=3D"expander-622589386" class=3D"expand-container">
-<div id=3D"expander-control-622589386" class=3D"expand-control">
+<div id=3D"expander-1202054613" class=3D"expand-container">
+<div id=3D"expander-control-1202054613" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-622589386" class=3D"expand-content">
+<div id=3D"expander-content-1202054613" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
 lems)">A. Most Common Performance Issues (64% of all performance problems)<=
 /h3>
@@ -364,14 +364,14 @@ ry execution</p></li>
 </div>
 </div>
 <h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
-<div id=3D"expander-980844387" class=3D"expand-container">
-<div id=3D"expander-control-980844387" class=3D"expand-control">
+<div id=3D"expander-372279767" class=3D"expand-container">
+<div id=3D"expander-control-372279767" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Notes =
 on the Performance Monitor Tool</span>
 </div>
-<div id=3D"expander-content-980844387" class=3D"expand-content">
+<div id=3D"expander-content-372279767" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.NotesonthePerformanceMonitorTool">A. Notes on the P=
 erformance Monitor Tool </h3>
 <ol start=3D"1">
@@ -384,14 +384,14 @@ analysis.</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-131827058" class=3D"expand-container">
-<div id=3D"expander-control-131827058" class=3D"expand-control">
+<div id=3D"expander-93962351" class=3D"expand-container">
+<div id=3D"expander-control-93962351" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">B. Memory=
  Performance Analysis</span>
 </div>
-<div id=3D"expander-content-131827058" class=3D"expand-content">
+<div id=3D"expander-content-93962351" class=3D"expand-content">
 <h3 id=3D"DBAServices-B.MemoryPerformanceAnalysis">B. Memory Performance An=
 alysis</h3>
 <p>Memory bottlenecks are a priority because they also affect CPU. More CPU=
@@ -732,14 +732,14 @@ l=3D"nofollow">https://learning.oreilly.com/library/view/sql-server-2017/97=
 </ul>
 </div>
 </div>
-<div id=3D"expander-1515722954" class=3D"expand-container">
-<div id=3D"expander-control-1515722954" class=3D"expand-control">
+<div id=3D"expander-557781571" class=3D"expand-container">
+<div id=3D"expander-control-557781571" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">C. Disk P=
 erformance Analysis</span>
 </div>
-<div id=3D"expander-content-1515722954" class=3D"expand-content">
+<div id=3D"expander-content-557781571" class=3D"expand-content">
 <h3 id=3D"DBAServices-C.DiskPerformanceAnalysis">C. Disk Performance Analys=
 is</h3>
 <p>Although memory and CPUs have become faster and faster, disks and the di=
@@ -1059,14 +1059,14 @@ ance</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-1029272474" class=3D"expand-container">
-<div id=3D"expander-control-1029272474" class=3D"expand-control">
+<div id=3D"expander-705611692" class=3D"expand-container">
+<div id=3D"expander-control-705611692" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">D. CPU Pe=
 rformance Analysis</span>
 </div>
-<div id=3D"expander-content-1029272474" class=3D"expand-content">
+<div id=3D"expander-content-705611692" class=3D"expand-content">
 <h3 id=3D"DBAServices-D.CPUPerformanceAnalysis">D. CPU Performance Analysis=
 </h3>
 <p>The measures covered here are focused on the operating systems and SQL S=
@@ -1189,23 +1189,86 @@ ols for Measuring CPU Performance</h4>
 <ol start=3D"1">
 <li><p>Dynamic Management Objects (DMOs)</p>
 <ol start=3D"1">
-<li><p>Sys.dm_os_wait_stats</p></li>
-<li><p>Sys.dm_os_workers and Sys.dm_os_schedulers</p></li>
+<li><p>Sys.dm_os_wait_stats</p>
+<ol start=3D"1">
+<li><p>Metrics must be gathered over time to understand what=E2=80=99s norm=
+al on your system. An increasing signal wait time can indicate CPU bottlene=
+cks.</p></li>
+<li><p>Starting with SQL Server 2016, CXPACKET waits have been split into C=
+XPACKET and CXCONSUMER waits to differentiate between the producers vs cons=
+umers of parallelism, respectively. In these systems, CXPACKET is a wait th=
+at indicates real load on the system that affects CPU.</p></li>
 </ol></li>
-<li><p>Query Store</p></li>
+<li><p>Sys.dm_os_workers and Sys.dm_os_schedulers</p>
+<ol start=3D"1">
+<li><p>Worker and scheduler threads within the Windows operating system sho=
+w the number of processes that are in a runnable state. </p></li>
+<li><p>Running these regularly will indicate how processor load is changing=
+.</p></li>
+</ol></li>
+</ol></li>
+<li><p>Query Store</p>
+<ol start=3D"1">
+<li><p>The Query Store can be used to capture</p>
+<ol start=3D"1">
+<li><p>The aggregated CPU usage of the query in question</p></li>
+<li><p>The wait statistics for queries, including any related to CPU</p></l=
+i>
+</ol></li>
+</ol></li>
 </ol>
+<h4 id=3D"DBAServices-III.ProcessorBottleneckResolutions">III. Processor Bo=
+ttleneck Resolutions</h4>
+<ol start=3D"1">
+<li><p>Optimizing application workload</p>
+<ol start=3D"1">
+<li><p>First, capture processor-intensive queries via</p>
+<ol start=3D"1">
+<li><p>Extended Events (Chapter 6) with output grouped on the CPU column</p=
+></li>
+<li><p><code>sys.query_store_runtime_stats</code> in the Query Store (Chapt=
+er 11), which shows multiple, aggregated, CPU metrics on a per-query basis<=
+/p></li>
+<li><p>Querying the <code>sys.dm_exec_query_stats</code> or <code>sys.dm_ex=
+ec_procedure_stats</code> DMV</p></li>
+</ol></li>
+<li><p>Next, analyze and optimize those queries</p>
+<ol start=3D"1">
+<li><p>Frequently, the cause for CPU stress is not extensive calculations b=
+ut contention with logical I/O</p></li>
+<li><p>Common queries and common execution plans can be tuned using a query=
+ hash and query plan hash (Chapter 14)</p></li>
+</ol></li>
+</ol></li>
+<li><p>Eliminating or reducing excessive compiles/recompiles</p></li>
+<li><p>Using more or faster processors</p></li>
+<li><p>Not running unnecessary software</p></li>
+</ol>
+</div>
+</div>
+<div id=3D"expander-2068394843" class=3D"expand-container">
+<div id=3D"expander-control-2068394843" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">E. Networ=
+k Bottleneck Analysis</span>
+</div>
+<div id=3D"expander-content-2068394843" class=3D"expand-content">
+<h3 id=3D"DBAServices-E.NetworkBottleneckAnalysis">E. Network Bottleneck An=
+alysis</h3>
+<p></p>
 </div>
 </div>
 <h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
 ck Tools</h2>
-<div id=3D"expander-1948858375" class=3D"expand-container">
-<div id=3D"expander-control-1948858375" class=3D"expand-control">
+<div id=3D"expander-966913677" class=3D"expand-container">
+<div id=3D"expander-control-966913677" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1948858375" class=3D"expand-content">
+<div id=3D"expander-content-966913677" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
 =E2=80=99s First Responder Kit</h3>
 <p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
@@ -1429,7 +1492,7 @@ GO</pre>=20
     </div>
 </body>
 </html>
-------=_Part_12_703352549.1682987435305
+------=_Part_22_934277535.1684535555664
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
@@ -1474,7 +1537,7 @@ Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
 j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
 HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
 AAAAAElFTkSuQmCC
-------=_Part_12_703352549.1682987435305
+------=_Part_22_934277535.1684535555664
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -1484,4 +1547,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_12_703352549.1682987435305--
+------=_Part_22_934277535.1684535555664--
