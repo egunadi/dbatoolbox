@@ -1,11 +1,11 @@
-Date: Fri, 19 May 2023 22:32:35 +0000 (UTC)
-Message-ID: <1705217777.23.1684535555664@bdd05d2f421c>
+Date: Tue, 23 May 2023 21:52:11 +0000 (UTC)
+Message-ID: <1182407435.1.1684878731476@b21ed82bbfca>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_22_934277535.1684535555664"
+	boundary="----=_Part_0_1020529050.1684878731452"
 
-------=_Part_22_934277535.1684535555664
+------=_Part_0_1020529050.1684878731452
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -234,14 +234,14 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
 uning Overview</h2>
-<div id=3D"expander-1202054613" class=3D"expand-container">
-<div id=3D"expander-control-1202054613" class=3D"expand-control">
+<div id=3D"expander-1875822908" class=3D"expand-container">
+<div id=3D"expander-control-1875822908" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1202054613" class=3D"expand-content">
+<div id=3D"expander-content-1875822908" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
 lems)">A. Most Common Performance Issues (64% of all performance problems)<=
 /h3>
@@ -364,14 +364,14 @@ ry execution</p></li>
 </div>
 </div>
 <h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
-<div id=3D"expander-372279767" class=3D"expand-container">
-<div id=3D"expander-control-372279767" class=3D"expand-control">
+<div id=3D"expander-1617448418" class=3D"expand-container">
+<div id=3D"expander-control-1617448418" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Notes =
 on the Performance Monitor Tool</span>
 </div>
-<div id=3D"expander-content-372279767" class=3D"expand-content">
+<div id=3D"expander-content-1617448418" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.NotesonthePerformanceMonitorTool">A. Notes on the P=
 erformance Monitor Tool </h3>
 <ol start=3D"1">
@@ -384,14 +384,14 @@ analysis.</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-93962351" class=3D"expand-container">
-<div id=3D"expander-control-93962351" class=3D"expand-control">
+<div id=3D"expander-1454661972" class=3D"expand-container">
+<div id=3D"expander-control-1454661972" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">B. Memory=
  Performance Analysis</span>
 </div>
-<div id=3D"expander-content-93962351" class=3D"expand-content">
+<div id=3D"expander-content-1454661972" class=3D"expand-content">
 <h3 id=3D"DBAServices-B.MemoryPerformanceAnalysis">B. Memory Performance An=
 alysis</h3>
 <p>Memory bottlenecks are a priority because they also affect CPU. More CPU=
@@ -401,8 +401,8 @@ alysis</h3>
 <h4 id=3D"DBAServices-I.MemorySettings">I. Memory Settings</h4>
 <p>The following script can be used to determine the <em>max server memory<=
 /em> setting for SQL Server:</p>
-<p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"https=
-://github.com/bornsql/scripts/blob/main/max_server_memory.sql" rel=3D"nofol=
+<p><a href=3D"https://github.com/bornsql/scripts/blob/main/max_server_memor=
+y.sql" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofol=
 low">https://github.com/bornsql/scripts/blob/main/max_server_memory.sql</a>=
  </p>
 <p>At least 2GB should be available for the OS and another 2GB if MedInform=
@@ -725,21 +725,21 @@ d from disk and into memory</p></li>
 </ol></li>
 </ol>
 <ul>
-<li><p><a class=3D"external-link" href=3D"https://learning.oreilly.com/libr=
-ary/view/sql-server-2017/9781484238882/html/323849_5_En_5_Chapter.xhtml" re=
+<li><p><a href=3D"https://learning.oreilly.com/library/view/sql-server-2017=
+/9781484238882/html/323849_5_En_5_Chapter.xhtml" class=3D"external-link" re=
 l=3D"nofollow">https://learning.oreilly.com/library/view/sql-server-2017/97=
 81484238882/html/323849_5_En_5_Chapter.xhtml</a> </p></li>
 </ul>
 </div>
 </div>
-<div id=3D"expander-557781571" class=3D"expand-container">
-<div id=3D"expander-control-557781571" class=3D"expand-control">
+<div id=3D"expander-77538557" class=3D"expand-container">
+<div id=3D"expander-control-77538557" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">C. Disk P=
 erformance Analysis</span>
 </div>
-<div id=3D"expander-content-557781571" class=3D"expand-content">
+<div id=3D"expander-content-77538557" class=3D"expand-content">
 <h3 id=3D"DBAServices-C.DiskPerformanceAnalysis">C. Disk Performance Analys=
 is</h3>
 <p>Although memory and CPUs have become faster and faster, disks and the di=
@@ -1059,14 +1059,14 @@ ance</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-705611692" class=3D"expand-container">
-<div id=3D"expander-control-705611692" class=3D"expand-control">
+<div id=3D"expander-82278419" class=3D"expand-container">
+<div id=3D"expander-control-82278419" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">D. CPU Pe=
 rformance Analysis</span>
 </div>
-<div id=3D"expander-content-705611692" class=3D"expand-content">
+<div id=3D"expander-content-82278419" class=3D"expand-content">
 <h3 id=3D"DBAServices-D.CPUPerformanceAnalysis">D. CPU Performance Analysis=
 </h3>
 <p>The measures covered here are focused on the operating systems and SQL S=
@@ -1240,43 +1240,185 @@ ut contention with logical I/O</p></li>
  hash and query plan hash (Chapter 14)</p></li>
 </ol></li>
 </ol></li>
-<li><p>Eliminating or reducing excessive compiles/recompiles</p></li>
-<li><p>Using more or faster processors</p></li>
-<li><p>Not running unnecessary software</p></li>
+<li><p>Eliminating or reducing excessive compiles/recompiles</p>
+<ol start=3D"1">
+<li><p>Methods for addressing recompiles are covered in Chapter 17</p></li>
+<li><p>If there are a lot more compiles compared to recompiles, it means fe=
+w queries are being reused in the system. See Chapter 9 for tips on query r=
+euse.</p></li>
+</ol></li>
+<li><p>Using more or faster processors</p>
+<ol start=3D"1">
+<li><p>This is an easy but potentially costly solution.</p></li>
+<li><p>We can either </p>
+<ol start=3D"1">
+<li><p>Increase the power of individual processors </p>
+<ol start=3D"1">
+<li><p>Recommended when you have a high % Processor Time counter and low Pr=
+ocessor Queue Length</p></li>
+</ol></li>
+<li><p>Add more processors (which helps the system execute more requests si=
+multaneously)</p>
+<ol start=3D"1">
+<li><p>Recommended when you have both a high % Processor Time counter and h=
+igh Processor Queue Length</p></li>
+</ol></li>
+</ol></li>
+</ol></li>
+<li><p>Not running unnecessary software</p>
+<ol start=3D"1">
+<li><p>Exterior applications that have nothing to do with maintaining the W=
+indows server or SQL Server are best placed on a different machine</p></li>
+</ol></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-2068394843" class=3D"expand-container">
-<div id=3D"expander-control-2068394843" class=3D"expand-control">
+<div id=3D"expander-285923695" class=3D"expand-container">
+<div id=3D"expander-control-285923695" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">E. Networ=
 k Bottleneck Analysis</span>
 </div>
-<div id=3D"expander-content-2068394843" class=3D"expand-content">
+<div id=3D"expander-content-285923695" class=3D"expand-content">
 <h3 id=3D"DBAServices-E.NetworkBottleneckAnalysis">E. Network Bottleneck An=
 alysis</h3>
-<p></p>
+<p>In OLTP environments, few performance issues are because of the network.=
+ Most of the network issues are in fact hardware or driver limitations or i=
+ssues with switches or routers. Most of these can be best diagnosed with th=
+e Network Monitor tool. That said, there Performance Monitor does provide o=
+bjects that collect data on network activity.</p>
+<h4 id=3D"DBAServices-I.NetworkPerfmonCounters">I. Network Perfmon Counters=
+</h4>
+<ol start=3D"1">
+<li><p>Network Interface(Network card) - Bytes Total/sec &amp; Network Inte=
+rface\Current Bandwidth </p>
+<ol start=3D"1">
+<li><p>Bytes Total/sec shows how the network interface card (NIC) or networ=
+k adapter is performing. </p></li>
+<li><p>Compare this value with that reported by the Network Interface\Curre=
+nt Bandwidth performance counter, which reflects each adapter=E2=80=99s ban=
+dwidth</p>
+<ol start=3D"1">
+<li><p>To allow headroom for spikes in traffic, you should usually average =
+no more than 50 percent of capacity</p></li>
+</ol></li>
+</ol></li>
+<li><p>Network Segment - % Net Utilization</p>
+<ol start=3D"1">
+<li><p>Represents the percentage of network bandwidth in use on a network s=
+egment</p></li>
+<li><p>In general, the average value should be &lt; 80% of network bandwidt=
+h to keep room for load spikes</p>
+<ol start=3D"1">
+<li><p>This is true even for dedicated full-duplex networks, which can acco=
+unt for near 100 percent network usage</p></li>
+<li><p>For Ethernet networks, 30 percent is the recommended threshold when =
+SQL Server is on a shared network hub</p></li>
+</ol></li>
+<li><p>Note, the Network Monitor Driver must be installed to collect perfor=
+mance data using the Network Segment object counters</p>
+<ol start=3D"1">
+<li><p>An alternative is looking at the wait statistics in <code>sys.dm_os_=
+wait_stats</code> . This isn=E2=80=99t ideal however since it often returns=
+ ASYNC_NETWORK_IO, which is more commonly associated with poor programming =
+code that does not consume a result set efficiently.</p></li>
+</ol></li>
+</ol></li>
+</ol>
+<h4 id=3D"DBAServices-II.NetworkBottleneckResolutions">II. Network Bottlene=
+ck Resolutions</h4>
+<ol start=3D"1">
+<li><p>Optimizing application workload</p>
+<ol start=3D"1">
+<li><p>Used stored procedures instead of sending a long SQL string over the=
+ network</p>
+<ol start=3D"1">
+<li><p>Multiple database requests can also be grouped into one stored proce=
+dure (important for Azure SQL Databases)</p></li>
+</ol></li>
+<li><p>Trim down the data set to only table columns that are used by the ap=
+plication</p></li>
+<li><p>Move data-intensive business logic into the database as stored proce=
+dures or database triggers to reduce network round-trips</p></li>
+<li><p>If data doesn=E2=80=99t change frequently, try caching the informati=
+on on the application</p></li>
+<li><p>Suppress things like row count using SET NOCOUNT ON at the top of qu=
+eries</p></li>
+</ol></li>
+<li><p>Adding network adapters</p></li>
+<li><p>Moderating and avoiding interruptions</p></li>
+</ol>
+</div>
+</div>
+<div id=3D"expander-1635807621" class=3D"expand-container">
+<div id=3D"expander-control-1635807621" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">F. SQL Se=
+rver Overall Performance</span>
+</div>
+<div id=3D"expander-content-1635807621" class=3D"expand-content">
+<h3 id=3D"DBAServices-F.SQLServerOverallPerformance">F. SQL Server Overall =
+Performance</h3>
+<h4 id=3D"DBAServices-I.PerfmonCountersforGenericSQLPressure">I. Perfmon Co=
+unters for Generic SQL Pressure</h4>
+<ol start=3D"1">
+<li><p>SQLServer:Access Methods - Full Scans/sec</p>
+<ol start=3D"1">
+<li><p>Analyzes the possibility of missing indexes causing table scans or l=
+arge data set retrievals</p>
+<ol start=3D"1">
+<li><p>Note that scans can also be caused when</p>
+<ol start=3D"1">
+<li><p>Too many rows are requested</p></li>
+<li><p>The predicate is not selective enough</p></li>
+<li><p>There are syntax errors (improper T-SQL)</p></li>
+<li><p>The data distribution or quantity doesn=E2=80=99t support a seek</p>=
+</li>
+<li><p>Temporary tables are used in a stored procedure</p></li>
+</ol></li>
+<li><p>Use Extended Events (Chapter 5) or the Query Store (Chapter 11) to i=
+dentify these queries, which will have a large number of logical reads and =
+an increased CPU time</p></li>
+</ol></li>
+<li><p>See also counters FreeSpace Scans/sec, Table Lock Escalations/sec, &=
+amp; Worktables Created/sec</p></li>
+</ol></li>
+<li><p>SQLServer:Latches - Total Latch Wait Time (ms) &amp; SQLServer:Locks=
+(_Total) - Lock Timeouts/sec, Lock Wait Time (ms), &amp; Number of Deadlock=
+s/sec</p></li>
+<li><p>SQLServer:SQL Statistics - SOL Re-Compilations/sec</p></li>
+<li><p>SQLServer:General Statistics - User Connections &amp; SQLServer:SQL =
+Statistics - Batch Requests/sec</p></li>
+</ol>
+<h4 id=3D"DBAServices-II.DynamicManagementObjects">II. Dynamic Management O=
+bjects</h4>
+<ol start=3D"1">
+<li><p>sys.dm_db_missing_index details</p></li>
+<li><p>sys.dm_db_index_usage_stats</p></li>
+<li><p>sys.dm_db_index_operational_stats</p></li>
+</ol>
 </div>
 </div>
 <h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
 ck Tools</h2>
-<div id=3D"expander-966913677" class=3D"expand-container">
-<div id=3D"expander-control-966913677" class=3D"expand-control">
+<div id=3D"expander-929831964" class=3D"expand-container">
+<div id=3D"expander-control-929831964" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-966913677" class=3D"expand-content">
+<div id=3D"expander-content-929831964" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
 =E2=80=99s First Responder Kit</h3>
 <p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
 1px solid #ddd; box-sizing: border-box; vertical-align: text-bottom;" src=
 =3D"947577c3ee36272b288b185d96eeaac9" width=3D"250"></p>
 <h3 id=3D"DBAServices-B.PaulRandal=E2=80=99sWaitStatisticsQuery">B. Paul Ra=
-ndal=E2=80=99s <a class=3D"external-link" href=3D"https://www.sqlskills.com=
-/blogs/paul/wait-statistics-or-please-tell-me-where-it-hurts/" rel=3D"nofol=
+ndal=E2=80=99s <a href=3D"https://www.sqlskills.com/blogs/paul/wait-statist=
+ics-or-please-tell-me-where-it-hurts/" class=3D"external-link" rel=3D"nofol=
 low">Wait Statistics Query</a></h3>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -1485,14 +1627,14 @@ GO</pre>=20
 </div>
 </div>
 <h2 id=3D"DBAServices-4.In-depthQueryTuning">4. In-depth Query Tuning</h2>
-<p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"https=
-://learning.oreilly.com/library/view/t-sql-querying/9780133986631/ch02.html=
+<p><a href=3D"https://learning.oreilly.com/library/view/t-sql-querying/9780=
+133986631/ch02.html" data-card-appearance=3D"inline" class=3D"external-link=
 " rel=3D"nofollow">https://learning.oreilly.com/library/view/t-sql-querying=
 /9780133986631/ch02.html</a> </p>
     </div>
 </body>
 </html>
-------=_Part_22_934277535.1684535555664
+------=_Part_0_1020529050.1684878731452
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
@@ -1537,7 +1679,7 @@ Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
 j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
 HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
 AAAAAElFTkSuQmCC
-------=_Part_22_934277535.1684535555664
+------=_Part_0_1020529050.1684878731452
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -1547,4 +1689,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_22_934277535.1684535555664--
+------=_Part_0_1020529050.1684878731452--
