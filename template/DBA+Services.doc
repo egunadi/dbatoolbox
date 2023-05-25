@@ -1,11 +1,11 @@
-Date: Tue, 23 May 2023 21:52:11 +0000 (UTC)
-Message-ID: <1182407435.1.1684878731476@b21ed82bbfca>
+Date: Thu, 25 May 2023 21:19:28 +0000 (UTC)
+Message-ID: <361813184.29.1685049568686@a6d9552c0a20>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_0_1020529050.1684878731452"
+	boundary="----=_Part_28_1189676038.1685049568686"
 
-------=_Part_0_1020529050.1684878731452
+------=_Part_28_1189676038.1685049568686
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -234,14 +234,14 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
 uning Overview</h2>
-<div id=3D"expander-1875822908" class=3D"expand-container">
-<div id=3D"expander-control-1875822908" class=3D"expand-control">
+<div id=3D"expander-1241948821" class=3D"expand-container">
+<div id=3D"expander-control-1241948821" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1875822908" class=3D"expand-content">
+<div id=3D"expander-content-1241948821" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
 lems)">A. Most Common Performance Issues (64% of all performance problems)<=
 /h3>
@@ -364,14 +364,14 @@ ry execution</p></li>
 </div>
 </div>
 <h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
-<div id=3D"expander-1617448418" class=3D"expand-container">
-<div id=3D"expander-control-1617448418" class=3D"expand-control">
+<div id=3D"expander-1451905329" class=3D"expand-container">
+<div id=3D"expander-control-1451905329" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Notes =
 on the Performance Monitor Tool</span>
 </div>
-<div id=3D"expander-content-1617448418" class=3D"expand-content">
+<div id=3D"expander-content-1451905329" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.NotesonthePerformanceMonitorTool">A. Notes on the P=
 erformance Monitor Tool </h3>
 <ol start=3D"1">
@@ -384,14 +384,14 @@ analysis.</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-1454661972" class=3D"expand-container">
-<div id=3D"expander-control-1454661972" class=3D"expand-control">
+<div id=3D"expander-798323725" class=3D"expand-container">
+<div id=3D"expander-control-798323725" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">B. Memory=
  Performance Analysis</span>
 </div>
-<div id=3D"expander-content-1454661972" class=3D"expand-content">
+<div id=3D"expander-content-798323725" class=3D"expand-content">
 <h3 id=3D"DBAServices-B.MemoryPerformanceAnalysis">B. Memory Performance An=
 alysis</h3>
 <p>Memory bottlenecks are a priority because they also affect CPU. More CPU=
@@ -405,9 +405,10 @@ alysis</h3>
 y.sql" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofol=
 low">https://github.com/bornsql/scripts/blob/main/max_server_memory.sql</a>=
  </p>
-<p>At least 2GB should be available for the OS and another 2GB if MedInform=
-atix is hosted on the same server.</p>
-<p> Microsoft recommends that <em>min server memory </em>is 0.</p>
+<p><strong>At least 2GB should be available for the OS and another 2GB if M=
+edInformatix is hosted on the same server.</strong></p>
+<p><strong>Microsoft recommends that </strong><em><strong>min server memory=
+ </strong></em><strong>is 0.</strong></p>
 <h4 id=3D"DBAServices-II.MemoryPerfmonCounters">II. Memory Perfmon Counters=
 </h4>
 <ol start=3D"1">
@@ -417,8 +418,8 @@ atix is hosted on the same server.</p>
 ory not changing indicates that the server is under severe memory stress.</=
 p>
 <ol start=3D"1">
-<li><p>Low memory is defined as less than 1GB by Brent Ozar and 10% of the =
-installed memory by PAL</p></li>
+<li><p><strong>Low memory is defined as less than 1GB by Brent Ozar and 10%=
+ of the installed memory by PAL</strong></p></li>
 </ol></li>
 <li><p>Can also look at Available Bytes/Kbytes for more granularity</p></li=
 >
@@ -429,8 +430,9 @@ installed memory by PAL</p></li>
 retrieved from disk), whereas Page Faults/Sec measures the rate of total pa=
 ge faults, including soft faults (where the data can be retrieved from memo=
 ry).</p></li>
-<li><p>A baseline is essential to determine the expected normal behavior, w=
-hich can range from 0 to 1,000 per second for Page Faults/Sec.</p>
+<li><p><strong>A baseline is essential to determine the expected normal beh=
+avior, which can range from 0 to 1,000 per second for Page Faults/Sec.</str=
+ong></p>
 <ol start=3D"1">
 <li><p>These numbers vary widely based on the amount and type of memory as =
 well as the speed of disk access on the system</p></li>
@@ -451,8 +453,9 @@ rocess is causing excessive paging</p></li>
 <ol start=3D"1">
 <li><p>Paging is used by virtual memory to allows users to execute programs=
  larger than the actual physical memory. </p></li>
-<li><p>Ideally we shouldn't have to use the Paging File. Brent Ozar recomme=
-nds a 0 or 1% usage at most, while PAL is fine with up to 70%.</p></li>
+<li><p><strong>Ideally we shouldn't have to use the Paging File. Brent Ozar=
+ recommends a 0 or 1% usage at most, while PAL is fine with up to 70%.</str=
+ong></p></li>
 <li><p>Note that paging may be caused by problems external to SQL Server</p=
 ></li>
 <li><p>Paging File - %Usage Peak can also be used to see peak values</p></l=
@@ -460,8 +463,9 @@ i>
 </ol></li>
 <li><p>SQLServer:Buffer Manager - Buffer Cache Hit Ratio</p>
 <ol start=3D"1">
-<li><p>Per Brent Ozar, it used to be recommended to keep this above 90%, wh=
-ich means the majority of reads are coming out of the buffer cache</p>
+<li><p><strong>Per Brent Ozar, it used to be recommended to keep this above=
+ 90%, which means the majority of reads are coming out of the buffer cache<=
+/strong></p>
 <ol start=3D"1">
 <li><p>This may not be true anymore depending on how reads are done in the =
 system (ex. for a reporting workloads with lots of ad hoc queries)</p></li>
@@ -473,8 +477,8 @@ i>
 <ol start=3D"1">
 <li><p>This indicates how long a page will stay in the buffer pool without =
 being referenced</p></li>
-<li><p>Brent Ozar recommends at least 180 seconds, while SQLwatch.io recomm=
-ends &gt; 300 seconds</p></li>
+<li><p><strong>Brent Ozar recommends at least 180 seconds, while SQLwatch.i=
+o recommends &gt; 300 seconds</strong></p></li>
 <li><p>A baseline needs to be established and monitored over time</p>
 <ol start=3D"1">
 <li><p>Reporting systems, as opposed to OLTP systems, are expected to have =
@@ -487,8 +491,8 @@ ly loads</p></li>
 <ol start=3D"1">
 <li><p>This represents the number of pages moved to disk by a checkpoint op=
 eration</p></li>
-<li><p>Should be relatively low: less than 30 per second for most systems</=
-p></li>
+<li><p><strong>Should be relatively low: less than 30 per second for most s=
+ystems</strong></p></li>
 <li><p>Higher values indicate a large number of writes occurring within the=
  system, possibly indicative of I/O problems</p></li>
 </ol></li>
@@ -497,7 +501,8 @@ p></li>
 <li><p>This records how much dirty, aged buffers are removed from the buffe=
 r by the lazy write process, a system process that frees up the memory for =
 other uses</p></li>
-<li><p>Should consistently be less than 20 for the average system</p></li>
+<li><p><strong>Should consistently be less than 20 for the average system</=
+strong></p></li>
 <li><p>Higher values possibly indicate I/O issues or even memory problems</=
 p></li>
 </ol></li>
@@ -516,18 +521,18 @@ emory Manager - Total Server Memory (KB)</p>
 <li><p>Target Server Memory (KB) indicates the total amount of dynamic memo=
 ry SQL Server is willing to consume, while Total Server Memory (KB) indicat=
 es the amount of memory currently assigned to SQL Server</p></li>
-<li><p>Target Server Memory (KB) should be close to the size of physical me=
-mory available, especially if the system is dedicated to SQL Server</p></li=
->
-<li><p>Total Server Memory (KB) should be close to Target Server Memory (KB=
-). If it=E2=80=99s much less, make sure (1) max server memory is configured=
- properly and (2) the system did not just start up (since there is a <em>wa=
-rm-up phase </em>to expand memory allocation and bring data pages into memo=
-ry). Ruling those two out, we can conclude SQL Server simply has a low memo=
-ry requirement.</p></li>
-<li><p>Systems with a low memory requirement usually have 5,000 free pages =
-or more. The status of memory allocation can also be queried via the DMV <c=
-ode>sys.dm_os_ring_buffers</code> .</p></li>
+<li><p><strong>Target Server Memory (KB) should be close to the size of phy=
+sical memory available, especially if the system is dedicated to SQL Server=
+</strong></p></li>
+<li><p><strong>Total Server Memory (KB) should be close to Target Server Me=
+mory (KB).</strong> If it=E2=80=99s much less, make sure (1) max server mem=
+ory is configured properly and (2) the system did not just start up (since =
+there is a <em>warm-up phase </em>to expand memory allocation and bring dat=
+a pages into memory). Ruling those two out, we can conclude SQL Server simp=
+ly has a low memory requirement.</p></li>
+<li><p><strong>Systems with a low memory requirement usually have 5,000 fre=
+e pages or more.</strong> The status of memory allocation can also be queri=
+ed via the DMV <code>sys.dm_os_ring_buffers</code> .</p></li>
 </ol></li>
 <li><p>Process:Private Bytes and SQL Server:Buffer Manager - Total pages</p=
 >
@@ -732,14 +737,14 @@ l=3D"nofollow">https://learning.oreilly.com/library/view/sql-server-2017/97=
 </ul>
 </div>
 </div>
-<div id=3D"expander-77538557" class=3D"expand-container">
-<div id=3D"expander-control-77538557" class=3D"expand-control">
+<div id=3D"expander-605288124" class=3D"expand-container">
+<div id=3D"expander-control-605288124" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">C. Disk P=
 erformance Analysis</span>
 </div>
-<div id=3D"expander-content-77538557" class=3D"expand-content">
+<div id=3D"expander-content-605288124" class=3D"expand-content">
 <h3 id=3D"DBAServices-C.DiskPerformanceAnalysis">C. Disk Performance Analys=
 is</h3>
 <p>Although memory and CPUs have become faster and faster, disks and the di=
@@ -767,17 +772,17 @@ rfaces</p></li>
 <li><p>Disk Transfers/sec monitors the rate of read and write operations on=
  the disk</p>
 <ol start=3D"1">
-<li><p>A typical hard disk drive can do about 180 disk transfers per second=
- for sequential I/O (IOPS) and 100 disk transfers per second for random I/O=
-</p>
+<li><p><strong>A typical hard disk drive can do about 180 disk transfers pe=
+r second for sequential I/O (IOPS) and 100 disk transfers per second for ra=
+ndom I/O</strong></p>
 <ol start=3D"1">
 <li><p>Random I/O is lower because more disk arm and head movements are inv=
 olved</p></li>
 <li><p>OLTP workloads rely heavily on random access for its singleton/small=
  operations and thus is typically constrained more by disk transfers/sec th=
 an disk bytes/sec</p></li>
-<li><p>For comparison, an SSD can be anywhere from around 5,000 IOPS to as =
-much as 500,000 IOPS</p></li>
+<li><p><strong>For comparison, an SSD can be anywhere from around 5,000 IOP=
+S to as much as 500,000 IOPS</strong></p></li>
 </ol></li>
 </ol></li>
 </ol></li>
@@ -786,8 +791,8 @@ much as 500,000 IOPS</p></li>
 <li><p>Monitors the rate at which bytes are transferred to or from the disk=
  during read or write operations</p>
 <ol start=3D"1">
-<li><p>A typical disk spinning at 7200RPM can transfer about 1000MB per sec=
-ond</p></li>
+<li><p><strong>A typical disk spinning at 7200RPM can transfer about 1000MB=
+ per second</strong></p></li>
 <li><p>If the amount of data transfer exceeds capacity, there will be a bac=
 klog shown by the Disk Queue Length counters</p></li>
 <li><p>This is usually a nonissue for OLTP applications, which access small=
@@ -798,8 +803,8 @@ klog shown by the Disk Queue Length counters</p></li>
 <ol start=3D"1">
 <li><p>These track the average amount of time it takes in milliseconds to r=
 ead from or write to a disk</p></li>
-<li><p>Brent Ozar recommends these be less than 100 ms, whereas Grant Fritc=
-hey recommends less than 10 ms </p></li>
+<li><p><strong>Brent Ozar recommends these be less than 100 ms, whereas Gra=
+nt Fritchey recommends less than 10 ms </strong></p></li>
 <li><p>In terms of measuring performance of the I/O system, these are the s=
 ingle best measure</p>
 <ol start=3D"1">
@@ -1059,14 +1064,14 @@ ance</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-82278419" class=3D"expand-container">
-<div id=3D"expander-control-82278419" class=3D"expand-control">
+<div id=3D"expander-1491179508" class=3D"expand-container">
+<div id=3D"expander-control-1491179508" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">D. CPU Pe=
 rformance Analysis</span>
 </div>
-<div id=3D"expander-content-82278419" class=3D"expand-content">
+<div id=3D"expander-content-1491179508" class=3D"expand-content">
 <h3 id=3D"DBAServices-D.CPUPerformanceAnalysis">D. CPU Performance Analysis=
 </h3>
 <p>The measures covered here are focused on the operating systems and SQL S=
@@ -1076,13 +1081,18 @@ sure or even external throttling, none of which will be visible with the co=
 unters outlined here. To understand how the measures are reflecting reality=
 , investigation must be made on the hypervisor or virtualization system use=
 d.</p>
+<p>Remember that CPU is affected by other resources since it=E2=80=99s the =
+thing managing those resources, so some situations that look like a CPU pro=
+blem are better explained as a disk or memory issue (although networks are =
+seldom a major bottleneck).</p>
 <h4 id=3D"DBAServices-I.CPUPerfmonCounters">I. CPU Perfmon Counters</h4>
 <ol start=3D"1">
 <li><p>Processor(_Total)% - Processor Time</p>
 <ol start=3D"1">
-<li><p>% Processor Time should not be consistently high, or greater than 80=
- percent (for Scott Whigham it=E2=80=99s 75 percent). Any sustained time gr=
-eater than 90 percent is effectively the same as 100 percent. </p></li>
+<li><p><strong>% Processor Time should not be consistently high, or greater=
+ than 80 percent (for Scott Whigham it=E2=80=99s 75 percent). Any sustained=
+ time greater than 90 percent is effectively the same as 100 percent. </str=
+ong></p></li>
 <li><p>This counter should be used as a starting point for further investig=
 ation. For example, if there is excessive disk use shown in the I/O counter=
 s, a major part of the processor may be spent on managing the disk activiti=
@@ -1113,26 +1123,27 @@ sor Logical Processor(_Total)\% Total Run Time</code> for the same measure<=
 <li><p><em>Privileged </em>(or <em>kernel</em>) mode (as opponed to <em>use=
 r mode</em>) reflects the time spent of system-level activities, including =
 managing disk access and other external processes. </p></li>
-<li><p>The average value is 5 to 10 percent. If 20 to 25 percent or more, t=
-here could be I/O issues (ex. defective components), a filter driver such a=
-s encryption services, or even out-of-date drivers.</p></li>
+<li><p><strong>The average value is 5 to 10 percent. If 20 to 25 percent or=
+ more, there could be I/O issues (ex. defective components), a filter drive=
+r such as encryption services, or even out-of-date drivers.</strong></p></l=
+i>
 </ol></li>
 <li><p>System - Processor Queue Length</p>
 <ol start=3D"1">
 <li><p>This is the number of threads ready to run (or requests outstanding)=
  in the processor queue. There is only a single processor queue, even on co=
 mputers with multiple processors.</p></li>
-<li><p>On systems with lower CPU utilization, this counter is typically 0 o=
-r 1</p>
+<li><p><strong>On systems with lower CPU utilization, this counter is typic=
+ally 0 or 1</strong></p>
 <ol start=3D"1">
-<li><p>In general, it shouldn=E2=80=99t be more than two times the number o=
-f schedulers (usually 1:1 with processors) </p>
+<li><p><strong>In general, it shouldn=E2=80=99t be more than two times the =
+number of schedulers (usually 1:1 with processors) </strong></p>
 <ol start=3D"1">
-<li><p>Assuming a system with 1 processor and 1 scheduler, a sustained coun=
-ter of greater than 2 generally indicates processor congestion or bottlenec=
-k</p></li>
+<li><p><strong>Assuming a system with 1 processor and 1 scheduler, a sustai=
+ned counter of greater than 2 generally indicates processor congestion or b=
+ottleneck</strong></p></li>
 </ol></li>
-<li><p>PAL is fine with anything less than 10 </p></li>
+<li><p><strong>PAL is fine with anything less than 10 </strong></p></li>
 </ol></li>
 <li><p>This is a more certain indicator of a busy processor than <code>% Pr=
 ocessor Time</code></p></li>
@@ -1149,16 +1160,16 @@ ccur when a thread:</p>
 <li><p>Switches between user mode and privileged mode to use an executive o=
 r subsystem service</p></li>
 </ol></li>
-<li><p>On average this should be &lt; 5,000, but compare to the baseline si=
-nce it depends on CPU speed</p></li>
+<li><p><strong>On average this should be &lt; 5,000, but compare to the bas=
+eline since it depends on CPU speed</strong></p></li>
 </ol></li>
 <li><p>SQL Server:SQL Statistics - Batch Requests/sec</p>
 <ol start=3D"1">
 <li><p>Measures SQL command batches received per second, which is a good in=
 dicator of how much load is being placed on the processor. </p></li>
-<li><p>What=E2=80=99s normal differs based on your standard workload, altho=
-ugh 10,000 requests in a second would be definitely considered a busy syste=
-m.</p></li>
+<li><p><strong>What=E2=80=99s normal differs based on your standard workloa=
+d, although 10,000 requests in a second would be definitely considered a bu=
+sy system.</strong></p></li>
 </ol></li>
 <li><p>SQL Server:SQL Statistics - SQL Compilations/sec</p>
 <ol start=3D"1">
@@ -1179,8 +1190,8 @@ e or Entity Framework is used</p></li>
 <ol start=3D"1">
 <li><p>Measures the recompiles of both batches and statements, which can le=
 ad to processor stress</p></li>
-<li><p>SQLwatch.io recommends that the ratio percentage of SQL Re-Compilati=
-ons to SQL Compilations be less than 10%</p></li>
+<li><p><strong>SQLwatch.io recommends that the ratio percentage of SQL Re-C=
+ompilations to SQL Compilations be less than 10%</strong></p></li>
 <li><p>See Chapter 17 for details on how to optimize this</p></li>
 </ol></li>
 </ol>
@@ -1273,14 +1284,14 @@ indows server or SQL Server are best placed on a different machine</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-285923695" class=3D"expand-container">
-<div id=3D"expander-control-285923695" class=3D"expand-control">
+<div id=3D"expander-320230214" class=3D"expand-container">
+<div id=3D"expander-control-320230214" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">E. Networ=
 k Bottleneck Analysis</span>
 </div>
-<div id=3D"expander-content-285923695" class=3D"expand-content">
+<div id=3D"expander-content-320230214" class=3D"expand-content">
 <h3 id=3D"DBAServices-E.NetworkBottleneckAnalysis">E. Network Bottleneck An=
 alysis</h3>
 <p>In OLTP environments, few performance issues are because of the network.=
@@ -1300,21 +1311,21 @@ k adapter is performing. </p></li>
 nt Bandwidth performance counter, which reflects each adapter=E2=80=99s ban=
 dwidth</p>
 <ol start=3D"1">
-<li><p>To allow headroom for spikes in traffic, you should usually average =
-no more than 50 percent of capacity</p></li>
+<li><p><strong>To allow headroom for spikes in traffic, you should usually =
+average no more than 50 percent of capacity</strong></p></li>
 </ol></li>
 </ol></li>
 <li><p>Network Segment - % Net Utilization</p>
 <ol start=3D"1">
 <li><p>Represents the percentage of network bandwidth in use on a network s=
 egment</p></li>
-<li><p>In general, the average value should be &lt; 80% of network bandwidt=
-h to keep room for load spikes</p>
+<li><p><strong>In general, the average value should be &lt; 80% of network =
+bandwidth to keep room for load spikes</strong></p>
 <ol start=3D"1">
 <li><p>This is true even for dedicated full-duplex networks, which can acco=
 unt for near 100 percent network usage</p></li>
-<li><p>For Ethernet networks, 30 percent is the recommended threshold when =
-SQL Server is on a shared network hub</p></li>
+<li><p><strong>For Ethernet networks, 30 percent is the recommended thresho=
+ld when SQL Server is on a shared network hub</strong></p></li>
 </ol></li>
 <li><p>Note, the Network Monitor Driver must be installed to collect perfor=
 mance data using the Network Segment object counters</p>
@@ -1351,16 +1362,18 @@ eries</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-1635807621" class=3D"expand-container">
-<div id=3D"expander-control-1635807621" class=3D"expand-control">
+<div id=3D"expander-1379598567" class=3D"expand-container">
+<div id=3D"expander-control-1379598567" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">F. SQL Se=
 rver Overall Performance</span>
 </div>
-<div id=3D"expander-content-1635807621" class=3D"expand-content">
+<div id=3D"expander-content-1379598567" class=3D"expand-content">
 <h3 id=3D"DBAServices-F.SQLServerOverallPerformance">F. SQL Server Overall =
 Performance</h3>
+<p>To analyze overall performance, besides examining hardware resource util=
+ization, general aspects of SQL Server should also be examined.</p>
 <h4 id=3D"DBAServices-I.PerfmonCountersforGenericSQLPressure">I. Perfmon Co=
 unters for Generic SQL Pressure</h4>
 <ol start=3D"1">
@@ -1387,30 +1400,133 @@ amp; Worktables Created/sec</p></li>
 </ol></li>
 <li><p>SQLServer:Latches - Total Latch Wait Time (ms) &amp; SQLServer:Locks=
 (_Total) - Lock Timeouts/sec, Lock Wait Time (ms), &amp; Number of Deadlock=
-s/sec</p></li>
-<li><p>SQLServer:SQL Statistics - SOL Re-Compilations/sec</p></li>
+s/sec</p>
+<ol start=3D"1">
+<li><p>Analyzes the impact of database blocking (database concurrency) on t=
+he performance of SQL Server</p>
+<ol start=3D"1">
+<li><p>Total Latch Wait Time (ms) monitors latch requests that had to wait =
+in the last second. </p>
+<ol start=3D"1">
+<li><p>Latches are used internally by SQL Server (not directly controlled b=
+y users) to protect the integrity of internal structures, such as a table r=
+ow</p></li>
+<li><p>A high value here suggests SQL Server is spending too much time wait=
+ing on its internal synchronization mechanism</p></li>
+</ol></li>
+<li><p><strong>Expect Lock Timeouts/sec to be 0 and Lock Wait Time (ms) to =
+be very low</strong></p>
+<ol start=3D"1">
+<li><p>A nonzero value for Lock Timeouts/sec and a high value for Lock Wait=
+ Time (ms) indicate that excessive blocking is occurring in the database</p=
+></li>
+<li><p>Remember that some degree of locks is a necessary part of the system=
+. Establish a baseline to track thoroughly whether a given value is cause f=
+or concern.</p></li>
+</ol></li>
+<li><p><strong>Number of Deadlocks/sec should also be 0</strong></p>
+<ol start=3D"1">
+<li><p>If nonzero, identify the victimized request and either resubmit the =
+database request automatically or suggest that the user do so</p></li>
+<li><p>Troubleshoot and resolve the deadlock using techniques from Chapter =
+21</p></li>
+</ol></li>
+</ol></li>
+</ol></li>
+<li><p>SQLServer:SQL Statistics - SOL Re-Compilations/sec</p>
+<ol start=3D"1">
+<li><p>Analyzes the number of stored procedures that are recompiling</p>
+<ol start=3D"1">
+<li><p>Non-reusable execution plans stress the CPU because generating an ex=
+ecution plan for a stored procedure requires CPU cycles</p></li>
+<li><p><strong>This will never be 0 but should be as close to 0 as possible=
+</strong></p>
+<ol start=3D"1">
+<li><p>If there are consistent spikes:</p>
+<ol start=3D"1">
+<li><p>Use Extended Events to identify the relevant stored procedures </p><=
+/li>
+<li><p>Attempt to analyze and resolve the cause of recompilations (Chapter =
+17)</p></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
 <li><p>SQLServer:General Statistics - User Connections &amp; SQLServer:SQL =
-Statistics - Batch Requests/sec</p></li>
+Statistics - Batch Requests/sec</p>
+<ol start=3D"1">
+<li><p>Analyzes the volume of incoming requests and general behavior</p>
+<ol start=3D"1">
+<li><p>User Connections is critical for ensuring the distribution of user c=
+onnections in a load-balancing environment, where SQL Server is spread over=
+ several machines</p>
+<ol start=3D"1">
+<li><p>This number can range all over the spectrum with normal application =
+behavior. Compare with a baseline to determine expected behavior.</p></li>
+</ol></li>
+<li><p>Batch Requests/sec allow us to estimate the number of users SQL Serv=
+er can take without developing resource bottlenecks</p>
+<ol start=3D"1">
+<li><p>Helps understand SQL Server=E2=80=99s relationship with the number o=
+f database connections</p></li>
+<li><p>Helps understand SQL Server=E2=80=99s relationship with Web Requests=
+/sec (or Active Server Pages.Request/sec for web applications using IIS &am=
+p; ASP)</p></li>
+<li><p>The value of this counter can range over a wide spectrum with normal=
+ application behavior. A normal baseline is essential to determine the expe=
+cted behavior.</p></li>
+</ol></li>
+</ol></li>
+</ol></li>
 </ol>
 <h4 id=3D"DBAServices-II.DynamicManagementObjects">II. Dynamic Management O=
 bjects</h4>
 <ol start=3D"1">
-<li><p>sys.dm_db_missing_index details</p></li>
-<li><p>sys.dm_db_index_usage_stats</p></li>
-<li><p>sys.dm_db_index_operational_stats</p></li>
+<li><p>sys.dm_db_missing_index details</p>
+<ol start=3D"1">
+<li><p>Part of a series of DMVs collectively referred to as the <em>missing=
+ indexes feature</em>, used to check for missing indexes based on execution=
+ plans stored in the cache. Since they can=E2=80=99t be linked to a particu=
+lar query, however, it=E2=80=99s better off to use the XML execution plan f=
+or a given query (Chapter 5) or the Database Tuning Advisor (Chapter 10).</=
+p></li>
+</ol></li>
+<li><p>sys.dm_db_index_usage_stats</p>
+<ol start=3D"1">
+<li><p>Shows which indexes have been used since the last restart of the SQL=
+ Server instance. Not completely reliable since there are a number of ways =
+that counters within this DMV get reset or removed.</p></li>
+<li><p>As an alternative, a lower-level DMV <code>sys.dm_db_index_operation=
+al_stats</code> can be used. It helps show where indexes are slowing down b=
+ecause of contention or I/O. More on this in Chapter 20.</p></li>
+</ol></li>
+</ol>
+<h4 id=3D"DBAServices-III.Blocking/ConcurrencyResolutions">III. Blocking/Co=
+ncurrency Resolutions</h4>
+<ol start=3D"1">
+<li><p>Identify costly queries currently in cache using SQL Profiler or by =
+querying <code>sys.dm_exec_query_stats</code> </p>
+<ol start=3D"1">
+<li><p>Optimize these queries appropriately</p></li>
+</ol></li>
+<li><p>After optimizing costly queries, analyze and resolve blocking using =
+techniques from Chapter 20</p></li>
+<li><p>Enable the <code>blocked_process_report</code> blocking event (Chapt=
+er 20) in Extended Events (Chapter 6) to set a threshold to capture blockin=
+g information.</p></li>
 </ol>
 </div>
 </div>
 <h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
 ck Tools</h2>
-<div id=3D"expander-929831964" class=3D"expand-container">
-<div id=3D"expander-control-929831964" class=3D"expand-control">
+<div id=3D"expander-1868549559" class=3D"expand-container">
+<div id=3D"expander-control-1868549559" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-929831964" class=3D"expand-content">
+<div id=3D"expander-content-1868549559" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
 =E2=80=99s First Responder Kit</h3>
 <p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
@@ -1634,7 +1750,7 @@ GO</pre>=20
     </div>
 </body>
 </html>
-------=_Part_0_1020529050.1684878731452
+------=_Part_28_1189676038.1685049568686
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
@@ -1679,7 +1795,7 @@ Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
 j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
 HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
 AAAAAElFTkSuQmCC
-------=_Part_0_1020529050.1684878731452
+------=_Part_28_1189676038.1685049568686
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -1689,4 +1805,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_0_1020529050.1684878731452--
+------=_Part_28_1189676038.1685049568686--
