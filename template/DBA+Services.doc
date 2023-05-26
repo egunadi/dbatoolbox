@@ -1,11 +1,11 @@
-Date: Thu, 25 May 2023 21:19:28 +0000 (UTC)
-Message-ID: <361813184.29.1685049568686@a6d9552c0a20>
+Date: Fri, 26 May 2023 20:30:43 +0000 (UTC)
+Message-ID: <1713680345.29.1685133043098@476a41674d1e>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_28_1189676038.1685049568686"
+	boundary="----=_Part_28_941809780.1685133043098"
 
-------=_Part_28_1189676038.1685049568686
+------=_Part_28_941809780.1685133043098
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -234,14 +234,14 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
 uning Overview</h2>
-<div id=3D"expander-1241948821" class=3D"expand-container">
-<div id=3D"expander-control-1241948821" class=3D"expand-control">
+<div id=3D"expander-1924033284" class=3D"expand-container">
+<div id=3D"expander-control-1924033284" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1241948821" class=3D"expand-content">
+<div id=3D"expander-content-1924033284" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
 lems)">A. Most Common Performance Issues (64% of all performance problems)<=
 /h3>
@@ -335,8 +335,9 @@ urce bottlenecks</h3>
 <li><p>Measure the impact and current performance</p></li>
 <li><p>Start again with the next bottleneck</p></li>
 </ol>
-<p>This process should be done for one bottleneck at a time, making one cha=
-nge at a time and validating that one change at a time.</p>
+<p><strong>This process should be done for one bottleneck at a time, making=
+ one change at a time and validating that one change at a time.</strong></p=
+>
 <h3 id=3D"DBAServices-D.In-depthQueryTuningProcessOverview">D. In-depth Que=
 ry Tuning Process Overview</h3>
 <ol start=3D"1">
@@ -364,35 +365,127 @@ ry execution</p></li>
 </div>
 </div>
 <h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
-<div id=3D"expander-1451905329" class=3D"expand-container">
-<div id=3D"expander-control-1451905329" class=3D"expand-control">
+<div id=3D"expander-606918887" class=3D"expand-container">
+<div id=3D"expander-control-606918887" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
-h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Notes =
-on the Performance Monitor Tool</span>
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Overvi=
+ew</span>
 </div>
-<div id=3D"expander-content-1451905329" class=3D"expand-content">
-<h3 id=3D"DBAServices-A.NotesonthePerformanceMonitorTool">A. Notes on the P=
-erformance Monitor Tool </h3>
+<div id=3D"expander-content-606918887" class=3D"expand-content">
+<h3 id=3D"DBAServices-A.Overview">A. Overview</h3>
+<h4 id=3D"DBAServices-I.Createareusablelistofperformancecounters">I. Create=
+ a reusable list of performance counters</h4>
+<h4 id=3D"DBAServices-II.Createacounterlogusingyourlistofperformancecounter=
+s">II. Create a counter log using your list of performance counters </h4>
 <ol start=3D"1">
-<li><p> On a VM, counter measurements is usually is for the VM, not the phy=
-sical server. That means some values are not going to accurately reflect ph=
-ysical reality.</p></li>
-<li><p>While real time graphs are available, it=E2=80=99s recommended to ca=
-ptured data into a file (called a <em>data collector set</em>) for offline =
-analysis.</p></li>
+<li><p><strong>Because we are mainly interested in the resource utilization=
+ pattern during baseline monitoring, the data sampling interval can be incr=
+eased to 60 seconds or more to decrease the log file size and reduce demand=
+ on disk I/Os.</strong></p>
+<ol start=3D"1">
+<li><p><strong>Scott Whigham recommends 30 seconds maximum.</strong></p></l=
+i>
+</ol></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-798323725" class=3D"expand-container">
-<div id=3D"expander-control-798323725" class=3D"expand-control">
+<div id=3D"expander-1753788666" class=3D"expand-container">
+<div id=3D"expander-control-1753788666" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
-h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">B. Memory=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">B. Notes =
+on the Performance Monitor Tool</span>
+</div>
+<div id=3D"expander-content-1753788666" class=3D"expand-content">
+<h3 id=3D"DBAServices-B.NotesonthePerformanceMonitorTool">B. Notes on the P=
+erformance Monitor Tool </h3>
+<h4 id=3D"DBAServices-I.ConsiderationsforVirtualMachines">I. Considerations=
+ for Virtual Machines</h4>
+<p> On a VM, counter measurements is usually is for the VM, not the physica=
+l server. That means some values are not going to accurately reflect physic=
+al reality.</p>
+<ol start=3D"1">
+<li><p>Even if you could monitor these counters on the physical box, it is =
+shared by multiple different VMs and the numbers can=E2=80=99t be used to i=
+dentify specific SQL Server instance resource bottlenecks</p></li>
+<li><p>Most of the information on disk and network performance is still app=
+licable within a VM setting</p>
+<ol start=3D"1">
+<li><p>I/O may be slower because of the shared nature of hosted resources</=
+p></li>
+</ol></li>
+<li><p>All query metric information =E2=80=93 how long a query runs and how=
+ many reads it has, the length of time and volume of reads =E2=80=93 will b=
+e accurate</p></li>
+<li><p>Primarily, you=E2=80=99ll find the memory and CPU metrics that are c=
+ompletely different and quite unreliable, since CPU and memory are shared b=
+etween machines within a VM. </p>
+<ol start=3D"1">
+<li><p>A process may start on one CPU and finish it on another one entirely=
+.</p>
+<ol start=3D"1">
+<li><p>An exception is the queues counters, such as processor queue length<=
+/p></li>
+</ol></li>
+<li><p>The memory allocated can change as the machine=E2=80=99s demands for=
+ memory go up and down</p></li>
+<li><p>In general, both CPU and memory are going to be potentially slower b=
+ecause the management of the VM is getting in the way of the system resourc=
+es</p></li>
+</ol></li>
+<li><p>For major VM vendors, reliable documentation is available on how to =
+monitor their systems and how to use SQL Server within their systems:</p>
+<ol start=3D"1">
+<li><p>VMware &lt;<a href=3D"https://docs.vmware.com/en/VMware-Workstation-=
+Pro/index.html" data-card-appearance=3D"inline" class=3D"external-link" rel=
+=3D"nofollow">https://docs.vmware.com/en/VMware-Workstation-Pro/index.html<=
+/a>&gt;</p></li>
+<li><p>HyperV &lt;<a href=3D"https://learn.microsoft.com/en-us/biztalk/tech=
+nical-guides/checklist-optimizing-performance-on-hyper-v" data-card-appeara=
+nce=3D"inline" class=3D"external-link" rel=3D"nofollow">https://learn.micro=
+soft.com/en-us/biztalk/technical-guides/checklist-optimizing-performance-on=
+-hyper-v</a>&gt;</p></li>
+</ol></li>
+<li><p>For Azure SQL Database and SQL Server 2016+, the Query Store (Chapte=
+r 11) can be used for baselining</p></li>
+<li><p>DMVs (Chapter 6) are not as reliable for baselining since they chang=
+e depending the cache, reboots, failovers, etc. That said, they do provide =
+a way to see an aggregated view of query performance.</p></li>
+</ol>
+<h4 id=3D"DBAServices-II.ConsiderationsforCapturingandViewingData">II. Cons=
+iderations for Capturing and Viewing Data</h4>
+<ol start=3D"1">
+<li><p>While real time graphs are available, it=E2=80=99s recommended to ca=
+ptured data into a file (called a <em>data collector set</em>) for offline =
+analysis.</p>
+<ol start=3D"1">
+<li><p>Performance Monitor graphing is more costly in terms of overhead. On=
+ly use them for short-term viewing of data, troubleshooting, and diagnosis.=
+</p></li>
+<li><p>Counter logs are <em>sampled </em>(collected periodically), whereas =
+the Performance Monitor graph is updated in real time.</p></li>
+</ol></li>
+<li><p>Monitoring multiple performance objects with small sampling interval=
+s could incur overhead on the system. (The number of counters for the selec=
+ted objects does not add much overhead because it gives only an attribute o=
+f the object itself.)</p>
+<ol start=3D"1">
+<li><p>Consider baselining in phases, focusing on one performance object (a=
+long with its DMVs, QS, EE, various analyses, etc.) at a time</p></li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id=3D"expander-1265487152" class=3D"expand-container">
+<div id=3D"expander-control-1265487152" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">C. Memory=
  Performance Analysis</span>
 </div>
-<div id=3D"expander-content-798323725" class=3D"expand-content">
-<h3 id=3D"DBAServices-B.MemoryPerformanceAnalysis">B. Memory Performance An=
+<div id=3D"expander-content-1265487152" class=3D"expand-content">
+<h3 id=3D"DBAServices-C.MemoryPerformanceAnalysis">C. Memory Performance An=
 alysis</h3>
 <p>Memory bottlenecks are a priority because they also affect CPU. More CPU=
  cycles are needed to write memory pages to disk so SQL Server can maintain=
@@ -737,15 +830,15 @@ l=3D"nofollow">https://learning.oreilly.com/library/view/sql-server-2017/97=
 </ul>
 </div>
 </div>
-<div id=3D"expander-605288124" class=3D"expand-container">
-<div id=3D"expander-control-605288124" class=3D"expand-control">
+<div id=3D"expander-1610609717" class=3D"expand-container">
+<div id=3D"expander-control-1610609717" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
-h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">C. Disk P=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">D. Disk P=
 erformance Analysis</span>
 </div>
-<div id=3D"expander-content-605288124" class=3D"expand-content">
-<h3 id=3D"DBAServices-C.DiskPerformanceAnalysis">C. Disk Performance Analys=
+<div id=3D"expander-content-1610609717" class=3D"expand-content">
+<h3 id=3D"DBAServices-D.DiskPerformanceAnalysis">D. Disk Performance Analys=
 is</h3>
 <p>Although memory and CPUs have become faster and faster, disks and the di=
 sk subsystem remains one of the slowest parts of any computing system. Addi=
@@ -1064,15 +1157,15 @@ ance</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-1491179508" class=3D"expand-container">
-<div id=3D"expander-control-1491179508" class=3D"expand-control">
+<div id=3D"expander-700145158" class=3D"expand-container">
+<div id=3D"expander-control-700145158" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
-h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">D. CPU Pe=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">E. CPU Pe=
 rformance Analysis</span>
 </div>
-<div id=3D"expander-content-1491179508" class=3D"expand-content">
-<h3 id=3D"DBAServices-D.CPUPerformanceAnalysis">D. CPU Performance Analysis=
+<div id=3D"expander-content-700145158" class=3D"expand-content">
+<h3 id=3D"DBAServices-E.CPUPerformanceAnalysis">E. CPU Performance Analysis=
 </h3>
 <p>The measures covered here are focused on the operating systems and SQL S=
 erver. In a virtualized environment, the measures we=E2=80=99re looking at =
@@ -1284,15 +1377,15 @@ indows server or SQL Server are best placed on a different machine</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-320230214" class=3D"expand-container">
-<div id=3D"expander-control-320230214" class=3D"expand-control">
+<div id=3D"expander-1190224456" class=3D"expand-container">
+<div id=3D"expander-control-1190224456" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
-h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">E. Networ=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">F. Networ=
 k Bottleneck Analysis</span>
 </div>
-<div id=3D"expander-content-320230214" class=3D"expand-content">
-<h3 id=3D"DBAServices-E.NetworkBottleneckAnalysis">E. Network Bottleneck An=
+<div id=3D"expander-content-1190224456" class=3D"expand-content">
+<h3 id=3D"DBAServices-F.NetworkBottleneckAnalysis">F. Network Bottleneck An=
 alysis</h3>
 <p>In OLTP environments, few performance issues are because of the network.=
  Most of the network issues are in fact hardware or driver limitations or i=
@@ -1362,15 +1455,15 @@ eries</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-1379598567" class=3D"expand-container">
-<div id=3D"expander-control-1379598567" class=3D"expand-control">
+<div id=3D"expander-187428174" class=3D"expand-container">
+<div id=3D"expander-control-187428174" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
-h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">F. SQL Se=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">G. SQL Se=
 rver Overall Performance</span>
 </div>
-<div id=3D"expander-content-1379598567" class=3D"expand-content">
-<h3 id=3D"DBAServices-F.SQLServerOverallPerformance">F. SQL Server Overall =
+<div id=3D"expander-content-187428174" class=3D"expand-content">
+<h3 id=3D"DBAServices-G.SQLServerOverallPerformance">G. SQL Server Overall =
 Performance</h3>
 <p>To analyze overall performance, besides examining hardware resource util=
 ization, general aspects of SQL Server should also be examined.</p>
@@ -1519,14 +1612,14 @@ g information.</p></li>
 </div>
 <h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
 ck Tools</h2>
-<div id=3D"expander-1868549559" class=3D"expand-container">
-<div id=3D"expander-control-1868549559" class=3D"expand-control">
+<div id=3D"expander-732852521" class=3D"expand-container">
+<div id=3D"expander-control-732852521" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1868549559" class=3D"expand-content">
+<div id=3D"expander-content-732852521" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
 =E2=80=99s First Responder Kit</h3>
 <p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
@@ -1750,7 +1843,7 @@ GO</pre>=20
     </div>
 </body>
 </html>
-------=_Part_28_1189676038.1685049568686
+------=_Part_28_941809780.1685133043098
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
@@ -1795,7 +1888,7 @@ Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
 j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
 HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
 AAAAAElFTkSuQmCC
-------=_Part_28_1189676038.1685049568686
+------=_Part_28_941809780.1685133043098
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -1805,4 +1898,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_28_1189676038.1685049568686--
+------=_Part_28_941809780.1685133043098--
