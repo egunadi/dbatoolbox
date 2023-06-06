@@ -1,11 +1,11 @@
-Date: Tue, 30 May 2023 18:50:06 +0000 (UTC)
-Message-ID: <350201485.17.1685472606712@e63a6d387399>
+Date: Tue, 6 Jun 2023 23:41:53 +0000 (UTC)
+Message-ID: <446726083.37.1686094913671@630aeaa55cd6>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_16_75737570.1685472606712"
+	boundary="----=_Part_36_945689930.1686094913671"
 
-------=_Part_16_75737570.1685472606712
+------=_Part_36_945689930.1686094913671
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -234,14 +234,14 @@ d of the content */
     <div class=3D"Section1">
         <h2 id=3D"DBAServices-1.PerformanceTuningOverview">1. Performance T=
 uning Overview</h2>
-<div id=3D"expander-536341178" class=3D"expand-container">
-<div id=3D"expander-control-536341178" class=3D"expand-control">
+<div id=3D"expander-106019915" class=3D"expand-container">
+<div id=3D"expander-control-106019915" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-536341178" class=3D"expand-content">
+<div id=3D"expander-content-106019915" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.MostCommonPerformanceIssues(64%ofallperformanceprob=
 lems)">A. Most Common Performance Issues (64% of all performance problems)<=
 /h3>
@@ -365,14 +365,14 @@ ry execution</p></li>
 </div>
 </div>
 <h2 id=3D"DBAServices-2.CreatingaBaseline">2. Creating a Baseline</h2>
-<div id=3D"expander-1132695218" class=3D"expand-container">
-<div id=3D"expander-control-1132695218" class=3D"expand-control">
+<div id=3D"expander-233404695" class=3D"expand-container">
+<div id=3D"expander-control-233404695" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Overvi=
 ew</span>
 </div>
-<div id=3D"expander-content-1132695218" class=3D"expand-content">
+<div id=3D"expander-content-233404695" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.Overview">A. Overview</h3>
 <h4 id=3D"DBAServices-I.Createareusablelistofperformancecounters">I. Create=
  a reusable list of performance counters</h4><span class=3D"confluence-embe=
@@ -386,7 +386,7 @@ id=3D"2809298945" data-linked-resource-version=3D"1" data-linked-resource-t=
 ype=3D"attachment" data-linked-resource-default-alias=3D"image-20230530-184=
 918.png" data-base-url=3D"https://medinformatix.atlassian.net/wiki" data-li=
 nked-resource-content-type=3D"image/png" data-linked-resource-container-id=
-=3D"2698870835" data-linked-resource-container-version=3D"36" data-media-id=
+=3D"2698870835" data-linked-resource-container-version=3D"38" data-media-id=
 =3D"f468491c-b571-476f-9869-2fae531599f9" data-media-type=3D"file" width=3D=
 "468" height=3D"1852"></span>
 <h4 id=3D"DBAServices-II.Createacounterlogusingyourlistofperformancecounter=
@@ -400,17 +400,31 @@ eased to 60 seconds or more to decrease the log file size and reduce demand=
 <li><p><strong>Scott Whigham recommends 30 seconds maximum.</strong></p></l=
 i>
 </ol></li>
+<li><p>It is important to keep the baseline current by creating a new basel=
+ine at regular time intervals. Be sure to archive the previous baseline log=
+s so that they can be referred to later, if required.</p></li>
+<li><p>For Azure SQL Databases, Microsoft has defined a unit of performance=
+ measure known as the Database Transaction Unit (DTU), which is defined as =
+a blended measure of I/O, CPU, and memory. To establish a baseline, capture=
+ DTU information into a table using the <code>sys.dm_db_resource_stats</cod=
+e> DMV.</p>
+<ol start=3D"1">
+<li><p>Azure has the Query Store enabled by default, so that can also be us=
+ed</p></li>
+<li><p>To see CPT usage and the storage data, query <code>sys.resource_stat=
+s</code> </p></li>
+</ol></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-252218994" class=3D"expand-container">
-<div id=3D"expander-control-252218994" class=3D"expand-control">
+<div id=3D"expander-1499778204" class=3D"expand-container">
+<div id=3D"expander-control-1499778204" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">B. Notes =
 on the Performance Monitor Tool</span>
 </div>
-<div id=3D"expander-content-252218994" class=3D"expand-content">
+<div id=3D"expander-content-1499778204" class=3D"expand-content">
 <h3 id=3D"DBAServices-B.NotesonthePerformanceMonitorTool">B. Notes on the P=
 erformance Monitor Tool </h3>
 <h4 id=3D"DBAServices-I.ConsiderationsforVirtualMachines">I. Considerations=
@@ -450,13 +464,13 @@ es</p></li>
 <li><p>For major VM vendors, reliable documentation is available on how to =
 monitor their systems and how to use SQL Server within their systems:</p>
 <ol start=3D"1">
-<li><p>VMware &lt;<a href=3D"https://docs.vmware.com/en/VMware-Workstation-=
-Pro/index.html" data-card-appearance=3D"inline" class=3D"external-link" rel=
+<li><p>VMware &lt;<a class=3D"external-link" data-card-appearance=3D"inline=
+" href=3D"https://docs.vmware.com/en/VMware-Workstation-Pro/index.html" rel=
 =3D"nofollow">https://docs.vmware.com/en/VMware-Workstation-Pro/index.html<=
 /a>&gt;</p></li>
-<li><p>HyperV &lt;<a href=3D"https://learn.microsoft.com/en-us/biztalk/tech=
-nical-guides/checklist-optimizing-performance-on-hyper-v" data-card-appeara=
-nce=3D"inline" class=3D"external-link" rel=3D"nofollow">https://learn.micro=
+<li><p>HyperV &lt;<a class=3D"external-link" data-card-appearance=3D"inline=
+" href=3D"https://learn.microsoft.com/en-us/biztalk/technical-guides/checkl=
+ist-optimizing-performance-on-hyper-v" rel=3D"nofollow">https://learn.micro=
 soft.com/en-us/biztalk/technical-guides/checklist-optimizing-performance-on=
 -hyper-v</a>&gt;</p></li>
 </ol></li>
@@ -490,14 +504,14 @@ long with its DMVs, QS, EE, various analyses, etc.) at a time</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-1987335738" class=3D"expand-container">
-<div id=3D"expander-control-1987335738" class=3D"expand-control">
+<div id=3D"expander-1494064804" class=3D"expand-container">
+<div id=3D"expander-control-1494064804" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">C. Memory=
  Performance Analysis</span>
 </div>
-<div id=3D"expander-content-1987335738" class=3D"expand-content">
+<div id=3D"expander-content-1494064804" class=3D"expand-content">
 <h3 id=3D"DBAServices-C.MemoryPerformanceAnalysis">C. Memory Performance An=
 alysis</h3>
 <p>Memory bottlenecks are a priority because they also affect CPU. More CPU=
@@ -507,8 +521,8 @@ alysis</h3>
 <h4 id=3D"DBAServices-I.MemorySettings">I. Memory Settings</h4>
 <p>The following script can be used to determine the <em>max server memory<=
 /em> setting for SQL Server:</p>
-<p><a href=3D"https://github.com/bornsql/scripts/blob/main/max_server_memor=
-y.sql" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofol=
+<p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"https=
+://github.com/bornsql/scripts/blob/main/max_server_memory.sql" rel=3D"nofol=
 low">https://github.com/bornsql/scripts/blob/main/max_server_memory.sql</a>=
  </p>
 <p><strong>At least 2GB should be available for the OS and another 2GB if M=
@@ -836,21 +850,21 @@ d from disk and into memory</p></li>
 </ol></li>
 </ol>
 <ul>
-<li><p><a href=3D"https://learning.oreilly.com/library/view/sql-server-2017=
-/9781484238882/html/323849_5_En_5_Chapter.xhtml" class=3D"external-link" re=
+<li><p><a class=3D"external-link" href=3D"https://learning.oreilly.com/libr=
+ary/view/sql-server-2017/9781484238882/html/323849_5_En_5_Chapter.xhtml" re=
 l=3D"nofollow">https://learning.oreilly.com/library/view/sql-server-2017/97=
 81484238882/html/323849_5_En_5_Chapter.xhtml</a> </p></li>
 </ul>
 </div>
 </div>
-<div id=3D"expander-259099759" class=3D"expand-container">
-<div id=3D"expander-control-259099759" class=3D"expand-control">
+<div id=3D"expander-1147548296" class=3D"expand-container">
+<div id=3D"expander-control-1147548296" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">D. Disk P=
 erformance Analysis</span>
 </div>
-<div id=3D"expander-content-259099759" class=3D"expand-content">
+<div id=3D"expander-content-1147548296" class=3D"expand-content">
 <h3 id=3D"DBAServices-D.DiskPerformanceAnalysis">D. Disk Performance Analys=
 is</h3>
 <p>Although memory and CPUs have become faster and faster, disks and the di=
@@ -1170,14 +1184,14 @@ ance</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-1551486264" class=3D"expand-container">
-<div id=3D"expander-control-1551486264" class=3D"expand-control">
+<div id=3D"expander-651556358" class=3D"expand-container">
+<div id=3D"expander-control-651556358" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">E. CPU Pe=
 rformance Analysis</span>
 </div>
-<div id=3D"expander-content-1551486264" class=3D"expand-content">
+<div id=3D"expander-content-651556358" class=3D"expand-content">
 <h3 id=3D"DBAServices-E.CPUPerformanceAnalysis">E. CPU Performance Analysis=
 </h3>
 <p>The measures covered here are focused on the operating systems and SQL S=
@@ -1390,14 +1404,14 @@ indows server or SQL Server are best placed on a different machine</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-244931303" class=3D"expand-container">
-<div id=3D"expander-control-244931303" class=3D"expand-control">
+<div id=3D"expander-2099493327" class=3D"expand-container">
+<div id=3D"expander-control-2099493327" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">F. Networ=
 k Bottleneck Analysis</span>
 </div>
-<div id=3D"expander-content-244931303" class=3D"expand-content">
+<div id=3D"expander-content-2099493327" class=3D"expand-content">
 <h3 id=3D"DBAServices-F.NetworkBottleneckAnalysis">F. Network Bottleneck An=
 alysis</h3>
 <p>In OLTP environments, few performance issues are because of the network.=
@@ -1468,14 +1482,14 @@ eries</p></li>
 </ol>
 </div>
 </div>
-<div id=3D"expander-299600258" class=3D"expand-container">
-<div id=3D"expander-control-299600258" class=3D"expand-control">
+<div id=3D"expander-1069724632" class=3D"expand-container">
+<div id=3D"expander-control-1069724632" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">G. SQL Se=
 rver Overall Performance</span>
 </div>
-<div id=3D"expander-content-299600258" class=3D"expand-content">
+<div id=3D"expander-content-1069724632" class=3D"expand-content">
 <h3 id=3D"DBAServices-G.SQLServerOverallPerformance">G. SQL Server Overall =
 Performance</h3>
 <p>To analyze overall performance, besides examining hardware resource util=
@@ -1625,22 +1639,22 @@ g information.</p></li>
 </div>
 <h2 id=3D"DBAServices-3.SQLServerHealthCheckTools">3. SQL Server Health Che=
 ck Tools</h2>
-<div id=3D"expander-746170550" class=3D"expand-container">
-<div id=3D"expander-control-746170550" class=3D"expand-control">
+<div id=3D"expander-728244984" class=3D"expand-container">
+<div id=3D"expander-control-728244984" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-746170550" class=3D"expand-content">
+<div id=3D"expander-content-728244984" class=3D"expand-content">
 <h3 id=3D"DBAServices-A.BrentOzar=E2=80=99sFirstResponderKit">A. Brent Ozar=
 =E2=80=99s First Responder Kit</h3>
 <p class=3D"media-group"><img height=3D"250" style=3D"margin: 2px; border: =
 1px solid #ddd; box-sizing: border-box; vertical-align: text-bottom;" src=
 =3D"947577c3ee36272b288b185d96eeaac9" width=3D"250"></p>
 <h3 id=3D"DBAServices-B.PaulRandal=E2=80=99sWaitStatisticsQuery">B. Paul Ra=
-ndal=E2=80=99s <a href=3D"https://www.sqlskills.com/blogs/paul/wait-statist=
-ics-or-please-tell-me-where-it-hurts/" class=3D"external-link" rel=3D"nofol=
+ndal=E2=80=99s <a class=3D"external-link" href=3D"https://www.sqlskills.com=
+/blogs/paul/wait-statistics-or-please-tell-me-where-it-hurts/" rel=3D"nofol=
 low">Wait Statistics Query</a></h3>
 <div class=3D"code panel pdl" style=3D"border-width: 1px;">
 <div class=3D"codeContent panelContent pdl">=20
@@ -1849,14 +1863,55 @@ GO</pre>=20
 </div>
 </div>
 <h2 id=3D"DBAServices-4.In-depthQueryTuning">4. In-depth Query Tuning</h2>
-<p><a href=3D"https://learning.oreilly.com/library/view/t-sql-querying/9780=
-133986631/ch02.html" data-card-appearance=3D"inline" class=3D"external-link=
+<div id=3D"expander-623006028" class=3D"expand-container">
+<div id=3D"expander-control-623006028" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">A. Query =
+Performance Metrics</span>
+</div>
+<div id=3D"expander-content-623006028" class=3D"expand-content">
+<h3 id=3D"DBAServices-A.QueryPerformanceMetrics">A. Query Performance Metri=
+cs</h3>
+<h4 id=3D"DBAServices-I.ExtendedEvents">I. Extended Events</h4>
+<p>Grant Fritchey uses Extended Events primarily and the Query Store (Chapt=
+er 11) as a secondary mechanism. The most efficient way to define an Extend=
+ed Events session is through the T-SQL commands, but a good place to start =
+learning about sessions is through the GUI:</p>
+<ol start=3D"1">
+<li><p>Extended Events Sessions</p></li>
+<li><p>Event Fields</p></li>
+<li><p>Data Storage</p></li>
+<li><p>Finishing the Session</p></li>
+<li><p>The Built-in system_health Session</p></li>
+</ol>
+<h4 id=3D"DBAServices-II.ExtendedEventsAutomation">II. Extended Events Auto=
+mation</h4>
+<ol start=3D"1">
+<li><p>Creating a session script using the GUI</p></li>
+<li><p>Defining a session using T-SQL</p></li>
+</ol>
+<h4 id=3D"DBAServices-III.UsingCausalityTracking">III. Using Causality Trac=
+king</h4>
+<h4 id=3D"DBAServices-IV.ExtendedEventsRecommendations">IV. Extended Events=
+ Recommendations</h4>
+<ol start=3D"1">
+<li><p>Set the max file size appropriately</p></li>
+<li><p>Be cautious with debug events</p></li>
+<li><p>Avoid use of <code>No_Event_Loss</code></p></li>
+</ol>
+<h4 id=3D"DBAServices-V.OtherMethodsforQueryPerformanceMetrics">V. Other Me=
+thods for Query Performance Metrics</h4>
+</div>
+</div>
+<p><a class=3D"external-link" data-card-appearance=3D"inline" href=3D"https=
+://learning.oreilly.com/library/view/t-sql-querying/9780133986631/ch02.html=
 " rel=3D"nofollow">https://learning.oreilly.com/library/view/t-sql-querying=
 /9780133986631/ch02.html</a> </p>
     </div>
 </body>
 </html>
-------=_Part_16_75737570.1685472606712
+------=_Part_36_945689930.1686094913671
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/947577c3ee36272b288b185d96eeaac9
@@ -1901,7 +1956,7 @@ Ft7cpRHBqy3u5IFwdfvIk5gqvw4n95NhtNAonC+vLN8SfWSqcnu+7M/C8MG8R4c4RK1eusm6mm2j
 j2Na6788vvTlYey0HR3ckuGu+ZPFpCHGctMQg8q7Ecxfi5sBTTmXrXxIW9wkg0dPF3osPxjh0dOF
 HvsTePR0occAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDwP2uQQjnRwm2d
 AAAAAElFTkSuQmCC
-------=_Part_16_75737570.1685472606712
+------=_Part_36_945689930.1686094913671
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3141b06d20d8d04d4a000d087881dca7
@@ -7868,7 +7923,7 @@ gT1DQA2hPTPVOlAloASUgBJQAkqglYAaQq1E9G8loASUgBJQAkpgzxBQQ2jPTLUOVAkoASWgBJSA
 EmgloIZQKxH9WwkoASWgBJSAEtgzBNQQ2jNTrQNVAkpACSgBJaAEWgmoIdRKRP9WAkpACSgBJaAE
 9gwBNYT2zFTrQJWAElACSkAJKIFWAmoItRLRv5WAElACSkAJKIE9Q0ANoT0z1TpQJaAElIASUAJK
 oJWAGkKtRPRvJaAElIASUAJKYM8Q+P9rco/i/DTmpgAAAABJRU5ErkJggg==
-------=_Part_16_75737570.1685472606712
+------=_Part_36_945689930.1686094913671
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -7878,4 +7933,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_16_75737570.1685472606712--
+------=_Part_36_945689930.1686094913671--
