@@ -1,11 +1,11 @@
-Date: Wed, 26 Oct 2022 00:08:57 +0000 (UTC)
-Message-ID: <383171377.13.1666742937826@afde247e1883>
+Date: Mon, 28 Aug 2023 23:09:54 +0000 (UTC)
+Message-ID: <1327681387.141.1693264194799@7ab89ab57ed8>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_12_1377979789.1666742937826"
+	boundary="----=_Part_140_334344993.1693264194799"
 
-------=_Part_12_1377979789.1666742937826
+------=_Part_140_334344993.1693264194799
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -83,8 +83,8 @@ o much for printouts */
 
     body, #full-height-container, #main, #page, #content, .has-personal-sid=
 ebar #content {
-        background: #fff !important;
-        color: #000 !important;
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
         border: 0 !important;
         width: 100% !important;
         height: auto !important;
@@ -95,7 +95,7 @@ ebar #content {
     }
 
     a, a:link, a:visited, a:focus, a:hover, a:active {
-        color: #000;
+        color: var(--ds-text, #000);
     }
 
     #content h1,
@@ -296,7 +296,7 @@ ode></p></td>
 <td class=3D"confluenceTd"><p>3</p></td>
 <td class=3D"confluenceTd"><p>PowerShell version</p></td>
 <td class=3D"confluenceTd"><p><code>Get-Host | Select-Object -Property Vers=
-ion</code></p></td>
+ion</code></p><p>$PSVersionTable</p></td>
 </tr>
 </tbody>
 </table>
@@ -308,28 +308,28 @@ ormation">
 <span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
 tion-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
-<p>dbatools require a minimum PowerShell version of 3.0: <a class=3D"extern=
-al-link" href=3D"https://www.powershellgallery.com/packages/dbatools/1.0.13=
-5" rel=3D"nofollow">https://www.powershellgallery.com/packages/dbatools/1.0=
+<p>dbatools require a minimum PowerShell version of 3.0: <a href=3D"https:/=
+/www.powershellgallery.com/packages/dbatools/1.0.135" class=3D"external-lin=
+k" rel=3D"nofollow">https://www.powershellgallery.com/packages/dbatools/1.0=
 .135</a></p>
 <p>See command B3 for checking the version, as well as the following articl=
 es on updating PowerShell:</p>
 <ul>
-<li><p><a class=3D"external-link" href=3D"https://docs.microsoft.com/en-us/=
-powershell/scripting/windows-powershell/install/installing-windows-powershe=
-ll?view=3Dpowershell-7.1#upgrading-existing-windows-powershell" rel=3D"nofo=
+<li><p><a href=3D"https://docs.microsoft.com/en-us/powershell/scripting/win=
+dows-powershell/install/installing-windows-powershell?view=3Dpowershell-7.1=
+#upgrading-existing-windows-powershell" class=3D"external-link" rel=3D"nofo=
 llow">https://docs.microsoft.com/en-us/powershell/scripting/windows-powersh=
 ell/install/installing-windows-powershell?view=3Dpowershell-7.1#upgrading-e=
 xisting-windows-powershell</a></p></li>
-<li><p><a class=3D"external-link" href=3D"https://docs.microsoft.com/en-us/=
-powershell/scripting/windows-powershell/wmf/setup/install-configure?view=3D=
-powershell-7.1" rel=3D"nofollow">https://docs.microsoft.com/en-us/powershel=
+<li><p><a href=3D"https://docs.microsoft.com/en-us/powershell/scripting/win=
+dows-powershell/wmf/setup/install-configure?view=3Dpowershell-7.1" class=3D=
+"external-link" rel=3D"nofollow">https://docs.microsoft.com/en-us/powershel=
 l/scripting/windows-powershell/wmf/setup/install-configure?view=3Dpowershel=
 l-7.1</a></p></li>
 </ul>
 <p>If PowerShell is greater or equal to 3.0 but less than 5.0, dbatools wil=
-l have to be installed with an offline method: <a class=3D"external-link" h=
-ref=3D"https://dbatools.io/offline/" rel=3D"nofollow">https://dbatools.io/o=
+l have to be installed with an offline method: <a href=3D"https://dbatools.=
+io/offline/" class=3D"external-link" rel=3D"nofollow">https://dbatools.io/o=
 ffline/</a> </p>
 </div>
 </div>
@@ -341,11 +341,28 @@ ation-macro-icon"></span>
 <p>If step 3 returns an error like =E2=80=9CPowerShell Gallery is currently=
  unavailable,=E2=80=9D try running the commands here and restart PowerShell=
 :</p>
-<p><a class=3D"external-link" href=3D"https://dev.to/darksmile92/powershell=
--disabled-support-for-tls-1-0-for-the-gallery-update-module-and-install-mod=
-ule-broken-1oii" rel=3D"nofollow">https://dev.to/darksmile92/powershell-dis=
-abled-support-for-tls-1-0-for-the-gallery-update-module-and-install-module-=
-broken-1oii</a></p>
+<p><a href=3D"https://dev.to/darksmile92/powershell-disabled-support-for-tl=
+s-1-0-for-the-gallery-update-module-and-install-module-broken-1oii" class=
+=3D"external-link" rel=3D"nofollow">https://dev.to/darksmile92/powershell-d=
+isabled-support-for-tls-1-0-for-the-gallery-update-module-and-install-modul=
+e-broken-1oii</a></p>
+</div>
+</div>
+<div class=3D"confluence-information-macro confluence-information-macro-war=
+ning">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-error confluence-inform=
+ation-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>Newer versions of PowerShell may throw an error like =E2=80=9CThe certif=
+icate chain was issued by an authority that is not trusted=E2=80=9D when co=
+mmands are run. As a workaround, Connect-DbaInstance can be used as such:</=
+p>
+<p>$server =3D Connect-DbaInstance -SqlInstance sql2016 -TrustServerCertifi=
+cate Find-DbaAgentJob -SqlInstance $server -JobName *backup*</p>
+<p><a href=3D"https://dba.stackexchange.com/questions/324121/can-we-change-=
+the-parameter-of-find-dbaagentjob" data-card-appearance=3D"inline" class=3D=
+"external-link" rel=3D"nofollow">https://dba.stackexchange.com/questions/32=
+4121/can-we-change-the-parameter-of-find-dbaagentjob</a> </p>
 </div>
 </div>
 <div class=3D"table-wrap">
@@ -369,7 +386,7 @@ broken-1oii</a></p>
 <td class=3D"confluenceTd"><p>Get list of installed modules and versions</p=
 ></td>
 <td class=3D"confluenceTd"><p><code>Get-InstalledModule</code></p></td>
-<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>Get-InstalledModule dbatools</p></td>
 </tr>
 <tr>
 <td class=3D"confluenceTd"><p>2</p></td>
@@ -599,4 +616,4 @@ MaxMemory -SqlInstance $SQLInstance</pre>=20
     </div>
 </body>
 </html>
-------=_Part_12_1377979789.1666742937826--
+------=_Part_140_334344993.1693264194799--
