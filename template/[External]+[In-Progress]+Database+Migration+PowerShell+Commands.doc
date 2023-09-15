@@ -1,11 +1,11 @@
-Date: Mon, 28 Aug 2023 23:09:54 +0000 (UTC)
-Message-ID: <1327681387.141.1693264194799@7ab89ab57ed8>
+Date: Fri, 15 Sep 2023 18:34:02 +0000 (UTC)
+Message-ID: <1253110547.19.1694802842198@a8886ed45f96>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_140_334344993.1693264194799"
+	boundary="----=_Part_18_1798653097.1694802842198"
 
-------=_Part_140_334344993.1693264194799
+------=_Part_18_1798653097.1694802842198
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -484,7 +484,8 @@ e">
 rmation-macro-icon"></span>
 <div class=3D"confluence-information-macro-body">
 <p>Some jobs have hard-coded IPs, hostnames, database names, or directories=
-. Be sure to manually check for these. </p>
+. To check for these, it=E2=80=99s safer to recreate the jobs by scripting =
+them out.</p>
 </div>
 </div></td>
 <td class=3D"confluenceTd"><p><code>Copy-DbaAgentJob</code></p></td>
@@ -616,4 +617,4 @@ MaxMemory -SqlInstance $SQLInstance</pre>=20
     </div>
 </body>
 </html>
-------=_Part_140_334344993.1693264194799--
+------=_Part_18_1798653097.1694802842198--
