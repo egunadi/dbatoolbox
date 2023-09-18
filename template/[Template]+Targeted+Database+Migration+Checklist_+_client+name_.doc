@@ -1,11 +1,11 @@
-Date: Fri, 15 Sep 2023 18:33:39 +0000 (UTC)
-Message-ID: <2021198819.3.1694802819307@c629357dd2ba>
+Date: Mon, 18 Sep 2023 15:28:06 +0000 (UTC)
+Message-ID: <411490131.11.1695050886947@6fa5e1ccce43>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_2_1841182514.1694802819307"
+	boundary="----=_Part_10_1982824713.1695050886947"
 
-------=_Part_2_1841182514.1694802819307
+------=_Part_10_1982824713.1695050886947
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -237,14 +237,14 @@ t;</h1>
         <p></p>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-1.In=
 itialAudit">1. Initial Audit</h1>
-<div id=3D"expander-1518600398" class=3D"expand-container">
-<div id=3D"expander-control-1518600398" class=3D"expand-control">
+<div id=3D"expander-2034936219" class=3D"expand-container">
+<div id=3D"expander-control-2034936219" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1518600398" class=3D"expand-content">
+<div id=3D"expander-content-2034936219" class=3D"expand-content">
 <h2 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-A.So=
 urceServer-<hostname><IP>">A. Source Server - &lt;hostname&gt;&lt;IP&gt;</h=
 2>
@@ -588,6 +588,23 @@ target, add inbound &amp; outbound rules to open SQL Server ports (TCP 1433=
 ibrary/cc646023.aspx" class=3D"external-link" rel=3D"nofollow">https://msdn=
 .microsoft.com/en-us/library/cc646023.aspx</a></p></td>
 </tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">8</td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"148"><span class=3D"placeholder-inline-tasks">Co=
+nfirm if target server is in the cloud (ex. GCP). If so, migration project =
+cannot be done piecemeal &lt;<a href=3D"https://medinformatix.lightning.for=
+ce.com/lightning/r/0D53w00006FHJls/view" class=3D"external-link" rel=3D"nof=
+ollow">https://medinformatix.lightning.force.com/lightning/r/0D53w00006FHJl=
+s/view</a>&gt;</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"149"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -662,14 +679,14 @@ sure that mixed authentication is enabled</span></li>
 </div>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-2A.P=
 repwork">2A. Prepwork</h1>
-<div id=3D"expander-950110413" class=3D"expand-container">
-<div id=3D"expander-control-950110413" class=3D"expand-control">
+<div id=3D"expander-234554265" class=3D"expand-container">
+<div id=3D"expander-control-234554265" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-950110413" class=3D"expand-content">
+<div id=3D"expander-content-234554265" class=3D"expand-content">
 <h3 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-I.SQ=
 LServerLevelSettings.1">I. SQL Server Level Settings</h3>
 <div class=3D"table-wrap">
@@ -1151,14 +1168,14 @@ ashboardTasks">2B. Dashboard Tasks</h1>
 <li data-inline-task-id=3D"55"><span class=3D"placeholder-inline-tasks">Pre=
 mium Dashboard not used. Disregard section</span></li>
 </ul>
-<div id=3D"expander-1180629383" class=3D"expand-container">
-<div id=3D"expander-control-1180629383" class=3D"expand-control">
+<div id=3D"expander-1053116258" class=3D"expand-container">
+<div id=3D"expander-control-1053116258" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1180629383" class=3D"expand-content">
+<div id=3D"expander-content-1053116258" class=3D"expand-content">
 <p></p>
 <div class=3D"table-wrap">
 <table data-layout=3D"default" data-local-id=3D"168799a8-4833-4570-a8b4-6a9=
@@ -1224,14 +1241,14 @@ ctories be moved over</p></td>
 </div>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-3.Th=
 eDayOf">3. The Day Of</h1>
-<div id=3D"expander-701612611" class=3D"expand-container">
-<div id=3D"expander-control-701612611" class=3D"expand-control">
+<div id=3D"expander-1623779436" class=3D"expand-container">
+<div id=3D"expander-control-1623779436" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-701612611" class=3D"expand-content">
+<div id=3D"expander-content-1623779436" class=3D"expand-content">
 <p></p>
 <div class=3D"table-wrap">
 <table data-layout=3D"default" data-local-id=3D"83d2bb0f-de2f-4075-b71d-09b=
@@ -1664,14 +1681,14 @@ date SF connect info, SQL Server Version, &amp; SQL DB Server Version</span=
 </div>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-4.Ba=
 seliningandPerformanceTuning">4. Baselining and Performance Tuning</h1>
-<div id=3D"expander-1888942619" class=3D"expand-container">
-<div id=3D"expander-control-1888942619" class=3D"expand-control">
+<div id=3D"expander-1794545855" class=3D"expand-container">
+<div id=3D"expander-control-1794545855" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1888942619" class=3D"expand-content">
+<div id=3D"expander-content-1794545855" class=3D"expand-content">
 <p>Traditionally, this goes as follows:</p>
 <ul>
 <li><p>Change the Compatibility Level to the latest version</p></li>
@@ -1743,7 +1760,7 @@ rsion=3D"1" data-linked-resource-type=3D"attachment" data-linked-resource-d=
 efault-alias=3D"image-20220830-202014.png" data-base-url=3D"https://medinfo=
 rmatix.atlassian.net/wiki" data-linked-resource-content-type=3D"image/png" =
 data-linked-resource-container-id=3D"678330399" data-linked-resource-contai=
-ner-version=3D"103" data-media-id=3D"4c429374-b53f-4b76-b1d6-3e7f629e50ae" =
+ner-version=3D"104" data-media-id=3D"4c429374-b53f-4b76-b1d6-3e7f629e50ae" =
 data-media-type=3D"file" width=3D"468" height=3D"960"></span>
 <ul>
 <li><p>Use the default directory for saving the data (default is %systemdri=
@@ -2043,7 +2060,7 @@ d-resource-version=3D"1" data-linked-resource-type=3D"attachment" data-link=
 ed-resource-default-alias=3D"image-20220913-173407.png" data-base-url=3D"ht=
 tps://medinformatix.atlassian.net/wiki" data-linked-resource-content-type=
 =3D"image/png" data-linked-resource-container-id=3D"678330399" data-linked-=
-resource-container-version=3D"103" data-media-id=3D"0e236bf3-15f7-48c5-8262=
+resource-container-version=3D"104" data-media-id=3D"0e236bf3-15f7-48c5-8262=
 -51d771e6cb23" data-media-type=3D"file" width=3D"468" height=3D"444"></span=
 >
 <p>Even if it falls behind and switches into read-only mode, this switch is=
@@ -2068,7 +2085,7 @@ rom =E2=80=9CSQL Server Query Performance Tuning=E2=80=9D book</p></li>
     </div>
 </body>
 </html>
-------=_Part_2_1841182514.1694802819307
+------=_Part_10_1982824713.1695050886947
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/04157fe1e0fd943bf1b641211a18f5a2
@@ -3238,7 +3255,7 @@ QwrMdd1ICFlNAu8gAAIgAAIgAAIgAALzigBCC+bV4UJjQQAEQAAEQAAEQKB6CJjhBOa6JgCPrCaB
 dxAAARAAARAAARAAgZITMEMIgtZ1IyFkNQm8gwAIgAAIgAAIgAAIzCsCCC2YV4cLjQUBEAABEAAB
 EACByiZghhAErWsC8MhqEngHARAAARAAARAAARCYVwSUR7bm8S/Oq0ajsSAAAiAAAiAAAiAAAiDw
 /wFhO+sU9Rvx0QAAAABJRU5ErkJggg==
-------=_Part_2_1841182514.1694802819307
+------=_Part_10_1982824713.1695050886947
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/c4fcd04c5fc4959987f76bced1314a21
@@ -7844,7 +7861,7 @@ AQrkc2WmOU4SIAESIAESIAESIIFuEaBA7hYmZiIBEiABEiABEiABEjhXCFAgnyszzXGSAAmQAAmQ
 AAmQAAl0iwAFcrcwMRMJkAAJkAAJkAAJkMC5QoAC+VyZaY6TBEiABEiABEiABEigWwQokLuFiZlI
 gARIgARIgARIgATOFQIUyOfKTHOcJEACJEACJEACJEAC3SJAgdwtTMxEAiRAAiRAAiRAAiRwrhD4
 fzjEwL1Apm5qAAAAAElFTkSuQmCC
-------=_Part_2_1841182514.1694802819307
+------=_Part_10_1982824713.1695050886947
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -7854,4 +7871,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_2_1841182514.1694802819307--
+------=_Part_10_1982824713.1695050886947--
