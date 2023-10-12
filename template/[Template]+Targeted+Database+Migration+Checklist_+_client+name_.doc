@@ -1,11 +1,11 @@
-Date: Fri, 6 Oct 2023 20:55:36 +0000 (UTC)
-Message-ID: <194083439.33.1696625736682@6079d855b0cd>
+Date: Thu, 12 Oct 2023 20:01:19 +0000 (UTC)
+Message-ID: <400216827.53.1697140879434@9f6f332d9893>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_32_1056237245.1696625736682"
+	boundary="----=_Part_52_794204369.1697140879433"
 
-------=_Part_32_1056237245.1696625736682
+------=_Part_52_794204369.1697140879433
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -235,16 +235,115 @@ d of the content */
 t;</h1>
     <div class=3D"Section1">
         <p></p>
-<h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-1.In=
-itialAudit">1. Initial Audit</h1>
-<div id=3D"expander-1460845186" class=3D"expand-container">
-<div id=3D"expander-control-1460845186" class=3D"expand-control">
+<h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-0.Ki=
+ck-offCallItems">0. Kick-off Call Items</h1>
+<div id=3D"expander-1147911098" class=3D"expand-container">
+<div id=3D"expander-control-1147911098" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-1460845186" class=3D"expand-content">
+<div id=3D"expander-content-1147911098" class=3D"expand-content">
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"72=
+e1d916-911e-4d79-ac54-7a5647b13cae" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 721.0px;">
+<col style=3D"width: 131.0px;">
+<col style=3D"width: 915.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Task</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Pending</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Notes</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"150"><span class=3D"placeholder-inline-tasks">Co=
+nfirm if target server is in the cloud (ex. GCP). If so, migration project =
+cannot be done piecemeal &lt;<a href=3D"https://medinformatix.lightning.for=
+ce.com/lightning/r/0D53w00006FHJls/view" class=3D"external-link" rel=3D"nof=
+ollow">https://medinformatix.lightning.force.com/lightning/r/0D53w00006FHJl=
+s/view</a>&gt;</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"151"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"152"><span class=3D"placeholder-inline-tasks">Co=
+nfirm if server will be used for SQL Server only, or for the main app as we=
+ll</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"153"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"154"><span class=3D"placeholder-inline-tasks">Co=
+nfirm if IP and hostname will be changed post the migration. If yes, unchec=
+k 2A-I-12 and 3-29</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"155"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Recommend that hostname not be changed</p></t=
+d>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"156"><span class=3D"placeholder-inline-tasks">Ch=
+eck if customer uses reporting platform requiring ODBC connection</span></l=
+i>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"157"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>These will have to be reconfigured post the D=
+B migration</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"158"><span class=3D"placeholder-inline-tasks">If=
+ Graphing Tool (growth charts) is in use, bring BUG-003525 to their attenti=
+on and ensure Eddie creates corresponding Cases</span></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
+<li data-inline-task-id=3D"159"><span>&nbsp;</span></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-1.In=
+itialAudit">1. Initial Audit</h1>
+<div id=3D"expander-1482536916" class=3D"expand-container">
+<div id=3D"expander-control-1482536916" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
+e to expand...</span>
+</div>
+<div id=3D"expander-content-1482536916" class=3D"expand-content">
 <h2 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-A.So=
 urceServer-<hostname><IP>">A. Source Server - &lt;hostname&gt;&lt;IP&gt;</h=
 2>
@@ -255,9 +354,9 @@ LServerLevelSettings">I. SQL Server Level Settings</h3>
 a72c0182e" class=3D"confluenceTable">
 <colgroup>
 <col>
-<col style=3D"width: 654.0px;">
-<col style=3D"width: 126.0px;">
-<col style=3D"width: 976.0px;">
+<col style=3D"width: 647.0px;">
+<col style=3D"width: 122.0px;">
+<col style=3D"width: 959.0px;">
 </colgroup>
 <tbody>
 <tr>
@@ -271,7 +370,7 @@ a72c0182e" class=3D"confluenceTable">
 <td class=3D"confluenceTd">
 <ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
 <li data-inline-task-id=3D"12"><span class=3D"placeholder-inline-tasks">If =
-non-MI DBs exist, run by customer</span></li>
+non-MI DBs and/or SQL Jobs exist, run by customer</span></li>
 </ul></td>
 <td class=3D"confluenceTd">
 <ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
@@ -345,21 +444,6 @@ non-MI SSIS &amp; SSAS objects exist, run by customer</span></li>
 </ul></td>
 <td class=3D"confluenceTd"><p></p></td>
 </tr>
-<tr>
-<td class=3D"numberingColumn confluenceTd">6</td>
-<td class=3D"confluenceTd">
-<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
-<li data-inline-task-id=3D"108"><span class=3D"placeholder-inline-tasks">If=
- IP and hostname will be changed post the migration, uncheck 2A-I-12 and 3-=
-29</span></li>
-</ul></td>
-<td class=3D"confluenceTd">
-<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
-<li data-inline-task-id=3D"114"><span>&nbsp;</span></li>
-</ul></td>
-<td class=3D"confluenceTd"><p>Recommend that hostname not be changed</p></t=
-d>
-</tr>
 </tbody>
 </table>
 </div>
@@ -370,9 +454,9 @@ BLevelSettings">II. DB Level Settings</h3>
 269254db3" class=3D"confluenceTable">
 <colgroup>
 <col>
-<col style=3D"width: 742.0px;">
-<col style=3D"width: 126.0px;">
-<col style=3D"width: 888.0px;">
+<col style=3D"width: 733.0px;">
+<col style=3D"width: 122.0px;">
+<col style=3D"width: 873.0px;">
 </colgroup>
 <tbody>
 <tr>
@@ -440,9 +524,9 @@ ndowsServerLevelSettings">I. Windows Server Level Settings</h3>
 8bf896612" class=3D"confluenceTable">
 <colgroup>
 <col>
-<col style=3D"width: 773.0px;">
-<col style=3D"width: 120.0px;">
-<col style=3D"width: 863.0px;">
+<col style=3D"width: 763.0px;">
+<col style=3D"width: 117.0px;">
+<col style=3D"width: 848.0px;">
 </colgroup>
 <tbody>
 <tr>
@@ -535,20 +619,6 @@ ervice</p></td>
 <td class=3D"numberingColumn confluenceTd">5</td>
 <td class=3D"confluenceTd">
 <ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
-<li data-inline-task-id=3D"119"><span class=3D"placeholder-inline-tasks">Co=
-nfirm if server will be used for SQL Server only, or for the main app as we=
-ll</span></li>
-</ul></td>
-<td class=3D"confluenceTd">
-<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
-<li data-inline-task-id=3D"122"><span>&nbsp;</span></li>
-</ul></td>
-<td class=3D"confluenceTd"><p></p></td>
-</tr>
-<tr>
-<td class=3D"numberingColumn confluenceTd">6</td>
-<td class=3D"confluenceTd">
-<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
 <li data-inline-task-id=3D"36"><span class=3D"placeholder-inline-tasks">Ens=
 ure enough memory, CPU, storage, &amp; drives were provisioned. See if dedi=
 cated drives (not C:\) can be provided for both the data and backups. </spa=
@@ -573,7 +643,7 @@ ch-memory-is-normal-for-sql-servers/</a> </p></li>
 </ul></td>
 </tr>
 <tr>
-<td class=3D"numberingColumn confluenceTd">7</td>
+<td class=3D"numberingColumn confluenceTd">6</td>
 <td class=3D"confluenceTd">
 <ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
 <li data-inline-task-id=3D"38"><span class=3D"placeholder-inline-tasks">Ens=
@@ -589,23 +659,6 @@ target, add inbound &amp; outbound rules to open SQL Server ports (TCP 1433=
 ibrary/cc646023.aspx" class=3D"external-link" rel=3D"nofollow">https://msdn=
 .microsoft.com/en-us/library/cc646023.aspx</a></p></td>
 </tr>
-<tr>
-<td class=3D"numberingColumn confluenceTd">8</td>
-<td class=3D"confluenceTd">
-<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
-<li data-inline-task-id=3D"148"><span class=3D"placeholder-inline-tasks">Co=
-nfirm if target server is in the cloud (ex. GCP). If so, migration project =
-cannot be done piecemeal &lt;<a href=3D"https://medinformatix.lightning.for=
-ce.com/lightning/r/0D53w00006FHJls/view" class=3D"external-link" rel=3D"nof=
-ollow">https://medinformatix.lightning.force.com/lightning/r/0D53w00006FHJl=
-s/view</a>&gt;</span></li>
-</ul></td>
-<td class=3D"confluenceTd">
-<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
-<li data-inline-task-id=3D"149"><span>&nbsp;</span></li>
-</ul></td>
-<td class=3D"confluenceTd"><p></p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -616,9 +669,9 @@ QLServerLevelSettings">II. SQL Server Level Settings</h3>
 4c672cb87" class=3D"confluenceTable">
 <colgroup>
 <col>
-<col style=3D"width: 700.0px;">
-<col style=3D"width: 124.0px;">
-<col style=3D"width: 932.0px;">
+<col style=3D"width: 692.0px;">
+<col style=3D"width: 121.0px;">
+<col style=3D"width: 915.0px;">
 </colgroup>
 <tbody>
 <tr>
@@ -680,14 +733,14 @@ sure that mixed authentication is enabled</span></li>
 </div>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-2A.P=
 repwork">2A. Prepwork</h1>
-<div id=3D"expander-652867383" class=3D"expand-container">
-<div id=3D"expander-control-652867383" class=3D"expand-control">
+<div id=3D"expander-1200068439" class=3D"expand-container">
+<div id=3D"expander-control-1200068439" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-652867383" class=3D"expand-content">
+<div id=3D"expander-content-1200068439" class=3D"expand-content">
 <h3 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-I.SQ=
 LServerLevelSettings.1">I. SQL Server Level Settings</h3>
 <div class=3D"table-wrap">
@@ -695,9 +748,9 @@ LServerLevelSettings.1">I. SQL Server Level Settings</h3>
 cda6c6479" class=3D"confluenceTable">
 <colgroup>
 <col>
-<col style=3D"width: 614.0px;">
-<col style=3D"width: 87.0px;">
-<col style=3D"width: 1055.0px;">
+<col style=3D"width: 607.0px;">
+<col style=3D"width: 84.0px;">
+<col style=3D"width: 1037.0px;">
 </colgroup>
 <tbody>
 <tr>
@@ -1034,9 +1087,9 @@ rdPartySettings">II. 3rd Party Settings</h3>
 298d47b33" class=3D"confluenceTable">
 <colgroup>
 <col>
-<col style=3D"width: 530.0px;">
-<col style=3D"width: 87.0px;">
-<col style=3D"width: 1139.0px;">
+<col style=3D"width: 526.0px;">
+<col style=3D"width: 84.0px;">
+<col style=3D"width: 1118.0px;">
 </colgroup>
 <tbody>
 <tr>
@@ -1143,20 +1196,6 @@ install and test Box Sync post the migration.</span></li>
 </ul></td>
 <td class=3D"confluenceTd"><p></p></td>
 </tr>
-<tr>
-<td class=3D"numberingColumn confluenceTd">8</td>
-<td class=3D"confluenceTd">
-<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
-<li data-inline-task-id=3D"146"><span class=3D"placeholder-inline-tasks">If=
- Graphing Tool (growth charts) is in use, bring BUG-003525 to their attenti=
-on and ensure Eddie creates corresponding Cases</span></li>
-</ul></td>
-<td class=3D"confluenceTd">
-<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"678330399">
-<li data-inline-task-id=3D"147"><span>&nbsp;</span></li>
-</ul></td>
-<td class=3D"confluenceTd"><p></p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -1169,23 +1208,23 @@ ashboardTasks">2B. Dashboard Tasks</h1>
 <li data-inline-task-id=3D"55"><span class=3D"placeholder-inline-tasks">Pre=
 mium Dashboard not used. Disregard section</span></li>
 </ul>
-<div id=3D"expander-102013012" class=3D"expand-container">
-<div id=3D"expander-control-102013012" class=3D"expand-control">
+<div id=3D"expander-593884099" class=3D"expand-container">
+<div id=3D"expander-control-593884099" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-102013012" class=3D"expand-content">
+<div id=3D"expander-content-593884099" class=3D"expand-content">
 <p></p>
 <div class=3D"table-wrap">
 <table data-layout=3D"default" data-local-id=3D"168799a8-4833-4570-a8b4-6a9=
 83d0221df" class=3D"confluenceTable">
 <colgroup>
 <col>
-<col style=3D"width: 555.0px;">
-<col style=3D"width: 124.0px;">
-<col style=3D"width: 1077.0px;">
+<col style=3D"width: 548.0px;">
+<col style=3D"width: 121.0px;">
+<col style=3D"width: 1059.0px;">
 </colgroup>
 <tbody>
 <tr>
@@ -1255,22 +1294,22 @@ catalog</a> </p></li>
 </div>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-3.Th=
 eDayOf">3. The Day Of</h1>
-<div id=3D"expander-526188878" class=3D"expand-container">
-<div id=3D"expander-control-526188878" class=3D"expand-control">
+<div id=3D"expander-613026450" class=3D"expand-container">
+<div id=3D"expander-control-613026450" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-526188878" class=3D"expand-content">
+<div id=3D"expander-content-613026450" class=3D"expand-content">
 <p></p>
 <div class=3D"table-wrap">
 <table data-layout=3D"default" data-local-id=3D"83d2bb0f-de2f-4075-b71d-09b=
 c47d3c910" class=3D"confluenceTable">
 <colgroup>
 <col>
-<col style=3D"width: 423.0px;">
-<col style=3D"width: 1333.0px;">
+<col style=3D"width: 418.0px;">
+<col style=3D"width: 1310.0px;">
 </colgroup>
 <tbody>
 <tr>
@@ -1696,14 +1735,14 @@ date SF connect info, SQL Server Version, &amp; SQL DB Server Version</span=
 </div>
 <h1 id=3D"id-[Template]TargetedDatabaseMigrationChecklist:<clientname>-4.Ba=
 seliningandPerformanceTuning">4. Baselining and Performance Tuning</h1>
-<div id=3D"expander-2036800911" class=3D"expand-container">
-<div id=3D"expander-control-2036800911" class=3D"expand-control">
+<div id=3D"expander-1840827338" class=3D"expand-container">
+<div id=3D"expander-control-1840827338" class=3D"expand-control">
 <span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
 lass=3D"expand-control-image" src=3D"3582f1deb0810365b86e95312e68cb7c" widt=
 h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Click her=
 e to expand...</span>
 </div>
-<div id=3D"expander-content-2036800911" class=3D"expand-content">
+<div id=3D"expander-content-1840827338" class=3D"expand-content">
 <p>Traditionally, this goes as follows:</p>
 <ul>
 <li><p>Change the Compatibility Level to the latest version</p></li>
@@ -1731,9 +1770,9 @@ tup">I. Setup</h3>
 8bd382510" class=3D"confluenceTable">
 <colgroup>
 <col>
-<col style=3D"width: 654.0px;">
-<col style=3D"width: 126.0px;">
-<col style=3D"width: 976.0px;">
+<col style=3D"width: 257.0px;">
+<col style=3D"width: 49.0px;">
+<col style=3D"width: 382.0px;">
 </colgroup>
 <tbody>
 <tr>
@@ -1775,7 +1814,7 @@ rsion=3D"1" data-linked-resource-type=3D"attachment" data-linked-resource-d=
 efault-alias=3D"image-20220830-202014.png" data-base-url=3D"https://medinfo=
 rmatix.atlassian.net/wiki" data-linked-resource-content-type=3D"image/png" =
 data-linked-resource-container-id=3D"678330399" data-linked-resource-contai=
-ner-version=3D"106" data-media-id=3D"4c429374-b53f-4b76-b1d6-3e7f629e50ae" =
+ner-version=3D"107" data-media-id=3D"4c429374-b53f-4b76-b1d6-3e7f629e50ae" =
 data-media-type=3D"file" width=3D"468" height=3D"960"></span>
 <ul>
 <li><p>Use the default directory for saving the data (default is %systemdri=
@@ -1794,9 +1833,9 @@ nalysis">II. Analysis</h3>
 c282f3374" class=3D"confluenceTable">
 <colgroup>
 <col>
-<col style=3D"width: 742.0px;">
-<col style=3D"width: 126.0px;">
-<col style=3D"width: 888.0px;">
+<col style=3D"width: 292.0px;">
+<col style=3D"width: 49.0px;">
+<col style=3D"width: 347.0px;">
 </colgroup>
 <tbody>
 <tr>
@@ -1950,9 +1989,9 @@ eatingbaselineswitholdandnewcompatibilitylevels">I. Creating baselines with=
 f21bd28e2" class=3D"confluenceTable">
 <colgroup>
 <col>
-<col style=3D"width: 773.0px;">
-<col style=3D"width: 120.0px;">
-<col style=3D"width: 863.0px;">
+<col style=3D"width: 302.0px;">
+<col style=3D"width: 48.0px;">
+<col style=3D"width: 338.0px;">
 </colgroup>
 <tbody>
 <tr>
@@ -2022,9 +2061,9 @@ erformancetuneregressedqueries">II. Performance tune regressed queries</h3>
 b056bd0c4" class=3D"confluenceTable">
 <colgroup>
 <col>
-<col style=3D"width: 700.0px;">
-<col style=3D"width: 124.0px;">
-<col style=3D"width: 932.0px;">
+<col style=3D"width: 275.0px;">
+<col style=3D"width: 48.0px;">
+<col style=3D"width: 365.0px;">
 </colgroup>
 <tbody>
 <tr>
@@ -2075,7 +2114,7 @@ d-resource-version=3D"1" data-linked-resource-type=3D"attachment" data-link=
 ed-resource-default-alias=3D"image-20220913-173407.png" data-base-url=3D"ht=
 tps://medinformatix.atlassian.net/wiki" data-linked-resource-content-type=
 =3D"image/png" data-linked-resource-container-id=3D"678330399" data-linked-=
-resource-container-version=3D"106" data-media-id=3D"0e236bf3-15f7-48c5-8262=
+resource-container-version=3D"107" data-media-id=3D"0e236bf3-15f7-48c5-8262=
 -51d771e6cb23" data-media-type=3D"file" width=3D"468" height=3D"444"></span=
 >
 <p>Even if it falls behind and switches into read-only mode, this switch is=
@@ -2100,7 +2139,7 @@ rom =E2=80=9CSQL Server Query Performance Tuning=E2=80=9D book</p></li>
     </div>
 </body>
 </html>
-------=_Part_32_1056237245.1696625736682
+------=_Part_52_794204369.1697140879433
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/04157fe1e0fd943bf1b641211a18f5a2
@@ -3270,7 +3309,7 @@ QwrMdd1ICFlNAu8gAAIgAAIgAAIgAALzigBCC+bV4UJjQQAEQAAEQAAEQKB6CJjhBOa6JgCPrCaB
 dxAAARAAARAAARAAgZITMEMIgtZ1IyFkNQm8gwAIgAAIgAAIgAAIzCsCCC2YV4cLjQUBEAABEAAB
 EACByiZghhAErWsC8MhqEngHARAAARAAARAAARCYVwSUR7bm8S/Oq0ajsSAAAiAAAiAAAiAAAiDw
 /wFhO+sU9Rvx0QAAAABJRU5ErkJggg==
-------=_Part_32_1056237245.1696625736682
+------=_Part_52_794204369.1697140879433
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/c4fcd04c5fc4959987f76bced1314a21
@@ -7876,7 +7915,7 @@ AQrkc2WmOU4SIAESIAESIAESIIFuEaBA7hYmZiIBEiABEiABEiABEjhXCFAgnyszzXGSAAmQAAmQ
 AAmQAAl0iwAFcrcwMRMJkAAJkAAJkAAJkMC5QoAC+VyZaY6TBEiABEiABEiABEigWwQokLuFiZlI
 gARIgARIgARIgATOFQIUyOfKTHOcJEACJEACJEACJEAC3SJAgdwtTMxEAiRAAiRAAiRAAiRwrhD4
 fzjEwL1Apm5qAAAAAElFTkSuQmCC
-------=_Part_32_1056237245.1696625736682
+------=_Part_52_794204369.1697140879433
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: file:///C:/3582f1deb0810365b86e95312e68cb7c
@@ -7886,4 +7925,4 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
 CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
 ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
 GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
-------=_Part_32_1056237245.1696625736682--
+------=_Part_52_794204369.1697140879433--
