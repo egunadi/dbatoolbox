@@ -1,11 +1,11 @@
-Date: Fri, 15 Sep 2023 18:34:02 +0000 (UTC)
-Message-ID: <1253110547.19.1694802842198@a8886ed45f96>
+Date: Wed, 25 Oct 2023 18:16:54 +0000 (UTC)
+Message-ID: <937998402.45.1698257814632@f9bd766e3b7f>
 Subject: Exported From Confluence
 MIME-Version: 1.0
 Content-Type: multipart/related; 
-	boundary="----=_Part_18_1798653097.1694802842198"
+	boundary="----=_Part_44_1511587550.1698257814632"
 
-------=_Part_18_1798653097.1694802842198
+------=_Part_44_1511587550.1698257814632
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/exported.html
@@ -238,8 +238,8 @@ d of the content */
 <h2 id=3D"id-[External][In-Progress]DatabaseMigrationPowerShellCommands-A.I=
 nitialSetup">A. Initial Setup</h2>
 <div class=3D"table-wrap">
-<table data-layout=3D"default" data-local-id=3D"835ccb0f-cc5f-45d6-b795-b0a=
-45d52c405" class=3D"confluenceTable">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"83=
+5ccb0f-cc5f-45d6-b795-b0a45d52c405" class=3D"confluenceTable">
 <colgroup>
 <col style=3D"width: 140.0px;">
 <col style=3D"width: 310.0px;">
@@ -268,8 +268,8 @@ r-R2&gt;</code></p></td>
 <h2 id=3D"id-[External][In-Progress]DatabaseMigrationPowerShellCommands-B.A=
 uditingServerProperties">B. Auditing Server Properties</h2>
 <div class=3D"table-wrap">
-<table data-layout=3D"default" data-local-id=3D"9284c28a-769c-465b-86af-5c7=
-880cce00b" class=3D"confluenceTable">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"92=
+84c28a-769c-465b-86af-5c7880cce00b" class=3D"confluenceTable">
 <colgroup>
 <col style=3D"width: 140.0px;">
 <col style=3D"width: 310.0px;">
@@ -327,10 +327,16 @@ dows-powershell/wmf/setup/install-configure?view=3Dpowershell-7.1" class=3D=
 l/scripting/windows-powershell/wmf/setup/install-configure?view=3Dpowershel=
 l-7.1</a></p></li>
 </ul>
-<p>If PowerShell is greater or equal to 3.0 but less than 5.0, dbatools wil=
-l have to be installed with an offline method: <a href=3D"https://dbatools.=
-io/offline/" class=3D"external-link" rel=3D"nofollow">https://dbatools.io/o=
-ffline/</a> </p>
+<p>If PowerShell is greater or equal to 3.0 but less than 5.0, dbatools can=
+ be installed using <a href=3D"https://chocolatey.org/install" class=3D"ext=
+ernal-link" rel=3D"nofollow">chocolatey</a>:</p>
+<p><code>choco install dbatools --version 1.1.145</code></p>
+<p>1.1.145 is the latest release prior to dbatools version 2. At this time,=
+ there is a bug with chocolatey not including the new <code>dbatools.librar=
+y</code> dependency for version 2. See comments here:</p>
+<p><a href=3D"https://community.chocolatey.org/packages/dbatools" data-card=
+-appearance=3D"inline" class=3D"external-link" rel=3D"nofollow">https://com=
+munity.chocolatey.org/packages/dbatools</a> </p>
 </div>
 </div>
 <div class=3D"confluence-information-macro confluence-information-macro-war=
@@ -366,8 +372,8 @@ the-parameter-of-find-dbaagentjob" data-card-appearance=3D"inline" class=3D=
 </div>
 </div>
 <div class=3D"table-wrap">
-<table data-layout=3D"full-width" data-local-id=3D"c41f231c-0b95-4703-8b6c-=
-771d025b0491" class=3D"confluenceTable">
+<table data-table-width=3D"1800" data-layout=3D"full-width" data-local-id=
+=3D"c41f231c-0b95-4703-8b6c-771d025b0491" class=3D"confluenceTable">
 <colgroup>
 <col style=3D"width: 106.0px;">
 <col style=3D"width: 323.0px;">
@@ -617,4 +623,4 @@ MaxMemory -SqlInstance $SQLInstance</pre>=20
     </div>
 </body>
 </html>
-------=_Part_18_1798653097.1694802842198--
+------=_Part_44_1511587550.1698257814632--
